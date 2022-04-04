@@ -23,9 +23,12 @@
 module detect_input(
     input pushbutton,
     input clk,
-    output out
+    output pb_out
     );
+    wire slow_clk;
     wire Q1, Q2, Q2_bar, Q0;
+
+    flexible_clk clk0 (clk, 400, slow_clk);
     dff d0 (clk, pushbutton, Q0);
     dff d1 (clk, Q0, Q1);
     dff d2 (clk, Q1, Q2);

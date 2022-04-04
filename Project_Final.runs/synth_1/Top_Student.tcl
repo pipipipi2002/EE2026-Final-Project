@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -34,6 +33,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Oled_Display.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/PItoXY.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/flexible_clk.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/subtask4_2.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
