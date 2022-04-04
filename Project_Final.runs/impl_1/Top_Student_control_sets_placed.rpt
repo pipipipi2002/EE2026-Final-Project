@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Apr  4 17:20:12 2022
+| Date         : Mon Apr  4 18:49:40 2022
 | Host         : DESKTOP-ENDDUI1 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
 | Design       : Top_Student
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    20 |
-| Unused register locations in slices containing registers |    56 |
+| Number of unique control sets                            |    16 |
+| Unused register locations in slices containing registers |    34 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,11 +34,11 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      2 |            6 |
-|      4 |            1 |
+|      2 |            1 |
 |      6 |            1 |
-|     12 |            1 |
-|    16+ |           11 |
+|     10 |            1 |
+|     14 |            1 |
+|    16+ |           12 |
 +--------+--------------+
 
 
@@ -48,41 +48,37 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             110 |           26 |
+| No           | No                    | No                     |              32 |           14 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             274 |           43 |
-| Yes          | No                    | No                     |             106 |           15 |
+| No           | Yes                   | No                     |             430 |           62 |
+| Yes          | No                    | No                     |             104 |           15 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              46 |           11 |
+| Yes          | Yes                   | No                     |              32 |            6 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+------------------------+----------------------------------------+------------------------------------+------------------+----------------+
-|      Clock Signal      |              Enable Signal             |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
-+------------------------+----------------------------------------+------------------------------------+------------------+----------------+
-|  clk_6_25Mhz_out_BUFG  | subtask4_20/led_out[2]_i_2_n_0         | subtask4_20/led_out[2]_i_1_n_0     |                1 |              2 |
-|  clk_6_25Mhz_out_BUFG  | subtask4_20/led_out[1]_i_2_n_0         | subtask4_20/led_out[1]_i_1_n_0     |                1 |              2 |
-|  clk_6_25Mhz_out_BUFG  | subtask4_20/seg[6]_i_1_n_0             |                                    |                1 |              2 |
-|  clk_6_25Mhz_out_BUFG  | subtask4_20/led_out[4]_i_2_n_0         | subtask4_20/led_out[4]_i_1_n_0     |                1 |              2 |
-|  clk_6_25Mhz_out_BUFG  | subtask4_20/led_out[0]_i_2_n_0         | subtask4_20/led_out[0]_i_1_n_0     |                1 |              2 |
-|  clk_6_25Mhz_out_BUFG  | subtask4_20/led_out[3]_i_2_n_0         | subtask4_20/led_out[3]_i_1_n_0     |                1 |              2 |
-| ~clk_6_25Mhz_out_BUFG  |                                        |                                    |                2 |              4 |
-|  BASYS_CLK_IBUF_BUFG   |                                        |                                    |                3 |              6 |
-|  clk_6_25Mhz_out_BUFG  | subtask4_20/seg[6]_i_1_n_0             | subtask4_20/seg[5]_i_1_n_0         |                2 |             12 |
-|  J_MIC3_Pin1_OBUF_BUFG | subtask4_20/current_peak0_carry__0_n_2 | subtask4_20/current_peak           |                4 |             24 |
-|  BASYS_CLK_IBUF_BUFG   |                                        | J_MIC3_Pin1_OBUF_BUFG              |                3 |             24 |
-|  clk_6_25Mhz_out_BUFG  |                                        |                                    |                7 |             24 |
-| ~aud0/J_MIC3_Pin4_OBUF |                                        |                                    |                2 |             24 |
-| ~clk_6_25Mhz_out_BUFG  |                                        | display0/frame_counter[16]_i_1_n_0 |                4 |             32 |
-| ~clk_6_25Mhz_out_BUFG  | display0/delay[0]_i_1_n_0              |                                    |                5 |             40 |
-|  J_MIC3_Pin1_OBUF_BUFG |                                        |                                    |               12 |             52 |
-|  BASYS_CLK_IBUF_BUFG   |                                        | clk_20kHz/clear                    |                8 |             64 |
-|  BASYS_CLK_IBUF_BUFG   |                                        | clk6p25m/count[0]_i_1__0_n_0       |                8 |             64 |
-| ~clk_6_25Mhz_out_BUFG  | display0/FSM_onehot_state[31]_i_1_n_0  |                                    |                9 |             64 |
-| ~clk_6_25Mhz_out_BUFG  |                                        | display0/spi_word[39]_i_1_n_0      |               20 |             90 |
-+------------------------+----------------------------------------+------------------------------------+------------------+----------------+
++----------------------------+---------------------------+------------------------------------+------------------+----------------+
+|        Clock Signal        |       Enable Signal       |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
++----------------------------+---------------------------+------------------------------------+------------------+----------------+
+| ~clk_6_25Mhz_out_BUFG      |                           |                                    |                1 |              2 |
+|  menu_button0/clk0/clk_out |                           |                                    |                1 |              6 |
+|  BASYS_CLK_IBUF_BUFG       |                           |                                    |                5 |             10 |
+|  clk_6_25Mhz_out_BUFG      |                           |                                    |                7 |             14 |
+|  menu0/clk0/CLK            | menu0/moving0/x_offset0   | menu0/moving0/x_offset             |                3 |             16 |
+|  menu0/clk0/CLK            | menu0/moving0/y_offset    | menu0/moving0/x_offset             |                3 |             16 |
+|  BASYS_CLK_IBUF_BUFG       |                           | clk_20kHz/cs                       |                3 |             24 |
+|  menu_button0/clk0/clk_out |                           | menu_button0/count[13]_i_1_n_0     |                5 |             26 |
+| ~clk_6_25Mhz_out_BUFG      |                           | display0/frame_counter[16]_i_1_n_0 |                5 |             34 |
+| ~clk_6_25Mhz_out_BUFG      | display0/delay[0]_i_1_n_0 |                                    |                5 |             40 |
+| ~clk_6_25Mhz_out_BUFG      | display0/state            |                                    |               10 |             64 |
+|  BASYS_CLK_IBUF_BUFG       |                           | clk_20kHz/clear                    |                8 |             64 |
+|  BASYS_CLK_IBUF_BUFG       |                           | menu_button0/clk0/clear            |                8 |             64 |
+|  BASYS_CLK_IBUF_BUFG       |                           | clk6p25m/clear                     |                8 |             64 |
+|  BASYS_CLK_IBUF_BUFG       |                           | menu0/clk0/clear                   |                8 |             64 |
+| ~clk_6_25Mhz_out_BUFG      |                           | display0/spi_word[39]_i_1_n_0      |               17 |             90 |
++----------------------------+---------------------------+------------------------------------+------------------+----------------+
 
 

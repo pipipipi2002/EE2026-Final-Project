@@ -21,7 +21,7 @@ module Top_Student (
     output J_MIC3_Pin1,   // Connect to this signal from Audio_Capture.v
     output J_MIC3_Pin4,    // Connect to this signal from Audio_Capture.v
     output [4:0] led_out,
-    input sw,
+    input sw, pb_u, pb_d,
     input sub_4hide, sub_4, sub_4AorB,
     output [6:0] JX,
     output reg [3:0] an = 4'b1110, 
@@ -59,7 +59,14 @@ module Top_Student (
     wire [6:0] cX,cY;
     PItoXY convert0 (pixel_index, cX, cY);
     
-    subtask4_2 subtask4_20 (cX, cY, clk_6_25Mhz_out, clk_20khz_out, sub_4hide, sub_4, sub_4AorB, mic_in, seg, oled_data, led_out);
+    //subtask4_2 subtask4_20 (cX, cY, clk_6_25Mhz_out, clk_20khz_out, sub_4hide, sub_4, sub_4AorB, mic_in, seg, oled_data, led_out);
     
+
+    /* menu button */
+    wire [1:0] state;
+    menu_button menu_button0 (pb_u, pb_d, BASYS_CLK, state);
+    assign led_out = state;
+
+    menu_display menu0 (state, BASYS_CLK, clk_6_25Mhz_out, cX, cY, oled_data);
 
 endmodule
