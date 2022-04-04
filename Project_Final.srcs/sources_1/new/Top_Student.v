@@ -21,7 +21,7 @@ module Top_Student (
     output J_MIC3_Pin1,   // Connect to this signal from Audio_Capture.v
     output J_MIC3_Pin4,    // Connect to this signal from Audio_Capture.v
     output [4:0] led_out,
-    input sw, pb_u, pb_d,
+    input sw, pb_u, pb_d, pb_c, pb_r,
     input sub_4hide, sub_4, sub_4AorB,
     output [6:0] JX,
     output reg [3:0] an = 4'b1110, 
@@ -29,9 +29,10 @@ module Top_Student (
     output dp
     );
     assign dp = 1;
-    wire clk_10hz_out, clk_100hz_out;
+    wire clk_10hz_out, clk_100hz_out, clk_400hz_out;
     flexible_clk clk_10Hz (BASYS_CLK, 10, clk_10hz_out);
-    flexible_clk clk_100kHz (BASYS_CLK, 100, clk_100hz_out);
+    flexible_clk clk_100Hz (BASYS_CLK, 100, clk_100hz_out);
+    flexible_clk clk_400Hz (BASYS_CLK, 400, clk_400hz_out);
     
     /* Mic Configuration */
     // mic_in -> data coming in
@@ -59,14 +60,42 @@ module Top_Student (
     wire [6:0] cX,cY;
     PItoXY convert0 (pixel_index, cX, cY);
     
-    //subtask4_2 subtask4_20 (cX, cY, clk_6_25Mhz_out, clk_20khz_out, sub_4hide, sub_4, sub_4AorB, mic_in, seg, oled_data, led_out);
+    wire [15:0] subtask42_oled_data;
+    wire [4:0] subtask42_led_data;
+    subtask4_2 subtask4_20 (cX, cY, clk_6_25Mhz_out, clk_20khz_out, sub_4hide, sub_4, sub_4AorB, mic_in, seg, subtask42_oled_data, subtask42_led_data);
     
 
     /* menu button */
-    wire [1:0] state;
+    // state 0 -> Subtask 4.2
+    // state 1 -> Audio Spectogram
+    // state 2 -> Polynomial Plotter
+    // state 3 -> M-O-R-S-E code !
+    wire [1:0] state; 
+    wire [15:0] mainmenu_oled_data;
     menu_button menu_button0 (pb_u, pb_d, BASYS_CLK, state);
-    assign led_out = state;
+    menu_display menu0 (state, BASYS_CLK, clk_6_25Mhz_out, cX, cY, mainmenu_oled_data);
+    
+    wire pb_c_out, pb_r_out;
+    reg set_c = 0; 
 
-    menu_display menu0 (state, BASYS_CLK, clk_6_25Mhz_out, cX, cY, oled_data);
+    detect_input detect_input_c (pb_c, BASYS_CLK, pb_c_out);
+    detect_input detect_input_r (pb_r, BASYS_CLK, pb_r_out);
+
+    always @(posedge BASYS_CLK) begin
+        if (pb_c_out == 1) begin
+            set_c <= 1;
+        end else if (pb_r_out == 1) begin
+            set_c <= 0;
+        end
+    end
+    
+//    assign oled_data = mainmenu_oled_data;
+
+    assign oled_data = (set_c == 0) ? mainmenu_oled_data : (
+                        (state == 0) ? subtask42_oled_data : (
+                            0));
+    assign led_out = (set_c == 0) ? 0 : (
+                    (state == 0) ? subtask42_led_data : 0);
+
 
 endmodule

@@ -33,6 +33,8 @@ read_verilog -library xil_defaultlib {
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Audio_Capture.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Oled_Display.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/PItoXY.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/detect_input.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/dff.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_board.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_moving.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_selector.v
@@ -40,6 +42,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/flexible_clk.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_button.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_display.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/subtask4_2.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being
