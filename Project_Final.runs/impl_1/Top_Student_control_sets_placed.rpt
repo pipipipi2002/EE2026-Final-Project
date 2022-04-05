@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Mon Apr  4 20:04:25 2022
+| Date         : Tue Apr  5 11:20:17 2022
 | Host         : DESKTOP-ENDDUI1 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
 | Design       : Top_Student
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |    21 |
-| Unused register locations in slices containing registers |    40 |
+| Number of unique control sets                            |    26 |
+| Unused register locations in slices containing registers |    46 |
 +----------------------------------------------------------+-------+
 
 
@@ -34,10 +34,11 @@ Table of Contents
 +--------+--------------+
 | Fanout | Control Sets |
 +--------+--------------+
-|      2 |            2 |
+|      2 |            1 |
+|      4 |            1 |
 |      6 |            1 |
 |     12 |            1 |
-|    16+ |           17 |
+|    16+ |           22 |
 +--------+--------------+
 
 
@@ -47,42 +48,47 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             156 |           34 |
+| No           | No                    | No                     |             160 |           38 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             430 |           62 |
-| Yes          | No                    | No                     |             106 |           13 |
+| No           | Yes                   | No                     |             458 |           68 |
+| Yes          | No                    | No                     |             106 |           14 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              68 |           12 |
+| Yes          | Yes                   | No                     |             286 |           42 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------------------+------------------------------------------+------------------------------------+------------------+----------------+
-|        Clock Signal        |               Enable Signal              |          Set/Reset Signal          | Slice Load Count | Bel Load Count |
-+----------------------------+------------------------------------------+------------------------------------+------------------+----------------+
-|  clk_6_25Mhz_out_BUFG      | subtask4_20/seg[6]_i_1_n_0               |                                    |                1 |              2 |
-| ~clk_6_25Mhz_out_BUFG      |                                          |                                    |                1 |              2 |
-|  menu_button0/clk0/clk_out |                                          |                                    |                2 |              6 |
-|  clk_6_25Mhz_out_BUFG      | subtask4_20/seg[6]_i_1_n_0               | subtask4_20/seg[5]_i_1_n_0         |                1 |             12 |
-|  menu0/clk0/CLK            | menu0/moving0/x_offset0                  | menu0/moving0/x_offset             |                4 |             16 |
-|  menu0/clk0/CLK            | menu0/moving0/y_offset                   | menu0/moving0/x_offset             |                4 |             16 |
-| ~aud0/J_MIC3_Pin4_OBUF     |                                          |                                    |                4 |             24 |
-|  J_MIC3_Pin1_OBUF_BUFG     | subtask4_20/current_peak_reg[11]_i_2_n_2 | subtask4_20/current_peak           |                3 |             24 |
-|  BASYS_CLK_IBUF_BUFG       |                                          |                                    |                7 |             24 |
-|  BASYS_CLK_IBUF_BUFG       |                                          | J_MIC3_Pin1_OBUF_BUFG              |                3 |             24 |
-|  menu_button0/clk0/clk_out |                                          | menu_button0/count[13]_i_1_n_0     |                5 |             26 |
-| ~clk_6_25Mhz_out_BUFG      |                                          | display0/frame_counter[16]_i_1_n_0 |                5 |             34 |
-| ~clk_6_25Mhz_out_BUFG      | display0/delay[0]_i_1_n_0                |                                    |                5 |             40 |
-|  clk_6_25Mhz_out_BUFG      |                                          |                                    |               12 |             48 |
-|  J_MIC3_Pin1_OBUF_BUFG     |                                          |                                    |                8 |             52 |
-| ~clk_6_25Mhz_out_BUFG      | display0/state_0                         |                                    |                7 |             64 |
-|  BASYS_CLK_IBUF_BUFG       |                                          | menu_button0/clk0/clear            |                8 |             64 |
-|  BASYS_CLK_IBUF_BUFG       |                                          | clk6p25m/clear                     |                8 |             64 |
-|  BASYS_CLK_IBUF_BUFG       |                                          | clk_20kHz/clear                    |                8 |             64 |
-|  BASYS_CLK_IBUF_BUFG       |                                          | menu0/clk0/clear                   |                8 |             64 |
-| ~clk_6_25Mhz_out_BUFG      |                                          | display0/spi_word[39]_i_1_n_0      |               17 |             90 |
-+----------------------------+------------------------------------------+------------------------------------+------------------+----------------+
++----------------------------------+-----------------------------------------------+--------------------------------------------------+------------------+----------------+
+|           Clock Signal           |                 Enable Signal                 |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++----------------------------------+-----------------------------------------------+--------------------------------------------------+------------------+----------------+
+|  clk_6_25Mhz_out_BUFG            | subtask4_20/seg[6]_i_1_n_0                    |                                                  |                1 |              2 |
+| ~clk_6_25Mhz_out_BUFG            |                                               |                                                  |                2 |              4 |
+|  menu_button0/clk0/clk_100hz_out |                                               |                                                  |                1 |              6 |
+|  clk_6_25Mhz_out_BUFG            | subtask4_20/seg[6]_i_1_n_0                    | subtask4_20/seg[5]_i_1_n_0                       |                2 |             12 |
+|  menu0/clk0/CLK                  | menu0/moving0/x_offset0                       | menu0/moving0/x_offset                           |                4 |             16 |
+|  menu0/clk0/CLK                  | menu0/moving0/y_offset                        | menu0/moving0/x_offset                           |                3 |             16 |
+| ~aud0/J_MIC3_Pin4_OBUF           |                                               |                                                  |                5 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG           | morse0/detect_input0/current_peak[11]_i_2_n_0 | morse0/detect_input0/current_peak[11]_i_1__0_n_0 |                3 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG           | subtask4_20/current_peak0_carry__0_n_2        | subtask4_20/current_peak                         |                4 |             24 |
+|  BASYS_CLK_IBUF_BUFG             |                                               | J_MIC3_Pin1_OBUF_BUFG                            |                3 |             24 |
+|  menu_button0/clk0/clk_100hz_out |                                               | menu_button0/count[13]_i_1_n_0                   |                5 |             26 |
+|  BASYS_CLK_IBUF_BUFG             |                                               |                                                  |                8 |             26 |
+|  J_MIC3_Pin1_OBUF_BUFG           |                                               | morse0/detect_input0/reset                       |                7 |             30 |
+| ~clk_6_25Mhz_out_BUFG            |                                               | display0/frame_counter[16]_i_1_n_0               |                4 |             32 |
+| ~clk_6_25Mhz_out_BUFG            | display0/delay[0]_i_1_n_0                     |                                                  |                5 |             40 |
+|  clk_6_25Mhz_out_BUFG            |                                               |                                                  |               14 |             48 |
+|  J_MIC3_Pin1_OBUF_BUFG           |                                               |                                                  |                8 |             52 |
+|  J_MIC3_Pin1_OBUF_BUFG           | morse0/detect_input0/count_1[31]_i_1_n_0      | morse0/detect_input0/reset                       |                9 |             64 |
+|  J_MIC3_Pin1_OBUF_BUFG           | morse0/detect_input0/count_running[0]_i_1_n_0 | morse0/detect_input0/reset                       |                8 |             64 |
+|  BASYS_CLK_IBUF_BUFG             |                                               | clk6p25m/clear                                   |                8 |             64 |
+|  BASYS_CLK_IBUF_BUFG             |                                               | clk_20kHz/clear                                  |                8 |             64 |
+|  BASYS_CLK_IBUF_BUFG             |                                               | menu_button0/clk0/clear                          |                8 |             64 |
+|  BASYS_CLK_IBUF_BUFG             |                                               | menu0/clk0/clear                                 |                8 |             64 |
+| ~clk_6_25Mhz_out_BUFG            | display0/FSM_onehot_state[31]_i_1_n_0         |                                                  |                8 |             64 |
+|  J_MIC3_Pin1_OBUF_BUFG           | morse0/detect_input0/p_0_in_1                 | morse0/detect_input0/reset                       |                9 |             66 |
+| ~clk_6_25Mhz_out_BUFG            |                                               | display0/spi_word[39]_i_1_n_0                    |               17 |             90 |
++----------------------------------+-----------------------------------------------+--------------------------------------------------+------------------+----------------+
 
 

@@ -4,12 +4,12 @@
 //
 //  FILL IN THE FOLLOWING INFORMATION:
 //
-//  LAB SESSION DAY (Delete where applicable): MONDAY P.M, TUESDAY P.M, WEDNESDAY P.M, THURSDAY A.M., THURSDAY P.M
+//  LAB SESSION DAY (Delete where applicable): THURSDAY A.M.
 //
-//  STUDENT A NAME: 
-//  STUDENT A MATRICULATION NUMBER: 
+//  STUDENT A NAME: Marvin Pranajaya
+//  STUDENT A MATRICULATION NUMBER: A0239085X
 //
-//  STUDENT B NAME: 
+//  STUDENT B NAME: Amit 
 //  STUDENT B MATRICULATION NUMBER: 
 //
 //////////////////////////////////////////////////////////////////////////////////
@@ -20,7 +20,7 @@ module Top_Student (
     input  J_MIC3_Pin3,   // Connect from this signal to Audio_Capture.v
     output J_MIC3_Pin1,   // Connect to this signal from Audio_Capture.v
     output J_MIC3_Pin4,    // Connect to this signal from Audio_Capture.v
-    output [4:0] led_out,
+    output [9:0] led_out,
     input sw, pb_u, pb_d, pb_c, pb_r,
     input sub_4hide, sub_4, sub_4AorB,
     output [6:0] JX,
@@ -89,13 +89,17 @@ module Top_Student (
         end
     end
     
-//    assign oled_data = mainmenu_oled_data;
+    wire [15:0] morse_code_oled_data;
+    wire [9:0] morse_code_led_data;
+    morse_code_top morse0 (BASYS_CLK, cX, cY, clk_20khz_out, pb_c_out, mic_in, seg, 0, 0, morse_code_led_data);
+
 
     assign oled_data = (set_c == 0) ? mainmenu_oled_data : (
                         (state == 0) ? subtask42_oled_data : (
-                            0));
+                        (state == 3) ? 16'b11111_111111_11111 : 0 ));
     assign led_out = (set_c == 0) ? 0 : (
-                    (state == 0) ? subtask42_led_data : 0);
+                    (state == 0) ? subtask42_led_data : (
+                    (state == 3) ? morse_code_led_data : 0 ));
 
 
 endmodule
