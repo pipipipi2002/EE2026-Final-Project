@@ -26,10 +26,11 @@ module subtask4_2(
     input sub_4hide, sub_4, sub_4AorB,
     input [11:0] mic_in,
     output reg [6:0] seg,
+    output [4:0] an,
     output [15:0] oled_data,
     output reg [4:0] led_out = 0
     );
-    
+    assign an = 4'b1110;
     /* 4.2A */
     reg [15:0] oled_data_A = 0;
     always @(posedge clk_6_25Mhz_out) begin

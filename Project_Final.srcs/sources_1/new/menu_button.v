@@ -24,7 +24,8 @@ module menu_button(
     input pb_u,
     input pb_d,
     input BASYS_CLK,
-    output reg [1:0] state = 2
+    output reg [1:0] state = 0,
+    input disabled
     );
 
     wire clk_100hz_out;
@@ -32,6 +33,7 @@ module menu_button(
 
     reg [31:0] count = 0;
     always @(posedge clk_100hz_out) begin 
+        if (disabled == 0) begin
         if (pb_u == 1) begin
             count <= (count < 10000) ? count + 1: 2;
             if (count == 1 && (state != 0)) begin
@@ -48,6 +50,7 @@ module menu_button(
             end 
         end else begin
             count = 0;
+        end
         end 
     end
 

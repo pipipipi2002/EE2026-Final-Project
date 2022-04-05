@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Tue Apr  5 11:20:40 2022
+| Date         : Tue Apr  5 22:02:18 2022
 | Host         : DESKTOP-ENDDUI1 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file Top_Student_methodology_drc_routed.rpt -pb Top_Student_methodology_drc_routed.pb -rpx Top_Student_methodology_drc_routed.rpx
 | Design       : Top_Student
@@ -23,16 +23,47 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 373
+             Violations found: 498
 +-----------+----------+-------------------------------+------------+
 | Rule      | Severity | Description                   | Violations |
 +-----------+----------+-------------------------------+------------+
-| TIMING-17 | Warning  | Non-clocked sequential cell   | 352        |
-| TIMING-18 | Warning  | Missing input or output delay | 21         |
+| SYNTH-10  | Warning  | Wide multiplier               | 6          |
+| TIMING-17 | Warning  | Non-clocked sequential cell   | 453        |
+| TIMING-18 | Warning  | Missing input or output delay | 39         |
 +-----------+----------+-------------------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+SYNTH-10#1 Warning
+Wide multiplier  
+Detected multiplier at poly_top1/display_plot0/x_cube0 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#2 Warning
+Wide multiplier  
+Detected multiplier at poly_top1/display_plot0/x_cube0__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#3 Warning
+Wide multiplier  
+Detected multiplier at poly_top1/display_plot0/x_cube0__1 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#4 Warning
+Wide multiplier  
+Detected multiplier at poly_top1/display_plot0/x_square0 of size 16x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#5 Warning
+Wide multiplier  
+Detected multiplier at poly_top1/display_plot0/x_square0__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#6 Warning
+Wide multiplier  
+Detected multiplier at poly_top1/display_plot0/x_square0__1 of size 18x16, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
 TIMING-17#1 Warning
 Non-clocked sequential cell  
 The clock pin aud0/sample_reg[0]/C is not reached by a timing clock
@@ -1545,250 +1576,755 @@ Related violations: <none>
 
 TIMING-17#303 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/count_mic_reg[0]/C is not reached by a timing clock
+The clock pin poly_top1/an_scale_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#304 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/count_mic_reg[10]/C is not reached by a timing clock
+The clock pin poly_top1/an_scale_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#305 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/count_mic_reg[1]/C is not reached by a timing clock
+The clock pin poly_top1/an_scale_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#306 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/count_mic_reg[2]/C is not reached by a timing clock
+The clock pin poly_top1/an_scale_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#307 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/count_mic_reg[3]/C is not reached by a timing clock
+The clock pin poly_top1/coe_acc_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#308 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/count_mic_reg[4]/C is not reached by a timing clock
+The clock pin poly_top1/coe_acc_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#309 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/count_mic_reg[5]/C is not reached by a timing clock
+The clock pin poly_top1/coe_acc_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#310 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/count_mic_reg[6]/C is not reached by a timing clock
+The clock pin poly_top1/coe_acc_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#311 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/count_mic_reg[7]/C is not reached by a timing clock
+The clock pin poly_top1/coe_acc_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#312 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/count_mic_reg[8]/C is not reached by a timing clock
+The clock pin poly_top1/coe_acc_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#313 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/count_mic_reg[9]/C is not reached by a timing clock
+The clock pin poly_top1/coe_acc_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#314 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/current_peak_reg[0]/C is not reached by a timing clock
+The clock pin poly_top1/coe_acc_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#315 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/current_peak_reg[10]/C is not reached by a timing clock
+The clock pin poly_top1/coe_acc_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#316 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/current_peak_reg[11]/C is not reached by a timing clock
+The clock pin poly_top1/coe_acc_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#317 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/current_peak_reg[1]/C is not reached by a timing clock
+The clock pin poly_top1/coe_acc_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#318 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/current_peak_reg[2]/C is not reached by a timing clock
+The clock pin poly_top1/coe_acc_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#319 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/current_peak_reg[3]/C is not reached by a timing clock
+The clock pin poly_top1/coe_acc_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#320 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/current_peak_reg[4]/C is not reached by a timing clock
+The clock pin poly_top1/coe_acc_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#321 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/current_peak_reg[5]/C is not reached by a timing clock
+The clock pin poly_top1/coe_acc_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#322 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/current_peak_reg[6]/C is not reached by a timing clock
+The clock pin poly_top1/coe_acc_reg[9]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#323 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/current_peak_reg[7]/C is not reached by a timing clock
+The clock pin poly_top1/coe_no_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#324 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/current_peak_reg[8]/C is not reached by a timing clock
+The clock pin poly_top1/coe_no_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#325 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/current_peak_reg[9]/C is not reached by a timing clock
+The clock pin poly_top1/const_confirm_b_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#326 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/led_out_reg[0]/C is not reached by a timing clock
+The clock pin poly_top1/const_set_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#327 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/led_out_reg[1]/C is not reached by a timing clock
+The clock pin poly_top1/constant_confirmation0/coe0/oled_data_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#328 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/led_out_reg[2]/C is not reached by a timing clock
+The clock pin poly_top1/constant_confirmation0/coe1/oled_data_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#329 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/led_out_reg[3]/C is not reached by a timing clock
+The clock pin poly_top1/constant_confirmation0/coe2/oled_data_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#330 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/led_out_reg[4]/C is not reached by a timing clock
+The clock pin poly_top1/constant_confirmation0/coe3/oled_data_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#331 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/oled_data_A_reg[10]/C is not reached by a timing clock
+The clock pin poly_top1/constant_confirmation0/oled_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#332 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/oled_data_A_reg[15]/C is not reached by a timing clock
+The clock pin poly_top1/constant_confirmation0/oled_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#333 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/oled_data_A_reg[7]/C is not reached by a timing clock
+The clock pin poly_top1/constant_confirmation0/x00/oled_data_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#334 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/oled_data_B_reg[10]/C is not reached by a timing clock
+The clock pin poly_top1/constant_confirmation0/x10/oled_data_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#335 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/oled_data_B_reg[15]/C is not reached by a timing clock
+The clock pin poly_top1/constant_confirmation0/x20/oled_data_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#336 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/oled_data_B_reg[7]/C is not reached by a timing clock
+The clock pin poly_top1/constant_confirmation0/x30/oled_data_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#337 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/oled_data_CA_reg[10]/C is not reached by a timing clock
+The clock pin poly_top1/cross0/oled_data_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#338 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/oled_data_CA_reg[15]/C is not reached by a timing clock
+The clock pin poly_top1/curr_deg_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#339 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/oled_data_CA_reg[7]/C is not reached by a timing clock
+The clock pin poly_top1/curr_deg_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#340 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/oled_data_CB_reg[10]/C is not reached by a timing clock
+The clock pin poly_top1/curr_deg_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#341 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/oled_data_CB_reg[15]/C is not reached by a timing clock
+The clock pin poly_top1/curr_deg_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#342 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/oled_data_CB_reg[7]/C is not reached by a timing clock
+The clock pin poly_top1/db0/d0/Q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#343 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/seg_reg[1]/C is not reached by a timing clock
+The clock pin poly_top1/db0/d1/Q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#344 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/seg_reg[2]/C is not reached by a timing clock
+The clock pin poly_top1/db0/d2/Q_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#345 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/seg_reg[3]/C is not reached by a timing clock
+The clock pin poly_top1/deg_confirm_b_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#346 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/seg_reg[3]_lopt_replica/C is not reached by a timing clock
+The clock pin poly_top1/deg_set_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#347 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/seg_reg[4]/C is not reached by a timing clock
+The clock pin poly_top1/deg_valid_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#348 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/seg_reg[5]/C is not reached by a timing clock
+The clock pin poly_top1/degree_confirmation0/num0/oled_data_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#349 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/seg_reg[6]/C is not reached by a timing clock
+The clock pin poly_top1/degree_confirmation0/num1/oled_data_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#350 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/vol_lvl_reg[0]/C is not reached by a timing clock
+The clock pin poly_top1/degree_confirmation0/num2/oled_data_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#351 Warning
 Non-clocked sequential cell  
-The clock pin subtask4_20/vol_lvl_reg[1]/C is not reached by a timing clock
+The clock pin poly_top1/degree_confirmation0/num3/oled_data_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#352 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/degree_confirmation0/oled_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#353 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/degree_confirmation0/oled_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#354 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/degrees_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#355 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/degrees_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#356 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/degrees_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#357 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/degrees_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#358 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/display_plot0/oled_data_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#359 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/display_plot_bg0/oled_data_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#360 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/led_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#361 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/led_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#362 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/led_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#363 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/led_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#364 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/led_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#365 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/led_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#366 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/led_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#367 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/led_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#368 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/led_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#369 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/led_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#370 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/led_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#371 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/led_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#372 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/led_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#373 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/mode_0_disabled_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#374 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/mode_1_disabled_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#375 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/mode_change_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#376 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/mode_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#377 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/mode_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#378 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/mode_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#379 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/neg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#380 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/neg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#381 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/neg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#382 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/neg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#383 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/num0/oled_data_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#384 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/num1/oled_data_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#385 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/num2/oled_data_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#386 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/num3/oled_data_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#387 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/num4/oled_data_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#388 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/num5/oled_data_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#389 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/num6/oled_data_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#390 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/num7/oled_data_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#391 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/num8/oled_data_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#392 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/num9/oled_data_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#393 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/num_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#394 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/num_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#395 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/seg_count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#396 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/seg_count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#397 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/seg_scale_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#398 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/seg_scale_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#399 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/seg_scale_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#400 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/seg_scale_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#401 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/seg_scale_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#402 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/seg_scale_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#403 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/select_constant0/oled_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#404 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/select_constant0/oled_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#405 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/select_constant0/x_0_0/oled_data_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#406 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/select_constant0/x_1_0/oled_data_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#407 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/select_constant0/x_2_0/oled_data_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#408 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/select_constant0/x_3_0/oled_data_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#409 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/select_degree0/oled_data_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#410 Warning
+Non-clocked sequential cell  
+The clock pin poly_top1/select_degree0/oled_data_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#411 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/count_mic_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#412 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/count_mic_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#413 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/count_mic_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#414 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/count_mic_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#415 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/count_mic_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#416 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/count_mic_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#417 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/count_mic_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#418 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/count_mic_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#419 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/count_mic_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#420 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/count_mic_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#421 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/count_mic_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#422 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/current_peak_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#423 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/current_peak_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#424 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/current_peak_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#425 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/current_peak_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#426 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/current_peak_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#427 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/current_peak_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#428 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/current_peak_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#429 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/current_peak_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#430 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/current_peak_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#431 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/current_peak_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#432 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/current_peak_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#433 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/current_peak_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#434 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/led_out_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#435 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/led_out_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#436 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/led_out_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#437 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/led_out_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#438 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/led_out_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#439 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/oled_data_A_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#440 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/oled_data_A_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#441 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/oled_data_A_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#442 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/oled_data_B_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#443 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/oled_data_B_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#444 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/oled_data_B_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#445 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/oled_data_CA_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#446 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/oled_data_CA_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#447 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/oled_data_CA_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#448 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/oled_data_CB_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#449 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/oled_data_CB_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#450 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/oled_data_CB_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#451 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/vol_lvl_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#452 Warning
+Non-clocked sequential cell  
+The clock pin subtask4_20/vol_lvl_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#453 Warning
 Non-clocked sequential cell  
 The clock pin subtask4_20/vol_lvl_reg[2]/C is not reached by a timing clock
 Related violations: <none>
@@ -1800,102 +2336,192 @@ Related violations: <none>
 
 TIMING-18#2 Warning
 Missing input or output delay  
-An input delay is missing on pb_r relative to clock(s) sys_clk_pin
+An input delay is missing on pb_l relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#3 Warning
 Missing input or output delay  
-An output delay is missing on JX[0] relative to clock(s) sys_clk_pin
+An input delay is missing on pb_r relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#4 Warning
 Missing input or output delay  
-An output delay is missing on JX[1] relative to clock(s) sys_clk_pin
+An output delay is missing on JX[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#5 Warning
 Missing input or output delay  
-An output delay is missing on JX[2] relative to clock(s) sys_clk_pin
+An output delay is missing on JX[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#6 Warning
 Missing input or output delay  
-An output delay is missing on JX[3] relative to clock(s) sys_clk_pin
+An output delay is missing on JX[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#7 Warning
 Missing input or output delay  
-An output delay is missing on JX[4] relative to clock(s) sys_clk_pin
+An output delay is missing on JX[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#8 Warning
 Missing input or output delay  
-An output delay is missing on JX[5] relative to clock(s) sys_clk_pin
+An output delay is missing on JX[4] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#9 Warning
 Missing input or output delay  
-An output delay is missing on JX[6] relative to clock(s) sys_clk_pin
+An output delay is missing on JX[5] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#10 Warning
 Missing input or output delay  
-An output delay is missing on J_MIC3_Pin1 relative to clock(s) sys_clk_pin
+An output delay is missing on JX[6] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#11 Warning
 Missing input or output delay  
-An output delay is missing on J_MIC3_Pin4 relative to clock(s) sys_clk_pin
+An output delay is missing on J_MIC3_Pin1 relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#12 Warning
 Missing input or output delay  
-An output delay is missing on led_out[0] relative to clock(s) sys_clk_pin
+An output delay is missing on J_MIC3_Pin4 relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#13 Warning
 Missing input or output delay  
-An output delay is missing on led_out[1] relative to clock(s) sys_clk_pin
+An output delay is missing on an[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#14 Warning
 Missing input or output delay  
-An output delay is missing on led_out[2] relative to clock(s) sys_clk_pin
+An output delay is missing on an[1] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#15 Warning
 Missing input or output delay  
-An output delay is missing on led_out[3] relative to clock(s) sys_clk_pin
+An output delay is missing on an[2] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#16 Warning
 Missing input or output delay  
-An output delay is missing on led_out[4] relative to clock(s) sys_clk_pin
+An output delay is missing on an[3] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#17 Warning
 Missing input or output delay  
-An output delay is missing on led_out[5] relative to clock(s) sys_clk_pin
+An output delay is missing on led_out[0] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#18 Warning
 Missing input or output delay  
-An output delay is missing on led_out[6] relative to clock(s) sys_clk_pin
+An output delay is missing on led_out[10] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#19 Warning
 Missing input or output delay  
-An output delay is missing on led_out[7] relative to clock(s) sys_clk_pin
+An output delay is missing on led_out[11] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#20 Warning
 Missing input or output delay  
-An output delay is missing on led_out[8] relative to clock(s) sys_clk_pin
+An output delay is missing on led_out[12] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 TIMING-18#21 Warning
 Missing input or output delay  
+An output delay is missing on led_out[13] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An output delay is missing on led_out[14] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An output delay is missing on led_out[15] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An output delay is missing on led_out[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An output delay is missing on led_out[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An output delay is missing on led_out[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An output delay is missing on led_out[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An output delay is missing on led_out[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on led_out[6] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on led_out[7] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An output delay is missing on led_out[8] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
 An output delay is missing on led_out[9] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An output delay is missing on seg[0] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An output delay is missing on seg[1] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An output delay is missing on seg[2] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An output delay is missing on seg[3] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#37 Warning
+Missing input or output delay  
+An output delay is missing on seg[4] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#38 Warning
+Missing input or output delay  
+An output delay is missing on seg[5] relative to clock(s) sys_clk_pin
+Related violations: <none>
+
+TIMING-18#39 Warning
+Missing input or output delay  
+An output delay is missing on seg[6] relative to clock(s) sys_clk_pin
 Related violations: <none>
 
 

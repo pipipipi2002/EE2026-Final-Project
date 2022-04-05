@@ -17,10 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param synth.incrementalSynthesisCache C:/Users/marvi/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-9576-DESKTOP-ENDDUI1/incrSyn
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -36,18 +33,46 @@ read_verilog -library xil_defaultlib {
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Audio_Capture.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Oled_Display.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/PItoXY.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/constant_confirmation.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/cross_display.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/debouncer.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/degree_confirmation.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/detect_input.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/dff.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_board.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_moving.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_selector.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_words.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot_bg.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/flexible_clk.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_button.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_display.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_detect_input.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_top.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/num0_small.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_0.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_1.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_2.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_3.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_4.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_5.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_6.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_7.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_8.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_9.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/select_constant.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/select_degree.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/subtask4_2.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x0_constant.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x1_constant.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x2_constant.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x3_constant.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_0.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_1.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_2.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_3.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v
 }
 # Mark all dcp files as not used in implementation to prevent them from being

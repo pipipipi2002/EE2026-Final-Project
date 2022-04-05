@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Tue Apr  5 11:20:41 2022
+| Date             : Tue Apr  5 22:02:20 2022
 | Host             : DESKTOP-ENDDUI1 running 64-bit major release  (build 9200)
 | Command          : report_power -file Top_Student_power_routed.rpt -pb Top_Student_power_summary_routed.pb -rpx Top_Student_power_routed.rpx
 | Design           : Top_Student
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.081        |
+| Total On-Chip Power (W)  | 0.110        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.009        |
+| Dynamic (W)              | 0.038        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.6         |
-| Junction Temperature (C) | 25.4         |
+| Max Ambient (C)          | 84.5         |
+| Junction Temperature (C) | 25.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,18 +52,19 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.003 |     2544 |       --- |             --- |
-|   LUT as Logic |     0.002 |     1445 |     20800 |            6.95 |
-|   CARRY4       |    <0.001 |      233 |      8150 |            2.86 |
-|   Register     |    <0.001 |      505 |     41600 |            1.21 |
-|   F7/F8 Muxes  |    <0.001 |       81 |     32600 |            0.25 |
-|   Others       |     0.000 |       43 |       --- |             --- |
-|   BUFG         |     0.000 |        2 |        32 |            6.25 |
-| Signals        |     0.002 |     1677 |       --- |             --- |
-| I/O            |     0.003 |       40 |       106 |           37.74 |
+| Clocks         |     0.003 |        3 |       --- |             --- |
+| Slice Logic    |     0.013 |     5552 |       --- |             --- |
+|   LUT as Logic |     0.011 |     3601 |     20800 |           17.31 |
+|   CARRY4       |     0.002 |      550 |      8150 |            6.75 |
+|   Register     |    <0.001 |      708 |     41600 |            1.70 |
+|   F7/F8 Muxes  |    <0.001 |      138 |     32600 |            0.42 |
+|   Others       |     0.000 |      133 |       --- |             --- |
+|   BUFG         |     0.000 |        4 |        32 |           12.50 |
+| Signals        |     0.011 |     4714 |       --- |             --- |
+| DSPs           |     0.003 |       12 |        90 |           13.33 |
+| I/O            |     0.008 |       60 |       106 |           56.60 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.081 |          |           |                 |
+| Total          |     0.110 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,9 +74,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.016 |       0.006 |      0.010 |
+| Vccint    |       1.000 |     0.040 |       0.030 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
-| Vcco33    |       3.300 |     0.002 |       0.001 |      0.001 |
+| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -139,34 +140,80 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-------------------+-----------+
-| Name              | Power (W) |
-+-------------------+-----------+
-| Top_Student       |     0.009 |
-|   aud0            |    <0.001 |
-|   clk6p25m        |    <0.001 |
-|   clk_20kHz       |    <0.001 |
-|   convert0        |    <0.001 |
-|   detect_input_c  |    <0.001 |
-|     d0            |    <0.001 |
-|     d1            |    <0.001 |
-|     d2            |    <0.001 |
-|   detect_input_r  |    <0.001 |
-|     d0            |    <0.001 |
-|     d1            |    <0.001 |
-|     d2            |    <0.001 |
-|   display0        |    <0.001 |
-|   menu0           |     0.003 |
-|     board0        |     0.000 |
-|     clk0          |    <0.001 |
-|     moving0       |     0.002 |
-|     selector0     |    <0.001 |
-|     words0        |    <0.001 |
-|   menu_button0    |    <0.001 |
-|     clk0          |    <0.001 |
-|   morse0          |    <0.001 |
-|     detect_input0 |    <0.001 |
-|   subtask4_20     |    <0.001 |
-+-------------------+-----------+
++----------------------------+-----------+
+| Name                       | Power (W) |
++----------------------------+-----------+
+| Top_Student                |     0.038 |
+|   aud0                     |    <0.001 |
+|   clk6p25m                 |    <0.001 |
+|   clk_20kHz                |    <0.001 |
+|   convert0                 |    <0.001 |
+|   detect_input_c           |    <0.001 |
+|     d0                     |    <0.001 |
+|     d1                     |    <0.001 |
+|     d2                     |    <0.001 |
+|   detect_input_l           |    <0.001 |
+|     d0                     |    <0.001 |
+|     d1                     |    <0.001 |
+|     d2                     |    <0.001 |
+|   detect_input_r           |    <0.001 |
+|     d0                     |    <0.001 |
+|     d1                     |    <0.001 |
+|     d2                     |    <0.001 |
+|   display0                 |    <0.001 |
+|   menu0                    |     0.003 |
+|     board0                 |     0.000 |
+|     clk0                   |    <0.001 |
+|     moving0                |     0.002 |
+|     selector0              |     0.000 |
+|     words0                 |    <0.001 |
+|   menu_button0             |    <0.001 |
+|     clk0                   |    <0.001 |
+|   morse0                   |    <0.001 |
+|     detect_input0          |    <0.001 |
+|   poly_top1                |     0.023 |
+|     clk0                   |    <0.001 |
+|     clk6p25m               |    <0.001 |
+|     constant_confirmation0 |    <0.001 |
+|       coe0                 |    <0.001 |
+|       coe1                 |     0.000 |
+|       coe2                 |     0.000 |
+|       coe3                 |     0.000 |
+|       x00                  |     0.000 |
+|       x10                  |     0.000 |
+|       x20                  |    <0.001 |
+|       x30                  |     0.000 |
+|     convert0               |     0.001 |
+|     cross0                 |    <0.001 |
+|     db0                    |    <0.001 |
+|       clk0                 |    <0.001 |
+|       d0                   |     0.000 |
+|       d1                   |    <0.001 |
+|       d2                   |     0.000 |
+|     degree_confirmation0   |    <0.001 |
+|       num0                 |     0.000 |
+|       num1                 |     0.000 |
+|       num2                 |    <0.001 |
+|       num3                 |     0.000 |
+|     display_plot0          |     0.019 |
+|     display_plot_bg0       |    <0.001 |
+|     num0                   |    <0.001 |
+|     num1                   |     0.000 |
+|     num2                   |     0.000 |
+|     num3                   |    <0.001 |
+|     num4                   |    <0.001 |
+|     num5                   |     0.000 |
+|     num6                   |    <0.001 |
+|     num7                   |     0.000 |
+|     num8                   |    <0.001 |
+|     num9                   |     0.000 |
+|     select_constant0       |     0.000 |
+|       x_0_0                |     0.000 |
+|       x_1_0                |     0.000 |
+|       x_2_0                |     0.000 |
+|       x_3_0                |     0.000 |
+|     select_degree0         |    <0.001 |
+|   subtask4_20              |    <0.001 |
++----------------------------+-----------+
 
 

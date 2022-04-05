@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1480 
+INFO: Helper process launched with PID 15740 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 358.090 ; gain = 100.480
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 360.105 ; gain = 102.980
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v:18]
 INFO: [Synth 8-6157] synthesizing module 'flexible_clk' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/flexible_clk.v:23]
@@ -78,56 +78,149 @@ INFO: [Synth 8-226] default block is never used [C:/Users/marvi/verilog/Project_
 INFO: [Synth 8-226] default block is never used [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Oled_Display.v:201]
 WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Oled_Display.v:349]
 INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (3#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'detect_input' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/detect_input.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dff' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dff' (4#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'detect_input' (5#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/detect_input.v:23]
 INFO: [Synth 8-6157] synthesizing module 'PItoXY' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/PItoXY.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'PItoXY' (4#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/PItoXY.v:23]
-INFO: [Synth 8-6157] synthesizing module 'subtask4_2' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/subtask4_2.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'subtask4_2' (5#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/subtask4_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PItoXY' (6#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/PItoXY.v:23]
 INFO: [Synth 8-6157] synthesizing module 'menu_button' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_button.v:23]
-WARNING: [Synth 8-6090] variable 'count' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_button.v:50]
-INFO: [Synth 8-6155] done synthesizing module 'menu_button' (6#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_button.v:23]
+WARNING: [Synth 8-6090] variable 'count' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_button.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'menu_button' (7#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_button.v:23]
 INFO: [Synth 8-6157] synthesizing module 'menu_display' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_display.v:23]
 INFO: [Synth 8-6157] synthesizing module 'display_bg_board' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_board.v:23]
 	Parameter dark_brown bound to: 16'b0100100110100111 
 	Parameter brown bound to: 16'b0111001001101000 
 	Parameter green bound to: 16'b0001101010100100 
-INFO: [Synth 8-6155] done synthesizing module 'display_bg_board' (7#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_board.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_bg_board' (8#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_board.v:23]
 INFO: [Synth 8-6157] synthesizing module 'display_bg_words' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_words.v:23]
 	Parameter white bound to: 16'b1111111111111111 
 	Parameter black bound to: 16'b0000000000000000 
 	Parameter grey bound to: 16'b0011100110100111 
-INFO: [Synth 8-6155] done synthesizing module 'display_bg_words' (8#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_words.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_bg_words' (9#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_words.v:23]
 INFO: [Synth 8-6157] synthesizing module 'display_bg_moving' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_moving.v:23]
 	Parameter light_grey bound to: 16'b1001110001110011 
-INFO: [Synth 8-6155] done synthesizing module 'display_bg_moving' (9#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_moving.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_bg_moving' (10#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_moving.v:23]
 INFO: [Synth 8-6157] synthesizing module 'display_bg_selector' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_selector.v:23]
 	Parameter yellow bound to: 16'b1111110101100001 
-INFO: [Synth 8-6155] done synthesizing module 'display_bg_selector' (10#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_selector.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'menu_display' (11#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_display.v:23]
-WARNING: [Synth 8-689] width (7) of port connection 'x' does not match port width (8) of module 'menu_display' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v:76]
-WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (8) of module 'menu_display' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v:76]
-INFO: [Synth 8-6157] synthesizing module 'detect_input' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/detect_input.v:23]
-INFO: [Synth 8-6157] synthesizing module 'dff' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/dff.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'dff' (12#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/dff.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'detect_input' (13#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/detect_input.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_bg_selector' (11#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_selector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'menu_display' (12#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_display.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'x' does not match port width (8) of module 'menu_display' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v:71]
+WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (8) of module 'menu_display' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v:71]
+INFO: [Synth 8-6157] synthesizing module 'subtask4_2' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/subtask4_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'subtask4_2' (13#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/subtask4_2.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'an' does not match port width (5) of module 'subtask4_2' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v:79]
+INFO: [Synth 8-6157] synthesizing module 'poly_top' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/debouncer.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (14#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/debouncer.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:146]
+WARNING: [Synth 8-6090] variable 'coe' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:170]
+INFO: [Synth 8-6157] synthesizing module 'cross_display' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/cross_display.v:23]
+	Parameter red bound to: 16'b1111100000000000 
+INFO: [Synth 8-6155] done synthesizing module 'cross_display' (15#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/cross_display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_0' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_0.v:23]
+	Parameter green bound to: 16'b0000011111100000 
+INFO: [Synth 8-6155] done synthesizing module 'number_0' (16#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_0.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_1' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_1.v:23]
+	Parameter green bound to: 16'b0000011111100000 
+INFO: [Synth 8-6155] done synthesizing module 'number_1' (17#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_2' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_2.v:23]
+	Parameter green bound to: 16'b0000011111100000 
+INFO: [Synth 8-6155] done synthesizing module 'number_2' (18#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_3' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_3.v:23]
+	Parameter green bound to: 16'b0000011111100000 
+INFO: [Synth 8-6155] done synthesizing module 'number_3' (19#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_4' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_4.v:23]
+	Parameter green bound to: 16'b0000011111100000 
+INFO: [Synth 8-6155] done synthesizing module 'number_4' (20#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_5' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_5.v:23]
+	Parameter green bound to: 16'b0000011111100000 
+INFO: [Synth 8-6155] done synthesizing module 'number_5' (21#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_5.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_6' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_6.v:23]
+	Parameter green bound to: 16'b0000011111100000 
+INFO: [Synth 8-6155] done synthesizing module 'number_6' (22#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_6.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_7' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_7.v:23]
+	Parameter green bound to: 16'b0000011111100000 
+INFO: [Synth 8-6155] done synthesizing module 'number_7' (23#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_7.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_8' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_8.v:23]
+	Parameter green bound to: 16'b0000011111100000 
+INFO: [Synth 8-6155] done synthesizing module 'number_8' (24#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_8.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_9' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_9.v:23]
+	Parameter green bound to: 16'b0000011111100000 
+INFO: [Synth 8-6155] done synthesizing module 'number_9' (25#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_9.v:23]
+INFO: [Synth 8-6157] synthesizing module 'select_degree' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/select_degree.v:23]
+	Parameter white bound to: 16'b1111111111111111 
+	Parameter red bound to: 16'b1111100000000000 
+INFO: [Synth 8-6155] done synthesizing module 'select_degree' (26#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/select_degree.v:23]
+INFO: [Synth 8-6157] synthesizing module 'degree_confirmation' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/degree_confirmation.v:23]
+	Parameter white bound to: 16'b1111111111111111 
+	Parameter red bound to: 16'b1111100000000000 
+INFO: [Synth 8-6155] done synthesizing module 'degree_confirmation' (27#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/degree_confirmation.v:23]
+INFO: [Synth 8-6157] synthesizing module 'select_constant' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/select_constant.v:23]
+	Parameter white bound to: 16'b1111111111111111 
+	Parameter red bound to: 16'b1111100000000000 
+INFO: [Synth 8-6157] synthesizing module 'x_0' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_0.v:23]
+	Parameter blue bound to: 16'b1010001100011011 
+INFO: [Synth 8-6155] done synthesizing module 'x_0' (28#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_0.v:23]
+INFO: [Synth 8-6157] synthesizing module 'x_1' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_1.v:23]
+	Parameter blue bound to: 16'b1010001100011011 
+INFO: [Synth 8-6155] done synthesizing module 'x_1' (29#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'x_2' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_2.v:23]
+	Parameter blue bound to: 16'b1010001100011011 
+INFO: [Synth 8-6155] done synthesizing module 'x_2' (30#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'x_3' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_3.v:23]
+	Parameter blue bound to: 16'b1010001100011011 
+INFO: [Synth 8-6155] done synthesizing module 'x_3' (31#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'select_constant' (32#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/select_constant.v:23]
+INFO: [Synth 8-6157] synthesizing module 'constant_confirmation' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/constant_confirmation.v:23]
+	Parameter white bound to: 16'b1111111111111111 
+	Parameter red bound to: 16'b1111100000000000 
+INFO: [Synth 8-6157] synthesizing module 'num0_small' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/num0_small.v:23]
+	Parameter red bound to: 16'b1111100000000000 
+INFO: [Synth 8-6155] done synthesizing module 'num0_small' (33#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/num0_small.v:23]
+INFO: [Synth 8-6157] synthesizing module 'x0_constant' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x0_constant.v:23]
+	Parameter blue bound to: 16'b1010001100011011 
+INFO: [Synth 8-6155] done synthesizing module 'x0_constant' (34#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x0_constant.v:23]
+INFO: [Synth 8-6157] synthesizing module 'x1_constant' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x1_constant.v:23]
+	Parameter white bound to: 16'b1111111111111111 
+	Parameter red bound to: 16'b1111100000000000 
+	Parameter blue bound to: 16'b1010001100011011 
+INFO: [Synth 8-6155] done synthesizing module 'x1_constant' (35#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x1_constant.v:23]
+INFO: [Synth 8-6157] synthesizing module 'x2_constant' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x2_constant.v:23]
+	Parameter white bound to: 16'b1111111111111111 
+	Parameter red bound to: 16'b1111100000000000 
+	Parameter blue bound to: 16'b1010001100011011 
+INFO: [Synth 8-6155] done synthesizing module 'x2_constant' (36#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x2_constant.v:23]
+INFO: [Synth 8-6157] synthesizing module 'x3_constant' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x3_constant.v:23]
+	Parameter blue bound to: 16'b1010001100011011 
+INFO: [Synth 8-6155] done synthesizing module 'x3_constant' (37#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x3_constant.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'constant_confirmation' (38#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/constant_confirmation.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_plot' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v:23]
+	Parameter red bound to: 16'b1111100000000000 
+	Parameter x_offset bound to: 8'sb00101111 
+	Parameter y_offset bound to: 8'sb00011111 
+INFO: [Synth 8-6155] done synthesizing module 'display_plot' (39#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'x' does not match port width (8) of module 'display_plot' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:219]
+WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (8) of module 'display_plot' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:219]
+WARNING: [Synth 8-689] width (4) of port connection 'degrees' does not match port width (5) of module 'display_plot' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:219]
+INFO: [Synth 8-6157] synthesizing module 'display_plot_bg' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot_bg.v:23]
+	Parameter grey bound to: 16'b1000010000010000 
+INFO: [Synth 8-6155] done synthesizing module 'display_plot_bg' (40#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot_bg.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'x' does not match port width (8) of module 'display_plot_bg' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:220]
+WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (8) of module 'display_plot_bg' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:220]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register const_set_reg in module poly_top. [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:86]
+INFO: [Synth 8-6155] done synthesizing module 'poly_top' (41#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:23]
 INFO: [Synth 8-6157] synthesizing module 'morse_code_top' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_top.v:23]
 INFO: [Synth 8-6157] synthesizing module 'morse_code_detect_input' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_detect_input.v:23]
 WARNING: [Synth 8-6090] variable 'done' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_detect_input.v:64]
 WARNING: [Synth 8-6014] Unused sequential element count_2_reg was removed.  [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_detect_input.v:60]
 WARNING: [Synth 8-6014] Unused sequential element count_diff_reg was removed.  [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_detect_input.v:61]
-INFO: [Synth 8-6155] done synthesizing module 'morse_code_detect_input' (14#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_detect_input.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'morse_code_detect_input' (42#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_detect_input.v:23]
 WARNING: [Synth 8-3848] Net seg in module/entity morse_code_top does not have driver. [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_top.v:28]
 WARNING: [Synth 8-3848] Net oled_data in module/entity morse_code_top does not have driver. [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_top.v:29]
 WARNING: [Synth 8-3848] Net an in module/entity morse_code_top does not have driver. [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_top.v:30]
-INFO: [Synth 8-6155] done synthesizing module 'morse_code_top' (15#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_top.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'oled_data' does not match port width (16) of module 'morse_code_top' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v:94]
-WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v:94]
-WARNING: [Synth 8-689] width (32) of port connection 'an' does not match port width (4) of module 'morse_code_top' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v:94]
-WARNING: [Synth 8-2900] ignoring illegal expression in output port connection [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v:94]
-INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (16#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v:18]
-WARNING: [Synth 8-3917] design Top_Student has port an[3] driven by constant 1
-WARNING: [Synth 8-3917] design Top_Student has port an[2] driven by constant 1
-WARNING: [Synth 8-3917] design Top_Student has port an[1] driven by constant 1
-WARNING: [Synth 8-3917] design Top_Student has port an[0] driven by constant 0
+INFO: [Synth 8-6155] done synthesizing module 'morse_code_top' (43#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (44#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v:18]
 WARNING: [Synth 8-3917] design Top_Student has port dp driven by constant 1
 WARNING: [Synth 8-3331] design morse_code_top has unconnected port seg[6]
 WARNING: [Synth 8-3331] design morse_code_top has unconnected port seg[5]
@@ -170,9 +263,11 @@ WARNING: [Synth 8-3331] design morse_code_top has unconnected port y[3]
 WARNING: [Synth 8-3331] design morse_code_top has unconnected port y[2]
 WARNING: [Synth 8-3331] design morse_code_top has unconnected port y[1]
 WARNING: [Synth 8-3331] design morse_code_top has unconnected port y[0]
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw
+WARNING: [Synth 8-3331] design poly_top has unconnected port state[1]
+WARNING: [Synth 8-3331] design poly_top has unconnected port state[0]
+WARNING: [Synth 8-3331] design poly_top has unconnected port set_c
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 458.172 ; gain = 200.562
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 526.051 ; gain = 268.926
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -185,10 +280,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 458.172 ; gain = 200.562
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 526.051 ; gain = 268.926
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 458.172 ; gain = 200.562
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 526.051 ; gain = 268.926
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -204,22 +299,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 811.473 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 932.602 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 811.578 ; gain = 553.969
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 932.602 ; gain = 675.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 811.578 ; gain = 553.969
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 932.602 ; gain = 675.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 811.578 ; gain = 553.969
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 932.602 ; gain = 675.477
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
@@ -232,6 +327,13 @@ INFO: [Synth 8-5544] ROM "oled_data_A" won't be mapped to Block RAM because addr
 INFO: [Synth 8-5544] ROM "oled_data_B" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "oled_data_CA" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "oled_data_CB" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "x_offset" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "y_offset" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v:43]
+INFO: [Synth 8-4471] merging register 'const_valid_reg' into 'const_confirm_b_reg' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:135]
+WARNING: [Synth 8-6014] Unused sequential element const_valid_reg was removed.  [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:135]
+INFO: [Synth 8-5544] ROM "an_scale" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "seg_scale" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "current_peak" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "count_mic" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 ---------------------------------------------------------------------------------------------------
@@ -272,7 +374,7 @@ INFO: [Synth 8-5545] ROM "count_mic" won't be mapped to RAM because address size
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 811.578 ; gain = 553.969
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 932.602 ; gain = 675.477
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -280,71 +382,101 @@ Report RTL Partitions:
 |      |RTL Partition     |Replication |Instances |
 +------+------------------+------------+----------+
 |1     |flexible_clk      |           8|      3864|
-|2     |menu_button__GC0  |           1|       138|
-|3     |menu_display__GC0 |           1|     10486|
-|4     |detect_input__GC0 |           1|         4|
-|5     |Top_Student__GC0  |           1|      6416|
+|2     |detect_input__GC0 |           1|         4|
+|3     |menu_button__GC0  |           1|       228|
+|4     |menu_display__GC0 |           1|     10486|
+|5     |debouncer__GC0    |           1|         4|
+|6     |poly_top__GC0     |           1|     22274|
+|7     |Top_Student__GC0  |           1|      6503|
 +------+------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 11    
+	   2 Input     33 Bit       Adders := 5     
+	   3 Input     33 Bit       Adders := 1     
+	   4 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 15    
 	   3 Input     32 Bit       Adders := 1     
 	   2 Input     17 Bit       Adders := 1     
 	   2 Input     14 Bit       Adders := 1     
-	   2 Input     11 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 5     
 	   2 Input      9 Bit       Adders := 121   
-	   2 Input      8 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 54    
 	   2 Input      6 Bit       Adders := 1     
 	   2 Input      5 Bit       Adders := 1     
 	   2 Input      4 Bit       Adders := 1     
-	   2 Input      2 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 3     
 +---Registers : 
 	               40 Bit    Registers := 1     
-	               32 Bit    Registers := 2     
+	               32 Bit    Registers := 7     
 	               17 Bit    Registers := 1     
-	               16 Bit    Registers := 7     
+	               16 Bit    Registers := 43    
 	               15 Bit    Registers := 1     
-	               14 Bit    Registers := 1     
 	               12 Bit    Registers := 4     
 	               11 Bit    Registers := 1     
 	               10 Bit    Registers := 1     
 	                8 Bit    Registers := 2     
-	                7 Bit    Registers := 1     
+	                7 Bit    Registers := 2     
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 1     
-	                4 Bit    Registers := 1     
-	                3 Bit    Registers := 1     
-	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 21    
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 44    
++---Multipliers : 
+	                11x33  Multipliers := 3     
+	                33x33  Multipliers := 2     
 +---Muxes : 
 	   2 Input     40 Bit        Muxes := 3     
+	   2 Input     33 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 4     
 	  32 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 3     
 	  32 Input     20 Bit        Muxes := 1     
 	   2 Input     17 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 11    
-	   4 Input     16 Bit        Muxes := 2     
-	   3 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 31    
+	  18 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 3     
+	   4 Input     16 Bit        Muxes := 6     
+	  11 Input     16 Bit        Muxes := 4     
+	   6 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+	   5 Input     16 Bit        Muxes := 1     
 	   2 Input     15 Bit        Muxes := 1     
 	   2 Input     14 Bit        Muxes := 3     
 	   3 Input     14 Bit        Muxes := 1     
 	   2 Input     13 Bit        Muxes := 1     
-	   2 Input     11 Bit        Muxes := 3     
+	   7 Input     11 Bit        Muxes := 3     
+	   6 Input     11 Bit        Muxes := 6     
+	   4 Input     11 Bit        Muxes := 1     
+	   3 Input     11 Bit        Muxes := 1     
+	   8 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 7     
 	   2 Input     10 Bit        Muxes := 7     
-	   3 Input     10 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 4     
+	   2 Input      7 Bit        Muxes := 7     
+	   5 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 1     
 	   7 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 3     
 	  32 Input      6 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 2     
 	  32 Input      5 Bit        Muxes := 2     
 	   7 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 14    
+	   4 Input      4 Bit        Muxes := 2     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
 	   6 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 18    
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 40    
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
 	   8 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -358,10 +490,14 @@ Detailed RTL Component Info :
 +---Registers : 
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     16 Bit        Muxes := 1     
-	   3 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 2     
+	   5 Input     16 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 1     
-	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   4 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
 Module flexible_clk 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -370,15 +506,28 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 1     
+Module dff__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module dff__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
 Module menu_button 
 Detailed RTL Component Info : 
 +---Adders : 
 	   2 Input     14 Bit       Adders := 1     
 	   2 Input      2 Bit       Adders := 2     
 +---Registers : 
-	               14 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
 +---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
 	   2 Input     14 Bit        Muxes := 3     
 	   2 Input      2 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 2     
@@ -417,11 +566,11 @@ Module menu_display
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input     16 Bit        Muxes := 2     
-Module dff__1 
+Module dff__4 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
-Module dff__2 
+Module dff__5 
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
@@ -429,6 +578,242 @@ Module dff
 Detailed RTL Component Info : 
 +---Registers : 
 	                1 Bit    Registers := 1     
+Module cross_display 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  18 Input     16 Bit        Muxes := 1     
+Module number_0 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module number_1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   7 Input     11 Bit        Muxes := 1     
+Module number_2 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     11 Bit        Muxes := 1     
+Module number_3 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     11 Bit        Muxes := 1     
+Module number_4 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     11 Bit        Muxes := 1     
+Module number_5 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     11 Bit        Muxes := 1     
+Module number_6 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   7 Input     11 Bit        Muxes := 1     
+Module number_7 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     11 Bit        Muxes := 1     
+Module number_8 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   8 Input     11 Bit        Muxes := 1     
+Module number_9 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     11 Bit        Muxes := 1     
+Module select_degree 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input     16 Bit        Muxes := 1     
+Module number_0__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module number_1__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   7 Input     11 Bit        Muxes := 1     
+Module number_2__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     11 Bit        Muxes := 1     
+Module number_3__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     11 Bit        Muxes := 1     
+Module degree_confirmation 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 3     
+	   3 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 1     
+Module x_0 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module x_1 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module x_2 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module x_3 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module select_constant 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+Module num0_small__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 13    
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  11 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+Module num0_small__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 13    
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  11 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+Module num0_small__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 13    
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  11 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+Module num0_small 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 13    
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  11 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+Module x0_constant 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module x1_constant 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module x2_constant 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module x3_constant 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module constant_confirmation 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     16 Bit        Muxes := 1     
+	   7 Input     16 Bit        Muxes := 1     
+Module display_plot 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 5     
+	   3 Input     33 Bit       Adders := 1     
+	   4 Input     33 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 4     
++---Registers : 
+	               16 Bit    Registers := 1     
++---Multipliers : 
+	                11x33  Multipliers := 3     
+	                33x33  Multipliers := 2     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 4     
+	   2 Input     11 Bit        Muxes := 4     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+Module display_plot_bg 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
+Module poly_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	               16 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 13    
+	   5 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 2     
+	   8 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 9     
+	  11 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 19    
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
 Module Audio_Capture 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -508,126 +893,237 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-5545] ROM "clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v:58]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v:64]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v:64]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v:59]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v:64]
+DSP Report: Generating DSP x_square0, operation Mode is: A*B.
+DSP Report: operator x_square0 is absorbed into DSP x_square0.
+DSP Report: operator x_square0 is absorbed into DSP x_square0.
+DSP Report: Generating DSP x_square0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_square0 is absorbed into DSP x_square0.
+DSP Report: operator x_square0 is absorbed into DSP x_square0.
+DSP Report: Generating DSP x_square0, operation Mode is: A*B.
+DSP Report: operator x_square0 is absorbed into DSP x_square0.
+DSP Report: operator x_square0 is absorbed into DSP x_square0.
+DSP Report: Generating DSP x_square0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_square0 is absorbed into DSP x_square0.
+DSP Report: operator x_square0 is absorbed into DSP x_square0.
+DSP Report: Generating DSP oled_data5, operation Mode is: A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data5, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: operator oled_data5 is absorbed into DSP oled_data5.
+DSP Report: Generating DSP oled_data4, operation Mode is: A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP oled_data4, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: operator oled_data4 is absorbed into DSP oled_data4.
+DSP Report: Generating DSP x_cube0, operation Mode is: A*B.
+DSP Report: operator x_cube0 is absorbed into DSP x_cube0.
+DSP Report: operator x_cube0 is absorbed into DSP x_cube0.
+DSP Report: Generating DSP x_cube0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_cube0 is absorbed into DSP x_cube0.
+DSP Report: operator x_cube0 is absorbed into DSP x_cube0.
+DSP Report: Generating DSP x_cube0, operation Mode is: A*B.
+DSP Report: operator x_cube0 is absorbed into DSP x_cube0.
+DSP Report: operator x_cube0 is absorbed into DSP x_cube0.
+DSP Report: Generating DSP x_cube0, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator x_cube0 is absorbed into DSP x_cube0.
+DSP Report: operator x_cube0 is absorbed into DSP x_cube0.
+DSP Report: Generating DSP oled_data3, operation Mode is: A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
+INFO: [Synth 8-4471] merging register 'coe_no_reg[31:0]' into 'coe_no_reg[31:0]' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:159]
+INFO: [Synth 8-4471] merging register 'coe_no_reg[31:0]' into 'coe_no_reg[31:0]' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:159]
+INFO: [Synth 8-4471] merging register 'coe_no_reg[31:0]' into 'coe_no_reg[31:0]' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:159]
+INFO: [Synth 8-4471] merging register 'coe_no_reg[31:0]' into 'coe_no_reg[31:0]' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:159]
+WARNING: [Synth 8-6014] Unused sequential element coe_no_reg was removed.  [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:159]
+WARNING: [Synth 8-6014] Unused sequential element coe_no_reg was removed.  [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:159]
+WARNING: [Synth 8-6014] Unused sequential element coe_no_reg was removed.  [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:159]
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "current_peak" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5545] ROM "detect_input0/count_mic" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "detect_input0/current_peak" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-3917] design Top_Student has port an[3] driven by constant 1
-WARNING: [Synth 8-3917] design Top_Student has port an[2] driven by constant 1
-WARNING: [Synth 8-3917] design Top_Student has port an[1] driven by constant 1
-WARNING: [Synth 8-3917] design Top_Student has port an[0] driven by constant 0
 WARNING: [Synth 8-3917] design Top_Student has port dp driven by constant 1
-WARNING: [Synth 8-3331] design Top_Student has unconnected port sw
-INFO: [Synth 8-3886] merging instance 'menu0i_2/board0/oled_data_reg[0]' (FD) to 'menu0i_2/board0/oled_data_reg[1]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/board0/oled_data_reg[1]' (FD) to 'menu0i_2/board0/oled_data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/board0/oled_data_reg[2]' (FD) to 'menu0i_2/board0/oled_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/board0/oled_data_reg[3]' (FD) to 'menu0i_2/board0/oled_data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/board0/oled_data_reg[4]' (FD) to 'menu0i_2/board0/oled_data_reg[8]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/board0/oled_data_reg[5]' (FD) to 'menu0i_2/board0/oled_data_reg[9]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/board0/oled_data_reg[6]' (FD) to 'menu0i_2/board0/oled_data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/board0/oled_data_reg[7]' (FD) to 'menu0i_2/board0/oled_data_reg[11]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/board0/oled_data_reg[8]' (FD) to 'menu0i_2/board0/oled_data_reg[10]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/board0/oled_data_reg[9]' (FD) to 'menu0i_2/board0/oled_data_reg[12]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (menu0i_2/\board0/oled_data_reg[10] )
-INFO: [Synth 8-3886] merging instance 'menu0i_2/board0/oled_data_reg[13]' (FD) to 'menu0i_2/board0/oled_data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/moving0/oled_data_reg[6]' (FDS) to 'menu0i_2/moving0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/moving0/oled_data_reg[7]' (FDR) to 'menu0i_2/moving0/oled_data_reg[2]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/moving0/oled_data_reg[4]' (FDS) to 'menu0i_2/moving0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/moving0/oled_data_reg[5]' (FDS) to 'menu0i_2/moving0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/moving0/oled_data_reg[0]' (FDS) to 'menu0i_2/moving0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/moving0/oled_data_reg[1]' (FDS) to 'menu0i_2/moving0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/moving0/oled_data_reg[2]' (FDR) to 'menu0i_2/moving0/oled_data_reg[3]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/moving0/oled_data_reg[3]' (FDR) to 'menu0i_2/moving0/oled_data_reg[8]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/moving0/oled_data_reg[14]' (FDR) to 'menu0i_2/moving0/oled_data_reg[8]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/moving0/oled_data_reg[12]' (FDS) to 'menu0i_2/moving0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/moving0/oled_data_reg[13]' (FDR) to 'menu0i_2/moving0/oled_data_reg[8]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/moving0/oled_data_reg[8]' (FDR) to 'menu0i_2/moving0/oled_data_reg[9]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (menu0i_2/moving0/\oled_data_reg[9] )
-INFO: [Synth 8-3886] merging instance 'menu0i_2/moving0/oled_data_reg[10]' (FDS) to 'menu0i_2/moving0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/moving0/oled_data_reg[11]' (FDS) to 'menu0i_2/moving0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/words0/oled_data_reg[6]' (FD) to 'menu0i_2/words0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/selector0/oled_data_reg[6]' (FDS) to 'menu0i_2/selector0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/words0/oled_data_reg[7]' (FD) to 'menu0i_2/words0/oled_data_reg[5]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/selector0/oled_data_reg[7]' (FDR) to 'menu0i_2/selector0/oled_data_reg[9]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/words0/oled_data_reg[4]' (FD) to 'menu0i_2/words0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/selector0/oled_data_reg[4]' (FDR) to 'menu0i_2/selector0/oled_data_reg[9]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/words0/oled_data_reg[5]' (FD) to 'menu0i_2/words0/oled_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/selector0/oled_data_reg[5]' (FDS) to 'menu0i_2/selector0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/words0/oled_data_reg[0]' (FD) to 'menu0i_2/words0/oled_data_reg[1]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/selector0/oled_data_reg[0]' (FDS) to 'menu0i_2/selector0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/words0/oled_data_reg[1]' (FD) to 'menu0i_2/words0/oled_data_reg[2]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/selector0/oled_data_reg[1]' (FDR) to 'menu0i_2/selector0/oled_data_reg[9]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/words0/oled_data_reg[2]' (FD) to 'menu0i_2/words0/oled_data_reg[12]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/selector0/oled_data_reg[2]' (FDR) to 'menu0i_2/selector0/oled_data_reg[9]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/words0/oled_data_reg[3]' (FD) to 'menu0i_2/words0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/selector0/oled_data_reg[3]' (FDR) to 'menu0i_2/selector0/oled_data_reg[9]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/words0/oled_data_reg[15]' (FD) to 'menu0i_2/words0/oled_data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/selector0/oled_data_reg[15]' (FDS) to 'menu0i_2/selector0/oled_data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/words0/oled_data_reg[14]' (FD) to 'menu0i_2/words0/oled_data_reg[10]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/selector0/oled_data_reg[14]' (FDS) to 'menu0i_2/selector0/oled_data_reg[13]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/words0/oled_data_reg[12]' (FD) to 'menu0i_2/words0/oled_data_reg[13]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/selector0/oled_data_reg[12]' (FDS) to 'menu0i_2/selector0/oled_data_reg[13]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/words0/oled_data_reg[13]' (FD) to 'menu0i_2/words0/oled_data_reg[8]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/selector0/oled_data_reg[13]' (FDS) to 'menu0i_2/selector0/oled_data_reg[11]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/words0/oled_data_reg[8]' (FD) to 'menu0i_2/words0/oled_data_reg[11]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/selector0/oled_data_reg[8]' (FDS) to 'menu0i_2/selector0/oled_data_reg[11]'
-INFO: [Synth 8-3886] merging instance 'menu0i_2/words0/oled_data_reg[9]' (FD) to 'menu0i_2/words0/oled_data_reg[10]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (menu0i_2/\selector0/oled_data_reg[9] )
-INFO: [Synth 8-3886] merging instance 'menu0i_2/selector0/oled_data_reg[10]' (FDS) to 'menu0i_2/selector0/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[31]' (FDE) to 'menu_button0i_6/count_reg[30]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[30]' (FDE) to 'menu_button0i_6/count_reg[29]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[28]' (FDE) to 'menu_button0i_6/count_reg[29]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[29]' (FDE) to 'menu_button0i_6/count_reg[27]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[24]' (FDE) to 'menu_button0i_6/count_reg[27]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[25]' (FDE) to 'menu_button0i_6/count_reg[27]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[26]' (FDE) to 'menu_button0i_6/count_reg[27]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[27]' (FDE) to 'menu_button0i_6/count_reg[23]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[18]' (FDE) to 'menu_button0i_6/count_reg[23]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[19]' (FDE) to 'menu_button0i_6/count_reg[23]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[16]' (FDE) to 'menu_button0i_6/count_reg[23]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[17]' (FDE) to 'menu_button0i_6/count_reg[23]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[22]' (FDE) to 'menu_button0i_6/count_reg[23]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[23]' (FDE) to 'menu_button0i_6/count_reg[21]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[20]' (FDE) to 'menu_button0i_6/count_reg[21]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[21]' (FDE) to 'menu_button0i_6/count_reg[15]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[14]' (FDE) to 'menu_button0i_6/count_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (menu_button0i_6/\count_reg[15] )
+INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[0]' (FD) to 'menu0i_7/board0/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[1]' (FD) to 'menu0i_7/board0/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[2]' (FD) to 'menu0i_7/board0/oled_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[3]' (FD) to 'menu0i_7/board0/oled_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[4]' (FD) to 'menu0i_7/board0/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[5]' (FD) to 'menu0i_7/board0/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[6]' (FD) to 'menu0i_7/board0/oled_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[7]' (FD) to 'menu0i_7/board0/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[8]' (FD) to 'menu0i_7/board0/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[9]' (FD) to 'menu0i_7/board0/oled_data_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (menu0i_7/\board0/oled_data_reg[10] )
+INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[13]' (FD) to 'menu0i_7/board0/oled_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[6]' (FDS) to 'menu0i_7/moving0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[7]' (FDR) to 'menu0i_7/moving0/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[4]' (FDS) to 'menu0i_7/moving0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[5]' (FDS) to 'menu0i_7/moving0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[0]' (FDS) to 'menu0i_7/moving0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[1]' (FDS) to 'menu0i_7/moving0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[2]' (FDR) to 'menu0i_7/moving0/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[3]' (FDR) to 'menu0i_7/moving0/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[14]' (FDR) to 'menu0i_7/moving0/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[12]' (FDS) to 'menu0i_7/moving0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[13]' (FDR) to 'menu0i_7/moving0/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[8]' (FDR) to 'menu0i_7/moving0/oled_data_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (menu0i_7/moving0/\oled_data_reg[9] )
+INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[10]' (FDS) to 'menu0i_7/moving0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[11]' (FDS) to 'menu0i_7/moving0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[6]' (FD) to 'menu0i_7/words0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[6]' (FDS) to 'menu0i_7/selector0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[7]' (FD) to 'menu0i_7/words0/oled_data_reg[5]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[7]' (FDR) to 'menu0i_7/selector0/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[4]' (FD) to 'menu0i_7/words0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[4]' (FDR) to 'menu0i_7/selector0/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[5]' (FD) to 'menu0i_7/words0/oled_data_reg[0]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[5]' (FDS) to 'menu0i_7/selector0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[0]' (FD) to 'menu0i_7/words0/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[0]' (FDS) to 'menu0i_7/selector0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[1]' (FD) to 'menu0i_7/words0/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[1]' (FDR) to 'menu0i_7/selector0/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[2]' (FD) to 'menu0i_7/words0/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[2]' (FDR) to 'menu0i_7/selector0/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[3]' (FD) to 'menu0i_7/words0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[3]' (FDR) to 'menu0i_7/selector0/oled_data_reg[9]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[15]' (FD) to 'menu0i_7/words0/oled_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[15]' (FDS) to 'menu0i_7/selector0/oled_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[14]' (FD) to 'menu0i_7/words0/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[14]' (FDS) to 'menu0i_7/selector0/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[12]' (FD) to 'menu0i_7/words0/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[12]' (FDS) to 'menu0i_7/selector0/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[13]' (FD) to 'menu0i_7/words0/oled_data_reg[8]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[13]' (FDS) to 'menu0i_7/selector0/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[8]' (FD) to 'menu0i_7/words0/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[8]' (FDS) to 'menu0i_7/selector0/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[9]' (FD) to 'menu0i_7/words0/oled_data_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (menu0i_7/\selector0/oled_data_reg[9] )
+INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[10]' (FDS) to 'menu0i_7/selector0/oled_data_reg[11]'
 WARNING: [Synth 8-3332] Sequential element (oled_data_reg[9]) is unused and will be removed from module display_bg_moving.
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_B_reg[0]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_A_reg[0]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CA_reg[0]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CB_reg[0]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_B_reg[1]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_A_reg[1]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CA_reg[1]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CB_reg[1]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_B_reg[2]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_A_reg[2]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CA_reg[2]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CB_reg[2]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_B_reg[3]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_A_reg[3]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CA_reg[3]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CB_reg[3]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_B_reg[4]' (FD) to 'i_0/subtask4_20/oled_data_CA_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_A_reg[4]' (FD) to 'i_0/subtask4_20/oled_data_CA_reg[4]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CA_reg[4]' (FD) to 'i_0/subtask4_20/oled_data_CB_reg[4]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\subtask4_20/oled_data_CB_reg[4] )
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_B_reg[5]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[8]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_A_reg[5]' (FD) to 'i_0/subtask4_20/oled_data_A_reg[8]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CA_reg[5]' (FD) to 'i_0/subtask4_20/oled_data_CA_reg[8]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CB_reg[5]' (FD) to 'i_0/subtask4_20/oled_data_CB_reg[8]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_B_reg[6]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_A_reg[6]' (FD) to 'i_0/subtask4_20/oled_data_A_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CA_reg[6]' (FD) to 'i_0/subtask4_20/oled_data_CA_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CB_reg[6]' (FD) to 'i_0/subtask4_20/oled_data_CB_reg[7]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_B_reg[8]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_A_reg[8]' (FD) to 'i_0/subtask4_20/oled_data_A_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CA_reg[8]' (FD) to 'i_0/subtask4_20/oled_data_CA_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CB_reg[8]' (FD) to 'i_0/subtask4_20/oled_data_CB_reg[9]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_B_reg[9]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[10]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_A_reg[9]' (FD) to 'i_0/subtask4_20/oled_data_A_reg[10]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CA_reg[9]' (FD) to 'i_0/subtask4_20/oled_data_CA_reg[10]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CB_reg[9]' (FD) to 'i_0/subtask4_20/oled_data_CB_reg[10]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_B_reg[11]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[12]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_A_reg[11]' (FD) to 'i_0/subtask4_20/oled_data_A_reg[12]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CA_reg[11]' (FD) to 'i_0/subtask4_20/oled_data_CA_reg[12]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CB_reg[11]' (FD) to 'i_0/subtask4_20/oled_data_CB_reg[12]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_B_reg[12]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[13]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_A_reg[12]' (FD) to 'i_0/subtask4_20/oled_data_A_reg[13]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CA_reg[12]' (FD) to 'i_0/subtask4_20/oled_data_CA_reg[13]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CB_reg[12]' (FD) to 'i_0/subtask4_20/oled_data_CB_reg[13]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_B_reg[13]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[14]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_A_reg[13]' (FD) to 'i_0/subtask4_20/oled_data_A_reg[14]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CA_reg[13]' (FD) to 'i_0/subtask4_20/oled_data_CA_reg[14]'
-INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CB_reg[13]' (FD) to 'i_0/subtask4_20/oled_data_CB_reg[14]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num0/oled_data_reg[0]' (FDR) to 'poly_top1i_9/num0/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num1/oled_data_reg[0]' (FDR) to 'poly_top1i_9/num1/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num2/oled_data_reg[0]' (FDR) to 'poly_top1i_9/num2/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num3/oled_data_reg[0]' (FDR) to 'poly_top1i_9/num3/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num4/oled_data_reg[0]' (FDR) to 'poly_top1i_9/num4/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num5/oled_data_reg[0]' (FDR) to 'poly_top1i_9/num5/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num6/oled_data_reg[0]' (FDR) to 'poly_top1i_9/num6/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num7/oled_data_reg[0]' (FDR) to 'poly_top1i_9/num7/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num8/oled_data_reg[0]' (FDR) to 'poly_top1i_9/num8/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num9/oled_data_reg[0]' (FDR) to 'poly_top1i_9/num9/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/cross0/oled_data_reg[0]' (FDR) to 'poly_top1i_9/cross0/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num0/oled_data_reg[1]' (FDR) to 'poly_top1i_9/num0/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num1/oled_data_reg[1]' (FDR) to 'poly_top1i_9/num1/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num2/oled_data_reg[1]' (FDR) to 'poly_top1i_9/num2/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num3/oled_data_reg[1]' (FDR) to 'poly_top1i_9/num3/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num4/oled_data_reg[1]' (FDR) to 'poly_top1i_9/num4/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num5/oled_data_reg[1]' (FDR) to 'poly_top1i_9/num5/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num6/oled_data_reg[1]' (FDR) to 'poly_top1i_9/num6/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num7/oled_data_reg[1]' (FDR) to 'poly_top1i_9/num7/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num8/oled_data_reg[1]' (FDR) to 'poly_top1i_9/num8/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num9/oled_data_reg[1]' (FDR) to 'poly_top1i_9/num9/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/cross0/oled_data_reg[1]' (FDR) to 'poly_top1i_9/cross0/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num0/oled_data_reg[2]' (FDR) to 'poly_top1i_9/num0/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num1/oled_data_reg[2]' (FDR) to 'poly_top1i_9/num1/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num2/oled_data_reg[2]' (FDR) to 'poly_top1i_9/num2/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num3/oled_data_reg[2]' (FDR) to 'poly_top1i_9/num3/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num4/oled_data_reg[2]' (FDR) to 'poly_top1i_9/num4/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num5/oled_data_reg[2]' (FDR) to 'poly_top1i_9/num5/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num6/oled_data_reg[2]' (FDR) to 'poly_top1i_9/num6/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'poly_top1i_9/num7/oled_data_reg[2]' (FDR) to 'poly_top1i_9/num7/oled_data_reg[3]'
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_9/cross0/\oled_data_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_9/num0/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_9/num1/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_9/num2/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_9/num3/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_9/num4/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_9/num5/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_9/num6/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_9/num7/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_9/num8/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_9/num9/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_9/display_plot_bg0/\oled_data_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_9/constant_confirmation0/\x20/oled_data_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_9/select_constant0/\x_3_0/oled_data_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_9/display_plot0/\oled_data_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_9/degree_confirmation0/\num3/oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_9/\num_reg[4] )
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[10]) is unused and will be removed from module cross_display.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[15]) is unused and will be removed from module number_0.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[15]) is unused and will be removed from module number_1.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[15]) is unused and will be removed from module number_2.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[15]) is unused and will be removed from module number_3.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[15]) is unused and will be removed from module number_4.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[15]) is unused and will be removed from module number_5.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[15]) is unused and will be removed from module number_6.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[15]) is unused and will be removed from module number_7.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[15]) is unused and will be removed from module number_8.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[15]) is unused and will be removed from module number_9.
+WARNING: [Synth 8-3332] Sequential element (num3/oled_data_reg[15]) is unused and will be removed from module degree_confirmation.
+WARNING: [Synth 8-3332] Sequential element (x_3_0/oled_data_reg[14]) is unused and will be removed from module select_constant.
+WARNING: [Synth 8-3332] Sequential element (x20/oled_data_reg[14]) is unused and will be removed from module constant_confirmation.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[5]) is unused and will be removed from module display_plot.
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[14]) is unused and will be removed from module display_plot_bg.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\subtask4_20/oled_data_CB_reg[4] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\morse0/detect_input0/pointer0_inferred /\morse0/detect_input0/pointer_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 811.578 ; gain = 553.969
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 932.602 ; gain = 675.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|display_plot | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display_plot | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display_plot | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display_plot | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display_plot | A*B            | 18     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display_plot | (PCIN>>17)+A*B | 16     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display_plot | A*B            | 18     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display_plot | (PCIN>>17)+A*B | 16     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display_plot | A*B            | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display_plot | (PCIN>>17)+A*B | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display_plot | A*B            | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display_plot | (PCIN>>17)+A*B | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display_plot | A*B            | 18     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|display_plot | (PCIN>>17)+A*B | 16     | 11     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -635,25 +1131,28 @@ Report RTL Partitions:
 |      |RTL Partition     |Replication |Instances |
 +------+------------------+------------+----------+
 |1     |flexible_clk      |           1|       102|
-|2     |menu_button__GC0  |           1|        70|
-|3     |menu_display__GC0 |           1|      2686|
-|4     |detect_input__GC0 |           2|         4|
-|5     |Top_Student__GC0  |           1|      2126|
-|6     |flexible_clk__1   |           1|       101|
-|7     |flexible_clk__2   |           1|       101|
-|8     |flexible_clk__3   |           1|       101|
+|2     |detect_input__GC0 |           3|         4|
+|3     |menu_button__GC0  |           1|       106|
+|4     |menu_display__GC0 |           1|      2686|
+|5     |debouncer__GC0    |           1|         4|
+|6     |poly_top__GC0     |           1|      5857|
+|7     |Top_Student__GC0  |           1|      2182|
+|8     |flexible_clk__1   |           2|       101|
+|9     |flexible_clk__2   |           1|       101|
+|10    |flexible_clk__3   |           1|       101|
+|11    |flexible_clk__4   |           2|       102|
 +------+------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 811.578 ; gain = 553.969
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 932.602 ; gain = 675.477
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 811.578 ; gain = 553.969
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 932.602 ; gain = 675.477
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -661,19 +1160,30 @@ Report RTL Partitions:
 |      |RTL Partition     |Replication |Instances |
 +------+------------------+------------+----------+
 |1     |flexible_clk      |           1|       102|
-|2     |menu_button__GC0  |           1|        70|
-|3     |menu_display__GC0 |           1|      2686|
-|4     |detect_input__GC0 |           2|         4|
-|5     |Top_Student__GC0  |           1|      2126|
-|6     |flexible_clk__1   |           1|       101|
-|7     |flexible_clk__2   |           1|       101|
-|8     |flexible_clk__3   |           1|       101|
+|2     |detect_input__GC0 |           3|         4|
+|3     |menu_button__GC0  |           1|       106|
+|4     |menu_display__GC0 |           1|      2686|
+|5     |debouncer__GC0    |           1|         4|
+|6     |poly_top__GC0     |           1|      5857|
+|7     |Top_Student__GC0  |           1|      2182|
+|8     |flexible_clk__1   |           2|       101|
+|9     |flexible_clk__2   |           1|       101|
+|10    |flexible_clk__3   |           1|       101|
+|11    |flexible_clk__4   |           2|       102|
 +------+------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poly_top1/coe_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poly_top1/coe_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poly_top1/coe_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poly_top1/coe_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (poly_top1/coe_reg[3]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (poly_top1/coe_reg[2]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (poly_top1/coe_reg[1]) is unused and will be removed from module Top_Student.
+WARNING: [Synth 8-3332] Sequential element (poly_top1/coe_reg[0]) is unused and will be removed from module Top_Student.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 836.699 ; gain = 579.090
+Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 959.605 ; gain = 702.480
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -697,7 +1207,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 836.699 ; gain = 579.090
+Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 959.605 ; gain = 702.480
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -710,7 +1220,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 836.699 ; gain = 579.090
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 959.605 ; gain = 702.480
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -722,25 +1232,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 836.699 ; gain = 579.090
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 959.605 ; gain = 702.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 836.699 ; gain = 579.090
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 959.605 ; gain = 702.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 836.699 ; gain = 579.090
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 959.605 ; gain = 702.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 836.699 ; gain = 579.090
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 959.605 ; gain = 702.480
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -753,65 +1263,112 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     3|
-|2     |CARRY4 |   233|
-|3     |LUT1   |    40|
-|4     |LUT2   |   150|
-|5     |LUT3   |   144|
-|6     |LUT4   |   275|
-|7     |LUT5   |   256|
-|8     |LUT6   |   837|
-|9     |MUXF7  |    62|
-|10    |MUXF8  |    19|
-|11    |FDE_1  |    32|
-|12    |FDRE   |   466|
-|13    |FDSE   |     6|
-|14    |IBUF   |     9|
-|15    |OBUF   |    31|
-+------+-------+------+
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     5|
+|2     |CARRY4  |   550|
+|3     |DSP48E1 |    12|
+|4     |LUT1    |    48|
+|5     |LUT2    |   924|
+|6     |LUT3    |   310|
+|7     |LUT4    |   358|
+|8     |LUT5    |   740|
+|9     |LUT6    |  1659|
+|10    |MUXF7   |   114|
+|11    |MUXF8   |    24|
+|12    |FDE_1   |    32|
+|13    |FDRE    |   667|
+|14    |FDSE    |     9|
+|15    |IBUF    |    23|
+|16    |OBUF    |    37|
++------+--------+------+
 
 Report Instance Areas: 
-+------+------------------+------------------------+------+
-|      |Instance          |Module                  |Cells |
-+------+------------------+------------------------+------+
-|1     |top               |                        |  2563|
-|2     |  aud0            |Audio_Capture           |    93|
-|3     |  clk6p25m        |flexible_clk            |    63|
-|4     |  clk_20kHz       |flexible_clk_0          |    63|
-|5     |  convert0        |PItoXY                  |   526|
-|6     |  detect_input_c  |detect_input            |     3|
-|7     |    d0            |dff_6                   |     1|
-|8     |    d1            |dff_7                   |     1|
-|9     |    d2            |dff_8                   |     1|
-|10    |  detect_input_r  |detect_input_1          |     4|
-|11    |    d0            |dff                     |     1|
-|12    |    d1            |dff_4                   |     2|
-|13    |    d2            |dff_5                   |     1|
-|14    |  display0        |Oled_Display            |   534|
-|15    |  menu0           |menu_display            |   692|
-|16    |    board0        |display_bg_board        |     3|
-|17    |    clk0          |flexible_clk_3          |    63|
-|18    |    moving0       |display_bg_moving       |   593|
-|19    |    selector0     |display_bg_selector     |    13|
-|20    |    words0        |display_bg_words        |    20|
-|21    |  menu_button0    |menu_button             |   110|
-|22    |    clk0          |flexible_clk_2          |    63|
-|23    |  morse0          |morse_code_top          |   311|
-|24    |    detect_input0 |morse_code_detect_input |   311|
-|25    |  subtask4_20     |subtask4_2              |   119|
-+------+------------------+------------------------+------+
++------+---------------------------+------------------------+------+
+|      |Instance                   |Module                  |Cells |
++------+---------------------------+------------------------+------+
+|1     |top                        |                        |  5512|
+|2     |  aud0                     |Audio_Capture           |    90|
+|3     |  clk6p25m                 |flexible_clk            |    63|
+|4     |  clk_20kHz                |flexible_clk_0          |    63|
+|5     |  convert0                 |PItoXY                  |   521|
+|6     |  detect_input_c           |detect_input            |     3|
+|7     |    d0                     |dff_24                  |     1|
+|8     |    d1                     |dff_25                  |     1|
+|9     |    d2                     |dff_26                  |     1|
+|10    |  detect_input_l           |detect_input_1          |     3|
+|11    |    d0                     |dff_21                  |     1|
+|12    |    d1                     |dff_22                  |     1|
+|13    |    d2                     |dff_23                  |     1|
+|14    |  detect_input_r           |detect_input_2          |     4|
+|15    |    d0                     |dff_18                  |     1|
+|16    |    d1                     |dff_19                  |     2|
+|17    |    d2                     |dff_20                  |     1|
+|18    |  display0                 |Oled_Display            |  1225|
+|19    |  menu0                    |menu_display            |   692|
+|20    |    board0                 |display_bg_board        |     3|
+|21    |    clk0                   |flexible_clk_17         |    63|
+|22    |    moving0                |display_bg_moving       |   593|
+|23    |    selector0              |display_bg_selector     |    13|
+|24    |    words0                 |display_bg_words        |    20|
+|25    |  menu_button0             |menu_button             |   134|
+|26    |    clk0                   |flexible_clk_16         |    63|
+|27    |  morse0                   |morse_code_top          |   313|
+|28    |    detect_input0          |morse_code_detect_input |   313|
+|29    |  poly_top1                |poly_top                |  2187|
+|30    |    num5                   |number_5                |     1|
+|31    |    clk0                   |flexible_clk_3          |    63|
+|32    |    clk6p25m               |flexible_clk_4          |    63|
+|33    |    constant_confirmation0 |constant_confirmation   |    20|
+|34    |      coe0                 |num0_small              |     4|
+|35    |      coe1                 |num0_small_13           |     1|
+|36    |      coe2                 |num0_small_14           |     1|
+|37    |      coe3                 |num0_small_15           |     2|
+|38    |      x00                  |x0_constant             |     1|
+|39    |      x10                  |x1_constant             |     2|
+|40    |      x20                  |x2_constant             |     4|
+|41    |      x30                  |x3_constant             |     1|
+|42    |    convert0               |PItoXY_5                |   489|
+|43    |    cross0                 |cross_display           |     2|
+|44    |    db0                    |debouncer               |    68|
+|45    |      d0                   |dff                     |     1|
+|46    |      clk0                 |flexible_clk_10         |    63|
+|47    |      d1                   |dff_11                  |     3|
+|48    |      d2                   |dff_12                  |     1|
+|49    |    degree_confirmation0   |degree_confirmation     |    10|
+|50    |      num0                 |number_0_6              |     1|
+|51    |      num1                 |number_1_7              |     1|
+|52    |      num2                 |number_2_8              |     4|
+|53    |      num3                 |number_3_9              |     2|
+|54    |    display_plot0          |display_plot            |  1270|
+|55    |    display_plot_bg0       |display_plot_bg         |     2|
+|56    |    num0                   |number_0                |     2|
+|57    |    num1                   |number_1                |     1|
+|58    |    num2                   |number_2                |     1|
+|59    |    num3                   |number_3                |     2|
+|60    |    num4                   |number_4                |     2|
+|61    |    num6                   |number_6                |     3|
+|62    |    num7                   |number_7                |     1|
+|63    |    num8                   |number_8                |     2|
+|64    |    num9                   |number_9                |     1|
+|65    |    select_constant0       |select_constant         |    10|
+|66    |      x_0_0                |x_0                     |     1|
+|67    |      x_1_0                |x_1                     |     1|
+|68    |      x_2_0                |x_2                     |     3|
+|69    |      x_3_0                |x_3                     |     3|
+|70    |    select_degree0         |select_degree           |     5|
+|71    |  subtask4_20              |subtask4_2              |   100|
++------+---------------------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 836.699 ; gain = 579.090
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 959.605 ; gain = 702.480
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 7 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 836.699 ; gain = 225.684
-Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 836.699 ; gain = 579.090
+Synthesis finished with 0 errors, 0 critical warnings and 26 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:01:03 . Memory (MB): peak = 959.605 ; gain = 295.930
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 959.605 ; gain = 702.480
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 355 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-17] Analyzing 755 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
@@ -819,11 +1376,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDE_1 => FDRE (inverted pins: C): 32 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-172 Infos, 68 Warnings, 0 Critical Warnings and 0 Errors encountered.
+266 Infos, 88 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:44 . Memory (MB): peak = 836.699 ; gain = 592.113
+synth_design: Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 959.605 ; gain = 715.207
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/marvi/verilog/Project_Final/Project_Final.runs/synth_1/Top_Student.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 836.699 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Apr  5 11:19:39 2022...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 959.605 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  5 22:01:07 2022...
