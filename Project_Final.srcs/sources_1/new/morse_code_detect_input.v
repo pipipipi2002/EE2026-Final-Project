@@ -24,7 +24,8 @@ module morse_code_detect_input(
     input BASYS_CLK,
     input clk_20khz_out, pb_c,
     input [11:0] mic_in,
-    output [9:0] data
+    output [7:0] data,
+    input reset_data
     );
 
    
@@ -37,11 +38,11 @@ module morse_code_detect_input(
     reg [31:0] count_diff = 0;
     reg start = 0, done = 0;
 
-    reg [9:0] detected_value = 0; // 01 -> dot, 10 -> dash
+    reg [7:0] detected_value = 0; // 01 -> dot, 10 -> dash
     reg [3:0] pointer = 0;
 
     always @(posedge BASYS_CLK) begin
-        if (pb_c == 1) begin
+        if (pb_c == 1 || reset_data == 1) begin
             reset <= 1;
         end else if (reseted == 1) begin
             reset <= 0;
@@ -49,7 +50,7 @@ module morse_code_detect_input(
     end
 
     always @(posedge clk_20khz_out) begin 
-        if (reset != 1 && pointer == 10) begin 
+        if (reset != 1 && pointer == 8) begin 
             done = 1;
         end
         if (reset == 1) begin

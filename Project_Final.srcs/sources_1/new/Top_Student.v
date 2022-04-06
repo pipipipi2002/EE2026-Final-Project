@@ -79,8 +79,11 @@ module Top_Student (
     subtask4_2 subtask4_20 (cX, cY, clk_6_25Mhz_out, clk_20khz_out, sw[13], sw[15], sw[14], mic_in, subtask42_seg_data, subtask42_an_data, subtask42_oled_data, subtask42_led_data);
     
     /* Audio Spectrogram */
-
-
+    wire [11:0] spectrogram_led_data;
+    wire [15:0] spectrogram_oled_data;
+    wire [3:0] spectrogram_an_data;
+    wire [6:0] spectrogram_seg_data;
+    spectrogram_top spectrogram_top0(BASYS_CLK, sw[11:0], pixel_index, mic_in, spectrogram_led_data, spectrogram_oled_data, spectrogram_an_data, spectrogram_seg_data);
 
     /* Polynomial Plotter */
     wire [15:0] poly_led_data;
@@ -93,10 +96,10 @@ module Top_Student (
 
     /* M-O-R-S-E CODE ! */
     wire [15:0] morse_code_oled_data;
-    wire [9:0] morse_code_led_data;
+    wire [15:0] morse_code_led_data;
     wire [6:0] morse_code_seg_data;
     wire [3:0] morse_code_an_data;
-    morse_code_top morse0 (BASYS_CLK, cX, cY, clk_20khz_out, pb_c_out, mic_in, morse_code_seg_data, morse_code_oled_data, morse_code_an_data, morse_code_led_data);
+    morse_code_top morse0 (BASYS_CLK, pixel_index, clk_20khz_out, clk_6_25Mhz_out, pb_c_out, mic_in, sw[1:0], morse_code_seg_data, morse_code_oled_data, morse_code_an_data, morse_code_led_data);
 
 
      always @(posedge BASYS_CLK) begin
@@ -109,25 +112,25 @@ module Top_Student (
 
     assign oled_data = (set_c == 0) ? mainmenu_oled_data : (
                         (state == 0) ? subtask42_oled_data : (
-                        (state == 1) ? 0 : (
+                        (state == 1) ? spectrogram_oled_data : (
                         (state == 2) ? poly_oled_data : (
-                        (state == 3) ? 16'b11111_111111_11111 : 0))));
+                        (state == 3) ? morse_code_oled_data : 0))));
 
     assign led_out = (set_c == 0) ? 0 : (
                     (state == 0) ? subtask42_led_data : (
-                    (state == 1) ? 0 : (
+                    (state == 1) ? spectrogram_led_data : (
                     (state == 2) ? poly_led_data : (
                     (state == 3) ? morse_code_led_data : 0))));
 
     assign an = (set_c == 0) ? 4'b1111 : (
                 (state == 0) ? 4'b1111 : (
-                (state == 1) ? 4'b1111 : (
+                (state == 1) ? spectrogram_an_data : (
                 (state == 2) ? poly_an_data : (
                 (state == 3) ? 4'b1111 : 4'b1111))));
 
     assign seg = (set_c == 0) ? 7'b1111111 : (
                 (state == 0) ? 7'b1111111 : (
-                (state == 1) ? 7'b1111111 : (
+                (state == 1) ? spectrogram_seg_data : (
                 (state == 2) ? poly_seg_data : (
                 (state == 3) ? 7'b1111111 : 7'b1111111))));
 endmodule

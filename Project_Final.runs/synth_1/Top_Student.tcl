@@ -31,8 +31,10 @@ set_property ip_output_repo c:/Users/marvi/verilog/Project_Final/Project_Final.c
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Audio_Capture.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/LSFR.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Oled_Display.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/PItoXY.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Seven_segment_LED_Display_Controller.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/constant_confirmation.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/cross_display.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/debouncer.v
@@ -48,8 +50,19 @@ read_verilog -library xil_defaultlib {
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/flexible_clk.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_button.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_display.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterAJ.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterKT.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterUZ.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterwithmorse.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterwithmorseKT.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterwithmorseUZ.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_detect_input.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_menu.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_tick.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_timeup.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_top.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_practice.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_timed.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/num0_small.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_0.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_1.v
@@ -61,9 +74,12 @@ read_verilog -library xil_defaultlib {
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_7.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_8.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_9.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/pitchdetector.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/select_constant.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/select_degree.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/spectrogram.v
+  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/spectrogram_top.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/subtask4_2.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x0_constant.v
   C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x1_constant.v
