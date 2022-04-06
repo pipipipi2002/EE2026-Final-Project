@@ -1,0 +1,1540 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 12356
+License: Customer
+
+Current time: 	Wed Apr 06 08:07:49 SGT 2022
+Time zone: 	Singapore Time (Asia/Singapore)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 77 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Daniel Pranajaya
+User home directory: C:/Users/Daniel Pranajaya
+User working directory: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project
+User country: 	GB
+User language: 	en
+User locale: 	en_GB
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Daniel Pranajaya/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Daniel Pranajaya/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Daniel Pranajaya/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/vivado.log
+Vivado journal file location: 	C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/vivado.jou
+Engine tmp dir: 	C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/.Xil/Vivado-12356-Omen1518
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	157 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 503 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 65 MB (+65309kb) [00:00:18]
+// [Engine Memory]: 496 MB (+369080kb) [00:00:18]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.xpr. Version: Vivado v2018.2 
+// bx (ck):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 87 MB (+20526kb) [00:00:22]
+// Tcl Message: open_project {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'C:/Users/marvi/verilog/Project_Final' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// HMemoryUtils.trashcanNow. Engine heap size: 503 MB. GUI used memory: 37 MB. Current time: 4/6/22 8:07:51 AM SGT
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 546 MB (+25477kb) [00:00:28]
+// [Engine Memory]: 586 MB (+14061kb) [00:00:30]
+// Project name: Project_Final; location: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 767.461 ; gain = 78.477 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(PAResourceQtoS.RunGadget_SHOW_ERROR, "5 errors"); // h (Q, ck)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2715] syntax error near || [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_timeup.v:32]. ]", 1, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\marvi\verilog\Project_Final\Project_Final.srcs\sources_1\new\morse_code_timeup.v;-;;-;16;-;line;-;32;-;;-;16;-;"); // ah (O, ck)
+// ac (ck): Unable to Open File: addNotify
+selectButton(PAResourceOtoP.OpenFileAction_OK, "OK"); // a (ac)
+dismissDialog("Unable to Open File"); // ac (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2715] syntax error near || [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_timeup.v:32]. ]", 1, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-2715] syntax error near || [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_timeup.v:32]. ]", 1, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details. ]", 3, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1031] oled is not declared [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_timeup.v:33]. ]", 2, true); // ah (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true, false, false, false, false, true); // u (O, ck) - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 2); // B (D, ck)
+// PAPropertyPanels.initPanels (Top_Student.v) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 2, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, morse_characteronly (morse_characteronly.v)]", 21, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v)]", 18, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v)]", 18); // B (D, ck)
+// Elapsed time: 10 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v), timed0 : morse_timed (morse_timed.v)]", 25); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v), timed0 : morse_timed (morse_timed.v), timeup0 : morse_code_timeup (morse_code_timeup.v)]", 31, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v), timed0 : morse_timed (morse_timed.v), timeup0 : morse_code_timeup (morse_code_timeup.v)]", 31, false, false, false, false, false, true); // B (D, ck) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 607 MB. GUI used memory: 44 MB. Current time: 4/6/22 8:09:01 AM SGT
+selectCodeEditor("morse_code_timeup.v", 101, 395); // ce (w, ck)
+// [GUI Memory]: 95 MB (+2842kb) [00:03:56]
+// [GUI Memory]: 102 MB (+2747kb) [00:05:46]
+// Elapsed time: 298 seconds
+selectCodeEditor("morse_code_timeup.v", 1022, 403); // ce (w, ck)
+selectCodeEditor("morse_code_timeup.v", 569, 395); // ce (w, ck)
+selectCodeEditor("morse_code_timeup.v", 569, 395); // ce (w, ck)
+selectCodeEditor("morse_code_timeup.v", 573, 395); // ce (w, ck)
+selectCodeEditor("morse_code_timeup.v", 573, 395, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_code_timeup.v", 573, 395); // ce (w, ck)
+selectCodeEditor("morse_code_timeup.v", 573, 395); // ce (w, ck)
+selectCodeEditor("morse_code_timeup.v", 573, 395); // ce (w, ck)
+selectCodeEditor("morse_code_timeup.v", 573, 395); // ce (w, ck)
+selectCodeEditor("morse_code_timeup.v", 573, 395, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_code_timeup.v", 573, 395); // ce (w, ck)
+typeControlKey((HResource) null, "morse_code_timeup.v", 'c'); // ce (w, ck)
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 229ms to process. Increasing delay to 2000 ms.
+// Elapsed time: 30 seconds
+selectCodeEditor("morse_code_timeup.v", 1006, 222); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+dismissDialog("Resetting Runs"); // bx (ck)
+// [Engine Memory]: 622 MB (+7110kb) [00:07:28]
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr  6 08:14:57 2022] Launched synth_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/synth_1/runme.log [Wed Apr  6 08:14:57 2022] Launched impl_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 628 MB. GUI used memory: 43 MB. Current time: 4/6/22 8:15:01 AM SGT
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 14 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near ==. [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_timeup.v:32]. ]", 2, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.srcs\sources_1\new\morse_code_timeup.v;-;;-;16;-;line;-;32;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near ==. [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_timeup.v:32]. ]", 2, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.srcs\sources_1\new\morse_code_timeup.v;-;;-;16;-;line;-;32;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near ==. [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_timeup.v:32]. ]", 2, true, false, false, false, false, true); // ah (O, ck) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near ==. [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_timeup.v:32]. , [HDL 9-806] Syntax error near else. [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_timeup.v:33]. ]", 3, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.srcs\sources_1\new\morse_code_timeup.v;-;;-;16;-;line;-;33;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-806] Syntax error near ==. [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_timeup.v:32]. , [HDL 9-806] Syntax error near else. [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_timeup.v:33]. ]", 3, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.srcs\sources_1\new\morse_code_timeup.v;-;;-;16;-;line;-;33;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near ==. [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_timeup.v:32]. ]", 5, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.srcs\sources_1\new\morse_code_timeup.v;-;;-;16;-;line;-;32;-;;-;16;-;"); // ah (O, ck)
+selectCodeEditor("morse_code_timeup.v", 127, 381); // ce (w, ck)
+selectCodeEditor("morse_code_timeup.v", 1034, 395); // ce (w, ck)
+selectCodeEditor("morse_code_timeup.v", 1009, 261); // ce (w, ck)
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 28 seconds
+selectCodeEditor("morse_code_timeup.v", 54, 423); // ce (w, ck)
+// Elapsed time: 115 seconds
+selectCodeEditor("morse_code_timeup.v", 242, 137); // ce (w, ck)
+selectCodeEditor("morse_code_timeup.v", 242, 376); // ce (w, ck)
+selectCodeEditor("morse_code_timeup.v", 150, 403); // ce (w, ck)
+selectCodeEditor("morse_code_timeup.v", 150, 403, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_code_timeup.v", 150, 403); // ce (w, ck)
+typeControlKey((HResource) null, "morse_code_timeup.v", 'v'); // ce (w, ck)
+selectCodeEditor("morse_code_timeup.v", 149, 403); // ce (w, ck)
+selectCodeEditor("morse_code_timeup.v", 3, 396); // ce (w, ck)
+selectCodeEditor("morse_code_timeup.v", 17, 385, false, true, false, false, false); // ce (w, ck) - Control Key
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr  6 08:18:44 2022] Launched synth_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/synth_1/runme.log [Wed Apr  6 08:18:44 2022] Launched impl_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 46 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1031] correct is not declared [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_timed.v:99]. ]", 4, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.srcs\sources_1\new\morse_timed.v;-;;-;16;-;line;-;99;-;;-;16;-;"); // ah (O, ck)
+selectCodeEditor("morse_timed.v", 250, 149); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 18 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1852] concurrent assignment to a non-net correct_out is not permitted [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_timed.v:113]. ]", 5, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.srcs\sources_1\new\morse_timed.v;-;;-;16;-;line;-;113;-;;-;16;-;"); // ah (O, ck)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr  6 08:20:12 2022] Launched synth_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/synth_1/runme.log [Wed Apr  6 08:20:12 2022] Launched impl_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_FAILED
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 20 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_MESSAGE_WINDOW, "View Messages", true); // g (Q, ah): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1852] concurrent assignment to a non-net correct_out is not permitted [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_timed.v:114]. ]", 4, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.srcs\sources_1\new\morse_timed.v;-;;-;16;-;line;-;114;-;;-;16;-;"); // ah (O, ck)
+selectCodeEditor("morse_timed.v", 275, 469); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("morse_timed.v", 73, 385); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 73, 385, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_timed.v", 73, 385); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("morse_timed.v", 126, 415); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 126, 415, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_timed.v", 127, 410); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 127, 410, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_timed.v", 3, 388); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 3, 388, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_timed.v", 3, 388); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 72, 420); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 9, 211); // ce (w, ck)
+typeControlKey((HResource) null, "morse_timed.v", 'v'); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 9, 211); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 83 seconds
+selectCodeEditor("morse_timed.v", 259, 363); // ce (w, ck)
+// Elapsed time: 133 seconds
+selectCodeEditor("morse_timed.v", 310, 351); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 312, 382); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 474, 381); // ce (w, ck)
+// Elapsed time: 43 seconds
+selectCodeEditor("morse_timed.v", 40, 10); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v), clkslow : flexible_clk (flexible_clk.v)]", 18, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v), clkslow : flexible_clk (flexible_clk.v)]", 18, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v)]", 17, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v)]", 17, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_top.v", 3); // k (j, ck)
+selectCodeEditor("morse_code_top.v", 599, 52); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_top.v", 3); // k (j, ck)
+selectMenuItem((HResource) null, "New Vertical Group"); // JMenuItem (JidePopupMenu)
+// Elapsed time: 24 seconds
+selectCodeEditor("morse_code_top.v", 153, 325); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 153, 325, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_code_top.v", 153, 346); // ce (w, ck)
+// Elapsed time: 210 seconds
+selectCodeEditor("morse_timed.v", 271, 465); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 271, 465, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_timed.v", 271, 465); // ce (w, ck)
+typeControlKey((HResource) null, "morse_timed.v", 'c'); // ce (w, ck)
+// Elapsed time: 83 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1852] concurrent assignment to a non-net correct_out is not permitted [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_timed.v:114]. ]", 4, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1852] concurrent assignment to a non-net correct_out is not permitted [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_timed.v:114]. ]", 4, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1852] concurrent assignment to a non-net correct_out is not permitted [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_timed.v:114]. ]", 4, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1852] concurrent assignment to a non-net correct_out is not permitted [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_timed.v:114]. ]", 4, false); // ah (O, ck)
+// Elapsed time: 30 seconds
+selectCodeEditor("morse_timed.v", 84, 93); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 84, 93, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_timed.v", 106, 201); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 197, 431); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1852] concurrent assignment to a non-net correct_out is not permitted [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_timed.v:114]. ]", 4, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.srcs\sources_1\new\morse_timed.v;-;;-;16;-;line;-;114;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-1852] concurrent assignment to a non-net correct_out is not permitted [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_timed.v:114]. ]", 4, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.srcs\sources_1\new\morse_timed.v;-;;-;16;-;line;-;114;-;;-;16;-;"); // ah (O, ck)
+selectCodeEditor("morse_timed.v", 234, 389); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 12 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr  6 08:32:27 2022] Launched synth_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/synth_1/runme.log [Wed Apr  6 08:32:27 2022] Launched impl_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 23 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, ck)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (ck): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "mose_anode_disp"); // X (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 13 seconds
+dismissDialog("Add Sources"); // c (ck)
+// Tcl Message: close [ open {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/mose_anode_disp.v} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/mose_anode_disp.v}} 
+// I (ck): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton (A, H)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (ck)
+// [GUI Memory]: 108 MB (+502kb) [00:25:43]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mose_anode_disp (mose_anode_disp.v)]", 28, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mose_anode_disp (mose_anode_disp.v)]", 28, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, mose_anode_disp (mose_anode_disp.v)]", 28, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("mose_anode_disp.v", 109, 416); // ce (w, ck)
+// PAResourceOtoP.PAViews_CODE: Code: close view
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+// HMemoryUtils.trashcanNow. Engine heap size: 653 MB. GUI used memory: 48 MB. Current time: 4/6/22 8:33:46 AM SGT
+// Elapsed time: 20 seconds
+selectCodeEditor("mose_anode_disp.v", 987, 301); // ce (w, ck)
+// Elapsed time: 33 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), spectrogram_top0 : spectrogram_top (spectrogram_top.v)]", 15); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), spectrogram_top0 : spectrogram_top (spectrogram_top.v), freq_disp : Seven_segment_LED_Display_Controller (Seven_segment_LED_Display_Controller.v)]", 20, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), spectrogram_top0 : spectrogram_top (spectrogram_top.v), freq_disp : Seven_segment_LED_Display_Controller (Seven_segment_LED_Display_Controller.v)]", 20, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), spectrogram_top0 : spectrogram_top (spectrogram_top.v), freq_disp : Seven_segment_LED_Display_Controller (Seven_segment_LED_Display_Controller.v)]", 20, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// [Engine Memory]: 654 MB (+10kb) [00:27:01]
+selectCodeEditor("Seven_segment_LED_Display_Controller.v", 31, 28); // ce (w, ck)
+selectCodeEditor("Seven_segment_LED_Display_Controller.v", 31, 28); // ce (w, ck)
+selectCodeEditor("Seven_segment_LED_Display_Controller.v", 201, 539); // ce (w, ck)
+selectCodeEditor("Seven_segment_LED_Display_Controller.v", 201, 539, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Seven_segment_LED_Display_Controller.v", 'c'); // ce (w, ck)
+selectCodeEditor("Seven_segment_LED_Display_Controller.v", 250, 194); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), spectrogram_top0 : spectrogram_top (spectrogram_top.v), freq_disp : Seven_segment_LED_Display_Controller (Seven_segment_LED_Display_Controller.v)]", 20, true); // B (D, ck) - Node
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), spectrogram_top0 : spectrogram_top (spectrogram_top.v), freq_disp : Seven_segment_LED_Display_Controller (Seven_segment_LED_Display_Controller.v)]", 20); // B (D, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectCodeEditor("mose_anode_disp.v", 67, 406); // ce (w, ck)
+typeControlKey((HResource) null, "mose_anode_disp.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "mose_anode_disp.v", 'v'); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 201, 426); // ce (w, ck)
+// Run Command: PAResourceCommand.PACommandNames_TCL_CONSOLE_WINDOW
+// Run Command: PAResourceCommand.PACommandNames_TCL_CONSOLE_WINDOW
+setText(RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, (String) null); // aA (Z, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), spectrogram_top0 : spectrogram_top (spectrogram_top.v), freq_disp : Seven_segment_LED_Display_Controller (Seven_segment_LED_Display_Controller.v)]", 20, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), spectrogram_top0 : spectrogram_top (spectrogram_top.v), freq_disp : Seven_segment_LED_Display_Controller (Seven_segment_LED_Display_Controller.v)]", 20, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("Seven_segment_LED_Display_Controller.v", 14, 391); // ce (w, ck)
+typeControlKey((HResource) null, "Seven_segment_LED_Display_Controller.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mose_anode_disp.v", 3); // k (j, ck)
+selectCodeEditor("mose_anode_disp.v", 13, 393); // ce (w, ck)
+typeControlKey((HResource) null, "mose_anode_disp.v", 'v'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Seven_segment_LED_Display_Controller.v", 4); // k (j, ck)
+selectCodeEditor("Seven_segment_LED_Display_Controller.v", 243, 151, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mose_anode_disp.v", 3); // k (j, ck)
+selectCodeEditor("mose_anode_disp.v", 35, 426, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PASTE, "Paste"); // ad (aj, Popup.HeavyWeightWindow)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectCodeEditor("mose_anode_disp.v", 62, 112); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 62, 112, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("mose_anode_disp.v", 178, 198); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 171, 128); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 171, 128, false, false, false, false, true); // ce (w, ck) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_timed.v", 2); // k (j, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v)]", 23, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v)]", 23, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v)]", 23, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("morse_code_top.v", 384, 285); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mose_anode_disp.v", 3); // k (j, ck)
+selectCodeEditor("mose_anode_disp.v", 77, 127); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 77, 127); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 176, 160); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 169, 129); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 169, 129, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("mose_anode_disp.v", 147, 119); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 147, 119, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("mose_anode_disp.v", 102, 132); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 102, 132, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "mose_anode_disp.v", 'c'); // ce (w, ck)
+typeControlKey((HResource) null, "mose_anode_disp.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "mose_anode_disp.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "mose_anode_disp.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "mose_anode_disp.v", 'v'); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 575, 148); // ce (w, ck)
+// Elapsed time: 52 seconds
+selectCodeEditor("mose_anode_disp.v", 45, 352); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 291, 293); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 291, 310); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 288, 328); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 84, 326); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 155, 350); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 295, 309); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 88, 321); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 17 seconds
+selectCodeEditor("mose_anode_disp.v", 75, 332); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 54 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true, false, false, false, false, true); // u (O, ck) - Double Click - Node
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // aE (Q, ck)
+selectCodeEditor("mose_anode_disp.v", 291, 304); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 232, 295); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 209, 366); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 174, 225); // ce (w, ck)
+// TclEventType: RUN_COMPLETED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 433ms to process. Increasing delay to 2000 ms.
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 47 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results]", 0); // ah (O, ck)
+collapseTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis]", 1); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net morse0/timed0/next_letter has multiple drivers: morse0/timed0/correct_i_2/O, and morse0/practice0/correct_reg/Q.. ]", 7, false); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net morse0/timed0/next_letter has multiple drivers: morse0/timed0/correct_i_2/O, and morse0/practice0/correct_reg/Q.. ]", 7, false, false, false, false, false, true); // ah (O, ck) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Implementation, Opt Design, DRC, Netlist, Net, [DRC MDRV-1] Multiple Driver Nets: Net morse0/timed0/next_letter has multiple drivers: morse0/timed0/correct_i_2/O, and morse0/practice0/correct_reg/Q.. ]", 7, false); // ah (O, ck)
+selectCodeEditor("mose_anode_disp.v", 112, 229); // ce (w, ck)
+// Elapsed time: 132 seconds
+selectCodeEditor("mose_anode_disp.v", 119, 297); // ce (w, ck)
+// Elapsed time: 29 seconds
+selectCodeEditor("mose_anode_disp.v", 112, 295); // ce (w, ck)
+typeControlKey((HResource) null, "mose_anode_disp.v", 'c'); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 109, 368); // ce (w, ck)
+typeControlKey((HResource) null, "mose_anode_disp.v", 'v'); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 156, 367); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 145, 431); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 22 seconds
+selectCodeEditor("mose_anode_disp.v", 186, 417); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 108 seconds
+selectCodeEditor("mose_anode_disp.v", 118, 396); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 64, 404); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 72, 404); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 75, 402); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("mose_anode_disp.v", 91, 415); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 229, 416); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 104, 398); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 23 seconds
+selectCodeEditor("mose_anode_disp.v", 233, 421); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 70, 435); // ce (w, ck)
+typeControlKey((HResource) null, "mose_anode_disp.v", 'c'); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 143, 444); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 135, 437); // ce (w, ck)
+typeControlKey((HResource) null, "mose_anode_disp.v", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "mose_anode_disp.v", 'v'); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 44, 468); // ce (w, ck)
+typeControlKey(null, null, 'z');
+selectCodeEditor("mose_anode_disp.v", 55, 420); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 44, 431); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 148, 346); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 594, 334); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("mose_anode_disp.v", 180, 333); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 10 seconds
+selectCodeEditor("mose_anode_disp.v", 89, 469); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 201, 397); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 128, 327); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("mose_anode_disp.v", 304, 448); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 85, 464); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 85, 464, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("mose_anode_disp.v", 105, 471); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 238, 354); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectCodeEditor("mose_anode_disp.v", 255, 412); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 274, 289); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 24 seconds
+selectCodeEditor("mose_anode_disp.v", 49, 306); // ce (w, ck)
+typeControlKey((HResource) null, "mose_anode_disp.v", 'c'); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_timed.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_top.v", 4); // k (j, ck)
+selectCodeEditor("morse_code_top.v", 338, 225); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("morse_code_top.v", 89, 344); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 88, 339); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 88, 339); // ce (w, ck)
+typeControlKey((HResource) null, "morse_code_top.v", 'v'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 43, 349); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 43, 349, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_code_top.v", 130, 351); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 130, 374); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 35, 365); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 35, 365, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_code_top.v", 318, 292); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 318, 292, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'c'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 40, 364); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 40, 364, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'v'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 23, 367); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 98, 367); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 132, 365); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("morse_code_top.v", 130, 365); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("morse_code_top.v", 552, 350); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 11, 366); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("morse_code_top.v", 299, 339, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("morse_code_top.v", 225, 371); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("morse_code_top.v", 432, 471); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 432, 471, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_code_top.v", 432, 471); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 432, 471, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_code_top.v", 407, 502); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectCodeEditor("morse_code_top.v", 178, 99); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 21 seconds
+selectCodeEditor("morse_code_top.v", 366, 449); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 382, 399); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 93 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mose_anode_disp.v", 3); // k (j, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_timed.v", 2); // k (j, ck)
+// Elapsed time: 13 seconds
+selectButton(PAResourceQtoS.StaleMoreAction_OUT_OF_DATE_DETAILS, "details"); // h (cM, ck)
+// Synthesis and Implementation Out-of-date Due to: show
+selectButton(RDIResource.HPopupTitle_CLOSE, (String) null); // k (n, ResizableWindow)
+// Synthesis and Implementation Out-of-date Due to: hide
+selectCodeEditor("morse_timed.v", 737, 285); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 737, 285, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_timed.v", 737, 285); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 737, 285); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 737, 285); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 737, 285); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 737, 285); // ce (w, ck)
+selectButton(RDIResource.FilterToolBar_SHOW_ALL, "Show All"); // a (f, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr  6 08:53:43 2022] Launched synth_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/synth_1/runme.log [Wed Apr  6 08:53:43 2022] Launched impl_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_FAILED
+// WARNING: HTimer (ActiveMsgMonitor Process Messages Timer) is taking 248ms to process. Increasing delay to 2000 ms.
+// ah (ck): Synthesis Failed: addNotify
+// Elapsed time: 28 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_MESSAGE_WINDOW, "View Messages", true); // g (Q, ah): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ah (ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'morse_code_top' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_top.v:23]. ]", 6, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.srcs\sources_1\new\morse_code_top.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-685] variable 'an' should not be used in output port connection [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_top.v:52]. ]", 5, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.srcs\sources_1\new\morse_code_top.v;-;;-;16;-;line;-;52;-;;-;16;-;"); // ah (O, ck)
+// Elapsed time: 19 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-5413] Mix of synchronous and asynchronous control for register const_set_reg in module poly_top. [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:86]. ]", 4, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.srcs\sources_1\new\poly_top.v;-;;-;16;-;line;-;86;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-685] variable 'an' should not be used in output port connection [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_top.v:52]. ]", 5, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.srcs\sources_1\new\morse_code_top.v;-;;-;16;-;line;-;52;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'morse_code_top' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_top.v:23]. ]", 6, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.srcs\sources_1\new\morse_code_top.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'morse_code_top' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_top.v:23]. ]", 6, true); // ah (O, ck) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-6156] failed synthesizing module 'morse_code_top' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_top.v:23]. ]", 6, true); // ah (O, ck) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.srcs\sources_1\new\morse_code_top.v;-;;-;16;-;line;-;23;-;;-;16;-;"); // ah (O, ck)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-685] variable 'an' should not be used in output port connection [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_top.v:52]. ]", 5, false); // ah (O, ck)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;C:\Users\Daniel Pranajaya\Documents\GitHub\EE2026-Final-Project\Project_Final.srcs\sources_1\new\morse_code_top.v;-;;-;16;-;line;-;52;-;;-;16;-;"); // ah (O, ck)
+selectCodeEditor("morse_code_top.v", 75, 237); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 394, 301); // ce (w, ck)
+// Elapsed time: 29 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v)]", 23); // B (D, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("morse_code_top.v", 42, 299); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 142, 342); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v), morse_anode_disp0 : mose_anode_disp (mose_anode_disp.v)]", 28, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v), morse_anode_disp0 : mose_anode_disp (mose_anode_disp.v)]", 28); // B (D, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("morse_code_top.v", 47, 305); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v), morse_anode_disp0 : mose_anode_disp (mose_anode_disp.v)]", 28, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v), morse_anode_disp0 : mose_anode_disp (mose_anode_disp.v)]", 28, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("mose_anode_disp.v", 66, 381); // ce (w, ck)
+selectCodeEditor("mose_anode_disp.v", 124, 125); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_top.v", 3); // k (j, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mose_anode_disp.v", 5); // k (j, ck)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_timed.v", 2); // k (j, ck)
+selectCodeEditor("morse_timed.v", 557, 14); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mose_anode_disp.v", 5); // k (j, ck)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_timeup.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_top.v", 3); // k (j, ck)
+selectCodeEditor("morse_code_top.v", 154, 294); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 142, 273); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("morse_code_top.v", 395, 299); // ce (w, ck)
+// Elapsed time: 49 seconds
+selectCodeEditor("morse_code_top.v", 444, 295); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 444, 295, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'c'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 328, 273); // ce (w, ck)
+typeControlKey((HResource) null, "morse_code_top.v", 'v'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 548, 321); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 548, 321); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 548, 321, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'c'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 305, 313); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 302, 305); // ce (w, ck)
+typeControlKey((HResource) null, "morse_code_top.v", 'v'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 669, 331); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 669, 331, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'c'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 612, 309); // ce (w, ck)
+typeControlKey((HResource) null, "morse_code_top.v", 'v'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 308, 415); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 317, 360); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 24 seconds
+selectCodeEditor("morse_code_top.v", 126, 331); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 163, 386); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 165, 367); // ce (w, ck)
+// [GUI Memory]: 113 MB (+336kb) [00:52:00]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+// Elapsed time: 22 seconds
+selectCodeEditor("Top_Student.v", 272, 304); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 415, 458); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("Top_Student.v", 241, 432); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 241, 432, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("Top_Student.v", 241, 432); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 241, 432); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 97, 447); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 188, 455); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 13 seconds
+selectCodeEditor("Top_Student.v", 40, 448); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 40, 448, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "Top_Student.v", 'c'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 1242, 486); // ce (w, ck)
+typeControlKey((HResource) null, "Top_Student.v", 'v'); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 1159, 489); // ce (w, ck)
+selectCodeEditor("Top_Student.v", 720, 477); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mose_anode_disp.v", 5); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_top.v", 3); // k (j, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 667 MB. GUI used memory: 50 MB. Current time: 4/6/22 9:03:47 AM SGT
+// Elapsed time: 244 seconds
+selectCodeEditor("morse_code_top.v", 1000, 479); // ce (w, ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr  6 09:05:26 2022] Launched synth_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/synth_1/runme.log [Wed Apr  6 09:05:26 2022] Launched impl_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("morse_code_top.v", 920, 186); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_timeup.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_top.v", 3); // k (j, ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_FAILED
+// ah (ck): Implementation Failed: addNotify
+// Elapsed time: 411 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Implementation Failed"); // ah (ck)
+// Elapsed time: 61 seconds
+selectCodeEditor("morse_code_top.v", 659, 484); // ce (w, ck)
+// Elapsed time: 18 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "nrcy"); // l (aQ, ck)
+selectCodeEditor("morse_code_top.v", 710, 436); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 720, 442); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 720, 434); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 704, 435); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 741, 440); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true); // B (D, ck) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1); // B (D, ck)
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v)]", 17, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v), lsfr0 : LSFR (LSFR.v)]", 21, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 15 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v), timed0 : morse_timed (morse_timed.v)]", 25); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v), timed0 : morse_timed (morse_timed.v)]", 25, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v), timed0 : morse_timed (morse_timed.v)]", 25, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("morse_timed.v", 154, 301); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v), practice0 : morse_practice (morse_practice.v)]", 24, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v), practice0 : morse_practice (morse_practice.v)]", 24, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectCodeEditor("morse_practice.v", 164, 492); // ce (w, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true); // B (D, ck) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1, true, false, false, false, false, true); // B (D, ck) - Double Click - Node
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_top.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_timed.v", 2); // k (j, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("morse_timed.v", 607, 342); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 6); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Top_Student.v", 2); // k (j, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_top.v", 3); // k (j, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("morse_code_top.v", 732, 309); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 729, 338); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_timed.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_top.v", 3); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_timed.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_practice.v", 6); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_practice.v", 3); // k (j, ck)
+selectMenuItem((HResource) null, "New Vertical Group"); // JMenuItem (JidePopupMenu)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_timed.v", 2); // k (j, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("morse_timed.v", 110, 369); // ce (w, ck)
+selectCodeEditor("morse_practice.v", 99, 486); // ce (w, ck)
+// Elapsed time: 27 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_top.v", 3); // k (j, ck)
+// PAResourceOtoP.PAViews_CODE: Code: close view
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectCodeEditor("morse_code_top.v", 356, 317); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 356, 308); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 357, 302); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 781, 317); // ce (w, ck)
+// Elapsed time: 62 seconds
+selectCodeEditor("morse_code_top.v", 266, 93); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 302, 126); // ce (w, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v)]", 1); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v), detect_input0 : morse_code_detect_input (morse_code_detect_input.v)]", 20, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Top_Student (Top_Student.v), morse0 : morse_code_top (morse_code_top.v), detect_input0 : morse_code_detect_input (morse_code_detect_input.v)]", 20, false, false, false, false, false, true); // B (D, ck) - Double Click
+selectCodeEditor("morse_code_detect_input.v", 96, 464); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_top.v", 3); // k (j, ck)
+selectCodeEditor("morse_code_top.v", 699, 93); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 135, 46); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("morse_code_top.v", 187, 35); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 187, 35, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'c'); // ce (w, ck)
+// Elapsed time: 32 seconds
+selectCodeEditor("morse_code_top.v", 161, 45); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 161, 45, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'c'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 651, 109); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 651, 109, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'v'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 645, 154); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 20 seconds
+selectCodeEditor("morse_code_top.v", 583, 471); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("morse_code_top.v", 782, 268); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 332, 87); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 332, 87, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'c'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 332, 87); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 743, 406); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 743, 406, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'v'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 405, 230); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 405, 230, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'c'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 694, 474); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 694, 474, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'v'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 717, 419); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("morse_code_top.v", 113, 460); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 20 seconds
+selectCodeEditor("morse_code_top.v", 744, 284); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 744, 284, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'c'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 149, 475); // ce (w, ck)
+typeControlKey((HResource) null, "morse_code_top.v", 'v'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 162, 418); // ce (w, ck)
+typeControlKey((HResource) null, "morse_code_top.v", 'c'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 464, 475); // ce (w, ck)
+typeControlKey((HResource) null, "morse_code_top.v", 'v'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 352, 483); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 352, 483, true, false, false, false, false); // ce (w, ck) - Shift Key
+selectCodeEditor("morse_code_top.v", 352, 500); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 261, 476); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 321, 494); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 243, 467); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 243, 467); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 243, 467, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_code_top.v", 243, 467); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 334, 496); // ce (w, ck)
+// Elapsed time: 28 seconds
+selectCodeEditor("morse_code_top.v", 904, 344); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_detect_input.v", 6); // k (j, ck)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_top.v", 3); // k (j, ck)
+selectCodeEditor("morse_code_top.v", 370, 418); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 370, 418, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("morse_code_top.v", 355, 432); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 355, 432, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("morse_code_top.v", 716, 245); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 716, 245, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("morse_code_top.v", 475, 371); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("morse_code_top.v", 423, 464); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 423, 464, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'c'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 347, 440); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 347, 440); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 347, 440, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("morse_code_top.v", 601, 449); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectCodeEditor("morse_code_top.v", 292, 417); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 440, 489); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 440, 489, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'c'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 290, 418); // ce (w, ck)
+typeControlKey((HResource) null, "morse_code_top.v", 'v'); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("morse_code_top.v", 290, 418, false, true, false, false, false); // ce (w, ck) - Control Key
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("morse_code_top.v", 161, 419); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("morse_code_top.v", 397, 441); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 397, 441, false, false, false, false, true); // ce (w, ck) - Double Click
+// TclEventType: DG_ANALYSIS_MSG_RESET
+selectCodeEditor("morse_code_top.v", 411, 491); // ce (w, ck)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 18 seconds
+selectCodeEditor("morse_code_top.v", 163, 56); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 782, 225); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 782, 225, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'c'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 124, 87); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 124, 87, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'v'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 283, 180); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 410, 434); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 410, 434, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_code_top.v", 414, 445); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 414, 446, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_code_top.v", 424, 464); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 424, 464, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'v'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 706, 207); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 706, 207, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'c'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 420, 458); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 420, 457, false, false, false, false, true); // ce (w, ck) - Double Click
+typeControlKey((HResource) null, "morse_code_top.v", 'v'); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 422, 430); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 422, 430, false, false, false, false, true); // ce (w, ck) - Double Click
+selectCodeEditor("morse_code_top.v", 566, 467); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 566, 467, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 85 seconds
+selectCodeEditor("morse_code_top.v", 262, 284); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 479, 335); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 394, 277); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 392, 334); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 300, 282); // ce (w, ck)
+selectCodeEditor("morse_code_top.v", 303, 295); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Wed Apr  6 09:27:05 2022] Launched synth_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/synth_1/runme.log [Wed Apr  6 09:27:05 2022] Launched impl_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 667 MB. GUI used memory: 52 MB. Current time: 4/6/22 9:33:47 AM SGT
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 629 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+// Elapsed time: 24 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_timed.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_detect_input.v", 6); // k (j, ck)
+// Elapsed time: 159 seconds
+selectCodeEditor("morse_code_detect_input.v", 662, 36); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_timeup.v", 1); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_timed.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_top.v", 3); // k (j, ck)
+selectButton(RDIResource.HCodeEditor_CLOSE, (String) null); // k (aI, ck)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mose_anode_disp.v", 4); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_timeup.v", 1); // k (j, ck)
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // J
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_detect_input.v", 4); // k (j, ck)
+// Elapsed time: 55 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_timed.v", 1); // k (j, ck)
+// Elapsed time: 357 seconds
+selectCodeEditor("morse_timed.v", 205, 229); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 273, 133); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 262, 166); // ce (w, ck)
+// Elapsed time: 13 seconds
+selectCodeEditor("morse_timed.v", 205, 229); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("morse_timed.v", 261, 205); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 267, 137); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 267, 129); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dismissDialog("Open Hardware Manager"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Open Target]", 22, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HW_TARGET
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// bx (ck):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// Tcl Message: INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2018.2   **** Build date : Jun 14 2018-20:42:52     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183AA0D12A 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,182 MB. GUI used memory: 68 MB. Current time: 4/6/22 9:49:22 AM SGT
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// [Engine Memory]: 1,182 MB (+520314kb) [01:41:55]
+dismissDialog("Auto Connect"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/Top_Student.bit"); // al (ak, bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 3 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 102 seconds
+selectCodeEditor("morse_code_timeup.v", 923, 345); // ce (w, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_timed.v", 1); // k (j, ck)
+selectCodeEditor("morse_timed.v", 254, 126); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 261, 230); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 272, 166); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("morse_timed.v", 328, 172); // ce (w, ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_timeup.v", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_top.v", 2); // k (j, ck)
+// Elapsed time: 323 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_timed.v", 1); // k (j, ck)
+// Elapsed time: 47 seconds
+selectCodeEditor("morse_timed.v", 159, 407); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 132, 399); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_code_top.v", 2); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "morse_timed.v", 1); // k (j, ck)
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (ck): Launch Runs: addNotify
+selectCheckBox(PAResourceItoN.LaunchPanel_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // g (a, f): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cv' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr  6 09:58:41 2022] Launched synth_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/synth_1/runme.log [Wed Apr  6 09:58:41 2022] Launched impl_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr  6 09:58:53 2022] Launched synth_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/synth_1/runme.log [Wed Apr  6 09:58:53 2022] Launched impl_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 677 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// 'cv' command handler elapsed time: 3 seconds
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_Cancel", "Cancel"); // JButton (A, G)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/Top_Student.bit"); // al (ak, bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 114 seconds
+selectCodeEditor("morse_timed.v", 198, 399); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr  6 10:12:32 2022] Launched synth_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/synth_1/runme.log [Wed Apr  6 10:12:32 2022] Launched impl_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+selectCodeEditor("morse_timed.v", 802, 382); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,187 MB. GUI used memory: 55 MB. Current time: 4/6/22 10:19:23 AM SGT
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 649 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+dismissDialog("Program Device"); // bB (ck)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 63 seconds
+selectCodeEditor("morse_timed.v", 265, 273); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 17 seconds
+selectCodeEditor("morse_timed.v", 201, 263); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (ck)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr  6 10:25:17 2022] Launched synth_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/synth_1/runme.log [Wed Apr  6 10:25:17 2022] Launched impl_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 25 seconds
+selectButton(PAResourceQtoS.SyntheticaStateMonitor_CANCEL, "Cancel"); // h (Q, ck)
+// bx (ck):  Resetting Runs : addNotify
+selectButton("PAResourceQtoS.StateMonitor_OK_TO_CANCEL_YOUR_RUNNING_SYNTHESIS_Cancel Process", "Cancel Process"); // JButton (A, G)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (bx)
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Resetting Runs"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,187 MB. GUI used memory: 53 MB. Current time: 4/6/22 10:49:23 AM SGT
+// Elapsed time: 2102 seconds
+selectCodeEditor("morse_timed.v", 306, 333); // ce (w, ck)
+selectCodeEditor("morse_timed.v", 306, 333, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 29 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (ck): No Implementation Results Available: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", false); // g (Q, A): FALSE
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (ck):  Resetting Runs : addNotify
+dismissDialog("No Implementation Results Available"); // A (ck)
+dismissDialog("Resetting Runs"); // bx (ck)
+// TclEventType: RUN_LAUNCH
+// bx (ck):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Apr  6 11:01:20 2022] Launched synth_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/synth_1/runme.log [Wed Apr  6 11:01:20 2022] Launched impl_1... Run output will be captured here: C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bx (ck)
+// Elapsed time: 112 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (O, ck) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Bitstream Generation Completed: addNotify
+// Elapsed time: 517 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a (ah)
+dismissDialog("Bitstream Generation Completed"); // ah (ck)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/Top_Student.bit"); // al (ak, bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)
+// Elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager, Program Device]", 23, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectMenuItem((HResource) null, "xc7a35t_0"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bB (ck): Program Device: addNotify
+applyEnter(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, "C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/Top_Student.bit"); // al (ak, bB)
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bB)
+// bx (ck):  Program Device : addNotify
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // bB (ck)
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/impl_1/Top_Student.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+dismissDialog("Program Device"); // bx (ck)

@@ -99,7 +99,9 @@ module Top_Student (
     wire [15:0] morse_code_led_data;
     wire [6:0] morse_code_seg_data;
     wire [3:0] morse_code_an_data;
-    morse_code_top morse0 (BASYS_CLK, pixel_index, clk_20khz_out, clk_6_25Mhz_out, pb_c_out, mic_in, sw[1:0], morse_code_seg_data, morse_code_oled_data, morse_code_an_data, morse_code_led_data);
+    wire morse_code_dp;
+
+    morse_code_top morse0 (BASYS_CLK, pixel_index, clk_20khz_out, clk_6_25Mhz_out, pb_c_out, mic_in, sw[1:0], morse_code_seg_data, morse_code_oled_data, morse_code_an_data, morse_code_led_data, morse_code_dp);
 
 
      always @(posedge BASYS_CLK) begin

@@ -1,0 +1,330 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Apr  6 11:10:11 2022
+| Host         : Omen1518 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   260 |
+| Unused register locations in slices containing registers |   896 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            5 |
+|      4 |            4 |
+|      6 |            2 |
+|      8 |            7 |
+|     10 |            2 |
+|     12 |          191 |
+|    16+ |           49 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             410 |          133 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |            1074 |          148 |
+| Yes          | No                    | No                     |            2650 |          333 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             522 |           77 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------------------+-----------------------------------------------+--------------------------------------------------+------------------+----------------+
+|                Clock Signal               |                 Enable Signal                 |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++-------------------------------------------+-----------------------------------------------+--------------------------------------------------+------------------+----------------+
+|  slow_clk                                 | poly_top1/coe_acc[3]_i_1_n_0                  | poly_top1/deg_confirm_b                          |                1 |              2 |
+|  slow_clk                                 | poly_top1/coe_acc[7]_i_1_n_0                  | poly_top1/deg_confirm_b                          |                1 |              2 |
+|  clock_25M_out                            |                                               |                                                  |                1 |              2 |
+|  slow_clk                                 | poly_top1/coe_acc[15]_i_1_n_0                 | poly_top1/deg_confirm_b                          |                1 |              2 |
+|  slow_clk                                 | poly_top1/coe_acc[11]_i_1_n_0                 | poly_top1/deg_confirm_b                          |                1 |              2 |
+|  menu_button0/clk0/clk_100hz_out          |                                               |                                                  |                1 |              4 |
+|  practice0/slow_clk                       |                                               |                                                  |                2 |              4 |
+| ~clk_6_25Mhz_out_BUFG                     |                                               |                                                  |                2 |              4 |
+|  clock_20k_out                            |                                               |                                                  |                2 |              4 |
+|  poly_top1/db0/clk0/slow_clk              |                                               |                                                  |                2 |              6 |
+|  timed0/slow_clk                          |                                               |                                                  |                2 |              6 |
+|  slow_clk                                 | poly_top1/coe_acc[11]_i_1_n_0                 |                                                  |                3 |              8 |
+|  slow_clk                                 | poly_top1/mode_1_disabled                     |                                                  |                1 |              8 |
+|  poly_top1/db0/d1/pbc_out                 |                                               |                                                  |                2 |              8 |
+|  slow_clk                                 | poly_top1/coe_acc[3]_i_1_n_0                  |                                                  |                1 |              8 |
+|  slow_clk                                 | poly_top1/coe_acc[7]_i_1_n_0                  |                                                  |                3 |              8 |
+|  slow_clk                                 | poly_top1/coe_acc[15]_i_1_n_0                 |                                                  |                1 |              8 |
+|  slow_clk                                 |                                               | poly_top1/mode_1_disabled                        |                4 |              8 |
+|  BASYS_CLK_IBUF_BUFG                      | morse0/timed0/E[0]                            |                                                  |                2 |             10 |
+|  slow_clk                                 | poly_top1/led[15]_i_1_n_0                     |                                                  |                3 |             10 |
+|  clock_20k_out                            | spectrogram_top0/spec/del25[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig73[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig74[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig6[5]_i_1_n_0         |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig69[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig68[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig71[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig70[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig77[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig76[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig75[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig81[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig79[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig80[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig78[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig7[5]_i_1_n_0         |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig85[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig87[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig83[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig82[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig88[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig86[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig84[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig90[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig9[5]_i_1_n_0         |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig94[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig91[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig8[5]_i_1_n_0         |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del7[5]_i_1_n_0         |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig92[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig95[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig93[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  slow_clk                                 | poly_top1/curr_deg[3]_i_2_n_0                 | poly_top1/curr_deg[3]_i_1_n_0                    |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del11[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del10[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del12[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del1[5]_i_1_n_0         |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del14[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del15[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del18[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del16[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del17[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del13[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del19[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del20[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del21[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del23[5]_i_1_n_0        |                                                  |                3 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del26[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del24[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del22[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del32[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del2[5]_i_1_n_0         |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del27[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del33[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del31[5]_i_1_n_0        |                                                  |                3 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del29[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del28[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del30[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del36[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del38[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del37[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del3[5]_i_1_n_0         |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del34[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del39[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del35[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del40[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del42[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del43[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del44[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del45[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del46[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del41[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del47[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del4[5]_i_1_n_0         |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del48[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del49[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del53[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del54[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del50[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del51[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del52[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del56[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del57[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del55[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del59[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del61[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del60[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del58[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del5[5]_i_1_n_0         |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del62[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del66[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del69[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del67[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del63[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del68[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del65[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del64[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del70[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del74[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del71[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del6[5]_i_1_n_0         |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del72[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del75[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del76[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del73[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del82[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del80[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del78[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del77[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del79[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig89[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del81[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del84[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del85[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del83[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del89[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del8[5]_i_1_n_0         |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del86[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del88[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del87[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del95[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del91[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del93[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del92[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del90[5]_i_1_n_0        |                                                  |                3 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del94[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/del9[5]_i_1_n_0         |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig10[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig15[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig12[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig16[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig11[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig13[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig14[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig19[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig22[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig23[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig20[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig21[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig17[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig18[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig1[5]_i_1_n_0         |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig27[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig29[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig30[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig2[5]_i_1_n_0         |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig25[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig26[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig28[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig24[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig33[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig31[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig37[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig35[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig36[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig34[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig32[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig38[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig39[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig40[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig44[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig3[5]_i_1_n_0         |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig43[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig45[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig42[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig41[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig47[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig4[5]_i_1_n_0         |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig46[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig51[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig52[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig50[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig48[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig49[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig54[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig57[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig55[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig53[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig56[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig58[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig5[5]_i_1_n_0         |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig59[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig62[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig66[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig64[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig61[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig63[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig60[5]_i_1_n_0        |                                                  |                2 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig65[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig67[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig72[5]_i_1_n_0        |                                                  |                1 |             12 |
+|  menu0/clk0/CLK                           | menu0/moving0/y_offset                        | menu0/moving0/x_offset                           |                3 |             16 |
+|  menu0/clk0/CLK                           | menu0/moving0/x_offset0                       | menu0/moving0/x_offset                           |                3 |             16 |
+|  morse0/clkslow/CLK                       |                                               |                                                  |                4 |             16 |
+|  BASYS_CLK_IBUF_BUFG                      | morse0/timed0/char_byte[7]_i_1_n_0            |                                                  |                3 |             16 |
+|  BASYS_CLK_IBUF_BUFG                      | morse0/practice0/char_byte[7]_i_1__0_n_0      |                                                  |                2 |             16 |
+|  slow_clk                                 | poly_top1/led[15]_i_1_n_0                     | poly_top1/led[14]_i_1_n_0                        |                3 |             16 |
+|  BASYS_CLK_IBUF_BUFG                      | morse0/timed0/p_0_in                          |                                                  |                2 |             16 |
+|  J_MIC3_Pin1_OBUF_BUFG                    | subtask4_20/current_peak0_carry__0_n_2        | subtask4_20/current_peak                         |                3 |             24 |
+|  clock_20k_out                            | spectrogram_top0/spec/sig0[5]_i_1_n_0         |                                                  |                4 |             24 |
+|  J_MIC3_Pin1_OBUF_BUFG                    | morse0/detect_input0/current_peak[11]_i_2_n_0 | morse0/detect_input0/current_peak[11]_i_1__0_n_0 |                4 |             24 |
+|  BASYS_CLK_IBUF_BUFG                      |                                               | J_MIC3_Pin1_OBUF_BUFG                            |                3 |             24 |
+| ~aud0/J_MIC3_Pin4_OBUF                    |                                               |                                                  |                7 |             24 |
+|  spectrogram_top0/freq_disp/clock_200/CLK |                                               |                                                  |                5 |             26 |
+|  J_MIC3_Pin1_OBUF_BUFG                    |                                               | morse0/detect_input0/reset                       |                6 |             26 |
+|  clk_6_25Mhz_out_BUFG                     | display0/E[0]                                 |                                                  |                8 |             26 |
+|  clock_20k_out                            | spectrogram_top0/spec/counter_reg[14]_0       | spectrogram_top0/pitch/freq_in_reg[0]            |                5 |             26 |
+|  menu_button0/clk0/clk_100hz_out          | menu_button0/count[13]_i_1_n_0                |                                                  |                3 |             28 |
+|  clock_25M_out                            | aud0/E[0]                                     |                                                  |               14 |             28 |
+|  clock_20k_out                            | spectrogram_top0/spec/counter_reg[14]_0       | spectrogram_top0/spec/counter[14]_i_1_n_0        |                4 |             28 |
+|  slow_clk                                 |                                               |                                                  |                6 |             30 |
+| ~clk_6_25Mhz_out_BUFG                     |                                               | display0/frame_counter[16]_i_1_n_0               |                4 |             32 |
+|  BASYS_CLK_IBUF_BUFG                      | morse0/timed0/led0                            | morse0/timed0/led[15]_i_1__0_n_0                 |                5 |             32 |
+| ~clk_6_25Mhz_out_BUFG                     | display0/delay[0]_i_1_n_0                     |                                                  |                5 |             40 |
+|  clock_25M_out                            | aud0/count_reg_0_sn_1                         |                                                  |                7 |             52 |
+|  J_MIC3_Pin1_OBUF_BUFG                    |                                               |                                                  |               13 |             52 |
+|  timed0/slow_clk                          | morse0/timed0/correct_detected_reg_n_0        | morse0/timed0/correct_count[31]_i_1__0_n_0       |                8 |             62 |
+|  BASYS_CLK_IBUF_BUFG                      |                                               | morse0/timed0/count[31]_i_1_n_0                  |                8 |             62 |
+|  J_MIC3_Pin1_OBUF_BUFG                    | morse0/detect_input0/count_running[0]_i_1_n_0 | morse0/detect_input0/reset                       |                8 |             64 |
+|  J_MIC3_Pin1_OBUF_BUFG                    | morse0/detect_input0/count_1[31]_i_1_n_0      | morse0/detect_input0/reset                       |                9 |             64 |
+|  BASYS_CLK_IBUF_BUFG                      |                                               | spectrogram_top0/freq_disp/clock_200/clear       |                8 |             64 |
+|  BASYS_CLK_IBUF_BUFG                      |                                               | poly_top1/clk0/clear                             |                8 |             64 |
+|  BASYS_CLK_IBUF_BUFG                      |                                               | poly_top1/db0/clk0/clear                         |                8 |             64 |
+|  BASYS_CLK_IBUF_BUFG                      |                                               | poly_top1/clk6p25m/clear                         |                8 |             64 |
+|  BASYS_CLK_IBUF_BUFG                      |                                               | morse0/timed0/slowslow_5clk/clear                |                8 |             64 |
+|  BASYS_CLK_IBUF_BUFG                      |                                               | morse0/practice0/slowslow_clk/clear              |                8 |             64 |
+|  BASYS_CLK_IBUF_BUFG                      |                                               | spectrogram_top0/clock_20M/clear                 |                8 |             64 |
+|  BASYS_CLK_IBUF_BUFG                      |                                               | menu0/clk0/clear                                 |                8 |             64 |
+|  BASYS_CLK_IBUF_BUFG                      |                                               | menu_button0/clk0/clear                          |                8 |             64 |
+|  BASYS_CLK_IBUF_BUFG                      |                                               | clk_20kHz/clear                                  |                8 |             64 |
+| ~clk_6_25Mhz_out_BUFG                     | display0/state                                |                                                  |                9 |             64 |
+|  BASYS_CLK_IBUF_BUFG                      |                                               | morse0/clkslow/clear                             |                8 |             64 |
+|  BASYS_CLK_IBUF_BUFG                      |                                               | clk6p25m/clear                                   |                8 |             64 |
+|  clk_6_25Mhz_out_BUFG                     |                                               |                                                  |               20 |             64 |
+|  BASYS_CLK_IBUF_BUFG                      |                                               | spectrogram_top0/clock_20k/clear                 |                8 |             64 |
+|  practice0/slow_clk                       | morse0/practice0/correct_detected_reg_n_0     | morse0/practice0/correct_count[31]_i_1_n_0       |                9 |             64 |
+|  J_MIC3_Pin1_OBUF_BUFG                    | morse0/detect_input0/reseted_i_1_n_0          | morse0/detect_input0/reset                       |                8 |             66 |
+|  clk_6_25Mhz_out_0                        |                                               |                                                  |               36 |             78 |
+|  BASYS_CLK_IBUF_BUFG                      |                                               |                                                  |               28 |             82 |
+| ~clk_6_25Mhz_out_BUFG                     |                                               | display0/spi_word[39]_i_1_n_0                    |               19 |             90 |
++-------------------------------------------+-----------------------------------------------+--------------------------------------------------+------------------+----------------+
+
+

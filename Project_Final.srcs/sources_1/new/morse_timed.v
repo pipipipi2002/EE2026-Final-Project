@@ -27,7 +27,7 @@ module morse_timed(
     input [4:0] character,
     output reg [15:0] led = 16'b1111111111111111,
     output [15:0] oled_data,
-    output reg correct_out);
+    output correct_out);
 
     wire slow_clk;
     flexible_clk slowslow_5clk (BASYS_CLK, 5, slow_clk); // 0.2s
@@ -39,11 +39,14 @@ module morse_timed(
     reg [7:0] char_byte, char_byte_prev;
     wire [15:0] tick_oled_data, correct_temp;
 
+    reg correct_detected;
+    reg [31:0] correct_count = 0;
+    reg correct=0;
 
     always @(posedge BASYS_CLK) begin
         count <= (count == 24999999) ? 0 : count + 1; // 2hz
         if (count == 24999999 && correct_detected == 0) begin
-            led <= led/2;
+            led <= led >> 1;
         end
 
         if (led == 0) timeup <= 1;
@@ -85,8 +88,6 @@ module morse_timed(
         
     end
 
-    reg correct_detected;
-    reg [31:0] correct_count = 0;
 
     always @(posedge slow_clk) begin
         if (char_byte == data) begin 

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/marvi/verilog/Project_Final/Project_Final.runs/synth_1'
+HD_PWD='C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

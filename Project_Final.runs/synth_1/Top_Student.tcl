@@ -23,73 +23,74 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/marvi/verilog/Project_Final/Project_Final.cache/wt [current_project]
-set_property parent.project_path C:/Users/marvi/verilog/Project_Final/Project_Final.xpr [current_project]
+set_property webtalk.parent_dir {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/marvi/verilog/Project_Final/Project_Final.cache/ip [current_project]
+set_property ip_output_repo {c:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Audio_Capture.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/LSFR.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Oled_Display.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/PItoXY.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Seven_segment_LED_Display_Controller.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/constant_confirmation.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/cross_display.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/debouncer.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/degree_confirmation.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/detect_input.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/dff.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_board.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_moving.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_selector.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_words.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot_bg.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/flexible_clk.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_button.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_display.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterAJ.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterKT.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterUZ.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterwithmorse.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterwithmorseKT.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterwithmorseUZ.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_detect_input.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_menu.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_tick.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_timeup.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_top.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_practice.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_timed.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/num0_small.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_0.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_1.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_2.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_3.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_4.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_5.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_6.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_7.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_8.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_9.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/pitchdetector.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/select_constant.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/select_degree.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/spectrogram.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/spectrogram_top.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/subtask4_2.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x0_constant.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x1_constant.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x2_constant.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x3_constant.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_0.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_1.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_2.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_3.v
-  C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Audio_Capture.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/LSFR.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Oled_Display.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/PItoXY.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Seven_segment_LED_Display_Controller.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/constant_confirmation.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/cross_display.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/debouncer.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/degree_confirmation.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/detect_input.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/dff.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_bg_board.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_bg_moving.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_bg_selector.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_bg_words.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_plot.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_plot_bg.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/flexible_clk.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/menu_button.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/menu_display.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterAJ.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterKT.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterUZ.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterwithmorse.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterwithmorseKT.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterwithmorseUZ.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_detect_input.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_menu.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_tick.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_timeup.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_top.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_practice.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_timed.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/mose_anode_disp.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/num0_small.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_0.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_1.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_2.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_3.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_4.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_5.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_6.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_7.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_8.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_9.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/pitchdetector.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/select_constant.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/select_degree.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/spectrogram.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/spectrogram_top.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/subtask4_2.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x0_constant.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x1_constant.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x2_constant.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x3_constant.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x_0.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x_1.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x_2.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x_3.v}
+  {C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Top_Student.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -99,8 +100,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/constrs_1/new/Basys3_Master.xdc
-set_property used_in_implementation false [get_files C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/constrs_1/new/Basys3_Master.xdc]
+read_xdc {{C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/constrs_1/new/Basys3_Master.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/constrs_1/new/Basys3_Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
