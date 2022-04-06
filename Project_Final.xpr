@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="38" Path="C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.xpr">
+<Project Version="7" Minor="38" Path="C:/Users/marvi/verilog/Project_Final/Project_Final.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="1a51c10fa9834db8a427a68dabfc3bdd"/>

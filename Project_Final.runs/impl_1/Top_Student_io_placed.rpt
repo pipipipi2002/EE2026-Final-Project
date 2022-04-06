@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date                      : Wed Apr  6 11:10:11 2022
-| Host                      : Omen1518 running 64-bit major release  (build 9200)
+| Date                      : Wed Apr  6 05:44:17 2022
+| Host                      : DESKTOP-ENDDUI1 running 64-bit major release  (build 9200)
 | Command                   : report_io -file Top_Student_io_placed.rpt
 | Design                    : Top_Student
 | Device                    : xc7a35t

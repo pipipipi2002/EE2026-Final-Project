@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:{C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/constrs_1/new/Basys3_Master.xdc} rfile:../../../Project_Final.srcs/constrs_1/new/Basys3_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/constrs_1/new/Basys3_Master.xdc rfile:../../../Project_Final.srcs/constrs_1/new/Basys3_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN W5 [get_ports BASYS_CLK]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]

@@ -26,9 +26,9 @@ module morse_code_top(
     input clk_20khz_out, clk_6_25Mhz_out, pb_c,
     input [11:0] mic_in,
     input [1:0] menu_sw,        // sw 1 and sw 0
-    output reg [6:0] seg,
+    output [6:0] seg,
     output [15:0] oled_data,
-    output reg [3:0] an,
+    output [3:0] an,
     output [15:0] led,
     output dp
     );
@@ -54,6 +54,7 @@ module morse_code_top(
     wire[3:0]morse_display_an;
     wire[6:0]morse_display_seg;
     wire morse_display_dp;
+    wire [15:0] timed_led_data;
     
     morse_anode_disp morse_anode_disp0(BASYS_CLK, data, morse_display_an, morse_display_seg, morse_display_dp);
   
@@ -69,7 +70,7 @@ module morse_code_top(
     morse_code_menu mourse_code_menu0 (clk_6_25Mhz_out, pixel_index, menu_oled_data);
 
     morse_practice practice0 (data, clk_6_25Mhz_out, BASYS_CLK, x, y, character, practice_oled_data, next_letter_practice);
-    morse_timed timed0 (data, clk_6_25Mhz_out, BASYS_CLK, x, y, character, led, timed_oled_data, next_letter_timed);
+    morse_timed timed0 (data, clk_6_25Mhz_out, BASYS_CLK, x, y, character, menu_sw[0], timed_led_data, timed_oled_data, next_letter_timed);
 
     // assign next_letter = correct;
 
@@ -86,4 +87,8 @@ module morse_code_top(
                                     (menu_sw == 1) ? (next_letter_timed) : (
                                     (menu_sw == 2) ? (next_letter_practice) : 0));
       
+    assign led = (menu_sw == 1) ? (timed_led_data) : 0; 
+    assign seg = (menu_sw == 1 || menu_sw == 2) ? (morse_display_seg) : 7'b1111111; 
+    assign an = (menu_sw == 1 || menu_sw == 2) ? (morse_display_an) : 4'b1111; 
+    assign dp = (menu_sw == 1 || menu_sw == 2) ? (morse_display_dp) : 1; 
 endmodule

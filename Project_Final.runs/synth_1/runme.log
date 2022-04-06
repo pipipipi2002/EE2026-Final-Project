@@ -14,16 +14,16 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 10544 
+INFO: Helper process launched with PID 5440 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 369.227 ; gain = 112.793
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 369.332 ; gain = 112.574
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Top_Student.v:18]
-INFO: [Synth 8-6157] synthesizing module 'flexible_clk' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/flexible_clk.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'flexible_clk' (1#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/flexible_clk.v:23]
-INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Audio_Capture.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (2#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Audio_Capture.v:25]
-INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v:18]
+INFO: [Synth 8-6157] synthesizing module 'flexible_clk' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/flexible_clk.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'flexible_clk' (1#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/flexible_clk.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (2#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Oled_Display.v:36]
 	Parameter Width bound to: 96 - type: integer 
 	Parameter Height bound to: 64 - type: integer 
 	Parameter PixelCount bound to: 6144 - type: integer 
@@ -74,220 +74,201 @@ INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/Daniel Pranaja
 	Parameter SendPixel bound to: 5'b10000 
 	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
 	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
-INFO: [Synth 8-226] default block is never used [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Oled_Display.v:124]
-INFO: [Synth 8-226] default block is never used [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Oled_Display.v:201]
-WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Oled_Display.v:349]
-INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (3#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Oled_Display.v:36]
-INFO: [Synth 8-6157] synthesizing module 'detect_input' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/detect_input.v:23]
-INFO: [Synth 8-6157] synthesizing module 'dff' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/dff.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'dff' (4#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/dff.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'detect_input' (5#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/detect_input.v:23]
-INFO: [Synth 8-6157] synthesizing module 'PItoXY' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/PItoXY.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'PItoXY' (6#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/PItoXY.v:23]
-INFO: [Synth 8-6157] synthesizing module 'menu_button' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/menu_button.v:23]
-WARNING: [Synth 8-6090] variable 'count' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/menu_button.v:52]
-INFO: [Synth 8-6155] done synthesizing module 'menu_button' (7#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/menu_button.v:23]
-INFO: [Synth 8-6157] synthesizing module 'menu_display' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/menu_display.v:23]
-INFO: [Synth 8-6157] synthesizing module 'display_bg_board' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_bg_board.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Oled_Display.v:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Oled_Display.v:201]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Oled_Display.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (3#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'detect_input' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/detect_input.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dff' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'dff' (4#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/dff.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'detect_input' (5#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/detect_input.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PItoXY' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/PItoXY.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'PItoXY' (6#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/PItoXY.v:23]
+INFO: [Synth 8-6157] synthesizing module 'menu_button' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_button.v:23]
+WARNING: [Synth 8-6090] variable 'count' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_button.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'menu_button' (7#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_button.v:23]
+INFO: [Synth 8-6157] synthesizing module 'menu_display' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_bg_board' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_board.v:23]
 	Parameter dark_brown bound to: 16'b0100100110100111 
 	Parameter brown bound to: 16'b0111001001101000 
 	Parameter green bound to: 16'b0001101010100100 
-INFO: [Synth 8-6155] done synthesizing module 'display_bg_board' (8#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_bg_board.v:23]
-INFO: [Synth 8-6157] synthesizing module 'display_bg_words' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_bg_words.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_bg_board' (8#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_board.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_bg_words' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_words.v:23]
 	Parameter white bound to: 16'b1111111111111111 
 	Parameter black bound to: 16'b0000000000000000 
 	Parameter grey bound to: 16'b0011100110100111 
-INFO: [Synth 8-6155] done synthesizing module 'display_bg_words' (9#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_bg_words.v:23]
-INFO: [Synth 8-6157] synthesizing module 'display_bg_moving' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_bg_moving.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_bg_words' (9#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_words.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_bg_moving' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_moving.v:23]
 	Parameter light_grey bound to: 16'b1001110001110011 
-INFO: [Synth 8-6155] done synthesizing module 'display_bg_moving' (10#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_bg_moving.v:23]
-INFO: [Synth 8-6157] synthesizing module 'display_bg_selector' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_bg_selector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_bg_moving' (10#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_moving.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_bg_selector' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_selector.v:23]
 	Parameter yellow bound to: 16'b1111110101100001 
-INFO: [Synth 8-6155] done synthesizing module 'display_bg_selector' (11#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_bg_selector.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'menu_display' (12#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/menu_display.v:23]
-WARNING: [Synth 8-689] width (7) of port connection 'x' does not match port width (8) of module 'menu_display' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Top_Student.v:71]
-WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (8) of module 'menu_display' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Top_Student.v:71]
-INFO: [Synth 8-6157] synthesizing module 'subtask4_2' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/subtask4_2.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'subtask4_2' (13#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/subtask4_2.v:23]
-WARNING: [Synth 8-689] width (4) of port connection 'an' does not match port width (5) of module 'subtask4_2' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Top_Student.v:79]
-INFO: [Synth 8-6157] synthesizing module 'spectrogram_top' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/spectrogram_top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'pitchdetector' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/pitchdetector.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'pitchdetector' (14#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/pitchdetector.v:23]
-INFO: [Synth 8-6157] synthesizing module 'spectrogram' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/spectrogram.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/spectrogram.v:196]
-WARNING: [Synth 8-6014] Unused sequential element x_reg was removed.  [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/spectrogram.v:57]
-WARNING: [Synth 8-6014] Unused sequential element y_reg was removed.  [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/spectrogram.v:58]
-INFO: [Synth 8-6155] done synthesizing module 'spectrogram' (15#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/spectrogram.v:23]
-WARNING: [Synth 8-6104] Input port 'CLOCK' has an internal driver [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/spectrogram_top.v:49]
-INFO: [Synth 8-6157] synthesizing module 'Seven_segment_LED_Display_Controller' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Seven_segment_LED_Display_Controller.v:23]
-WARNING: [Synth 8-6014] Unused sequential element NUM_reg was removed.  [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Seven_segment_LED_Display_Controller.v:41]
-INFO: [Synth 8-6155] done synthesizing module 'Seven_segment_LED_Display_Controller' (16#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Seven_segment_LED_Display_Controller.v:23]
-WARNING: [Synth 8-3848] Net led in module/entity spectrogram_top does not have driver. [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/spectrogram_top.v:28]
-INFO: [Synth 8-6155] done synthesizing module 'spectrogram_top' (17#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/spectrogram_top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'poly_top' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/debouncer.v:24]
-INFO: [Synth 8-6155] done synthesizing module 'debouncer' (18#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/debouncer.v:24]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:146]
-WARNING: [Synth 8-6090] variable 'coe' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:170]
-INFO: [Synth 8-6157] synthesizing module 'cross_display' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/cross_display.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_bg_selector' (11#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_bg_selector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'menu_display' (12#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/menu_display.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'x' does not match port width (8) of module 'menu_display' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v:70]
+WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (8) of module 'menu_display' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v:70]
+INFO: [Synth 8-6157] synthesizing module 'subtask4_2' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/subtask4_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'subtask4_2' (13#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/subtask4_2.v:23]
+WARNING: [Synth 8-689] width (4) of port connection 'an' does not match port width (5) of module 'subtask4_2' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v:78]
+INFO: [Synth 8-6157] synthesizing module 'spectrogram_top' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/spectrogram_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pitchdetector' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/pitchdetector.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pitchdetector' (14#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/pitchdetector.v:23]
+INFO: [Synth 8-6157] synthesizing module 'spectrogram' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/spectrogram.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/spectrogram.v:196]
+WARNING: [Synth 8-6014] Unused sequential element x_reg was removed.  [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/spectrogram.v:57]
+WARNING: [Synth 8-6014] Unused sequential element y_reg was removed.  [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/spectrogram.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'spectrogram' (15#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/spectrogram.v:23]
+WARNING: [Synth 8-6104] Input port 'CLOCK' has an internal driver [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/spectrogram_top.v:49]
+INFO: [Synth 8-6157] synthesizing module 'Seven_segment_LED_Display_Controller' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Seven_segment_LED_Display_Controller.v:23]
+WARNING: [Synth 8-6014] Unused sequential element NUM_reg was removed.  [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Seven_segment_LED_Display_Controller.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'Seven_segment_LED_Display_Controller' (16#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Seven_segment_LED_Display_Controller.v:23]
+WARNING: [Synth 8-3848] Net led in module/entity spectrogram_top does not have driver. [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/spectrogram_top.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'spectrogram_top' (17#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/spectrogram_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'poly_top' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'debouncer' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/debouncer.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'debouncer' (18#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/debouncer.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:143]
+WARNING: [Synth 8-6090] variable 'coe' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:167]
+INFO: [Synth 8-6157] synthesizing module 'cross_display' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/cross_display.v:23]
 	Parameter red bound to: 16'b1111100000000000 
-INFO: [Synth 8-6155] done synthesizing module 'cross_display' (19#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/cross_display.v:23]
-INFO: [Synth 8-6157] synthesizing module 'number_0' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_0.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'cross_display' (19#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/cross_display.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_0' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_0.v:23]
 	Parameter green bound to: 16'b0000011111100000 
-INFO: [Synth 8-6155] done synthesizing module 'number_0' (20#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_0.v:23]
-INFO: [Synth 8-6157] synthesizing module 'number_1' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'number_0' (20#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_0.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_1' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_1.v:23]
 	Parameter green bound to: 16'b0000011111100000 
-INFO: [Synth 8-6155] done synthesizing module 'number_1' (21#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_1.v:23]
-INFO: [Synth 8-6157] synthesizing module 'number_2' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'number_1' (21#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_2' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_2.v:23]
 	Parameter green bound to: 16'b0000011111100000 
-INFO: [Synth 8-6155] done synthesizing module 'number_2' (22#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_2.v:23]
-INFO: [Synth 8-6157] synthesizing module 'number_3' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'number_2' (22#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_3' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_3.v:23]
 	Parameter green bound to: 16'b0000011111100000 
-INFO: [Synth 8-6155] done synthesizing module 'number_3' (23#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_3.v:23]
-INFO: [Synth 8-6157] synthesizing module 'number_4' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_4.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'number_3' (23#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_4' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_4.v:23]
 	Parameter green bound to: 16'b0000011111100000 
-INFO: [Synth 8-6155] done synthesizing module 'number_4' (24#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_4.v:23]
-INFO: [Synth 8-6157] synthesizing module 'number_5' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_5.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'number_4' (24#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_4.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_5' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_5.v:23]
 	Parameter green bound to: 16'b0000011111100000 
-INFO: [Synth 8-6155] done synthesizing module 'number_5' (25#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_5.v:23]
-INFO: [Synth 8-6157] synthesizing module 'number_6' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_6.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'number_5' (25#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_5.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_6' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_6.v:23]
 	Parameter green bound to: 16'b0000011111100000 
-INFO: [Synth 8-6155] done synthesizing module 'number_6' (26#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_6.v:23]
-INFO: [Synth 8-6157] synthesizing module 'number_7' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_7.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'number_6' (26#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_6.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_7' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_7.v:23]
 	Parameter green bound to: 16'b0000011111100000 
-INFO: [Synth 8-6155] done synthesizing module 'number_7' (27#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_7.v:23]
-INFO: [Synth 8-6157] synthesizing module 'number_8' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_8.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'number_7' (27#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_7.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_8' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_8.v:23]
 	Parameter green bound to: 16'b0000011111100000 
-INFO: [Synth 8-6155] done synthesizing module 'number_8' (28#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_8.v:23]
-INFO: [Synth 8-6157] synthesizing module 'number_9' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_9.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'number_8' (28#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_8.v:23]
+INFO: [Synth 8-6157] synthesizing module 'number_9' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_9.v:23]
 	Parameter green bound to: 16'b0000011111100000 
-INFO: [Synth 8-6155] done synthesizing module 'number_9' (29#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/number_9.v:23]
-INFO: [Synth 8-6157] synthesizing module 'select_degree' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/select_degree.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'number_9' (29#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/number_9.v:23]
+INFO: [Synth 8-6157] synthesizing module 'select_degree' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/select_degree.v:23]
 	Parameter white bound to: 16'b1111111111111111 
 	Parameter red bound to: 16'b1111100000000000 
-INFO: [Synth 8-6155] done synthesizing module 'select_degree' (30#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/select_degree.v:23]
-INFO: [Synth 8-6157] synthesizing module 'degree_confirmation' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/degree_confirmation.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'select_degree' (30#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/select_degree.v:23]
+INFO: [Synth 8-6157] synthesizing module 'degree_confirmation' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/degree_confirmation.v:23]
 	Parameter white bound to: 16'b1111111111111111 
 	Parameter red bound to: 16'b1111100000000000 
-INFO: [Synth 8-6155] done synthesizing module 'degree_confirmation' (31#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/degree_confirmation.v:23]
-INFO: [Synth 8-6157] synthesizing module 'select_constant' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/select_constant.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'degree_confirmation' (31#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/degree_confirmation.v:23]
+INFO: [Synth 8-6157] synthesizing module 'select_constant' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/select_constant.v:23]
 	Parameter white bound to: 16'b1111111111111111 
 	Parameter red bound to: 16'b1111100000000000 
-INFO: [Synth 8-6157] synthesizing module 'x_0' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x_0.v:23]
+INFO: [Synth 8-6157] synthesizing module 'x_0' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_0.v:23]
 	Parameter blue bound to: 16'b1010001100011011 
-INFO: [Synth 8-6155] done synthesizing module 'x_0' (32#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x_0.v:23]
-INFO: [Synth 8-6157] synthesizing module 'x_1' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x_1.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'x_0' (32#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_0.v:23]
+INFO: [Synth 8-6157] synthesizing module 'x_1' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_1.v:23]
 	Parameter blue bound to: 16'b1010001100011011 
-INFO: [Synth 8-6155] done synthesizing module 'x_1' (33#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x_1.v:23]
-INFO: [Synth 8-6157] synthesizing module 'x_2' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x_2.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'x_1' (33#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_1.v:23]
+INFO: [Synth 8-6157] synthesizing module 'x_2' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_2.v:23]
 	Parameter blue bound to: 16'b1010001100011011 
-INFO: [Synth 8-6155] done synthesizing module 'x_2' (34#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x_2.v:23]
-INFO: [Synth 8-6157] synthesizing module 'x_3' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x_3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'x_2' (34#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'x_3' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_3.v:23]
 	Parameter blue bound to: 16'b1010001100011011 
-INFO: [Synth 8-6155] done synthesizing module 'x_3' (35#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x_3.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'select_constant' (36#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/select_constant.v:23]
-INFO: [Synth 8-6157] synthesizing module 'constant_confirmation' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/constant_confirmation.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'x_3' (35#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x_3.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'select_constant' (36#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/select_constant.v:23]
+INFO: [Synth 8-6157] synthesizing module 'constant_confirmation' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/constant_confirmation.v:23]
 	Parameter white bound to: 16'b1111111111111111 
 	Parameter red bound to: 16'b1111100000000000 
-INFO: [Synth 8-6157] synthesizing module 'num0_small' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/num0_small.v:23]
+INFO: [Synth 8-6157] synthesizing module 'num0_small' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/num0_small.v:23]
 	Parameter red bound to: 16'b1111100000000000 
-INFO: [Synth 8-6155] done synthesizing module 'num0_small' (37#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/num0_small.v:23]
-INFO: [Synth 8-6157] synthesizing module 'x0_constant' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x0_constant.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'num0_small' (37#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/num0_small.v:23]
+INFO: [Synth 8-6157] synthesizing module 'x0_constant' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x0_constant.v:23]
 	Parameter blue bound to: 16'b1010001100011011 
-INFO: [Synth 8-6155] done synthesizing module 'x0_constant' (38#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x0_constant.v:23]
-INFO: [Synth 8-6157] synthesizing module 'x1_constant' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x1_constant.v:23]
-	Parameter white bound to: 16'b1111111111111111 
-	Parameter red bound to: 16'b1111100000000000 
-	Parameter blue bound to: 16'b1010001100011011 
-INFO: [Synth 8-6155] done synthesizing module 'x1_constant' (39#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x1_constant.v:23]
-INFO: [Synth 8-6157] synthesizing module 'x2_constant' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x2_constant.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'x0_constant' (38#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x0_constant.v:23]
+INFO: [Synth 8-6157] synthesizing module 'x1_constant' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x1_constant.v:23]
 	Parameter white bound to: 16'b1111111111111111 
 	Parameter red bound to: 16'b1111100000000000 
 	Parameter blue bound to: 16'b1010001100011011 
-INFO: [Synth 8-6155] done synthesizing module 'x2_constant' (40#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x2_constant.v:23]
-INFO: [Synth 8-6157] synthesizing module 'x3_constant' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x3_constant.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'x1_constant' (39#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x1_constant.v:23]
+INFO: [Synth 8-6157] synthesizing module 'x2_constant' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x2_constant.v:23]
+	Parameter white bound to: 16'b1111111111111111 
+	Parameter red bound to: 16'b1111100000000000 
 	Parameter blue bound to: 16'b1010001100011011 
-INFO: [Synth 8-6155] done synthesizing module 'x3_constant' (41#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/x3_constant.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'constant_confirmation' (42#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/constant_confirmation.v:23]
-INFO: [Synth 8-6157] synthesizing module 'display_plot' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_plot.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'x2_constant' (40#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x2_constant.v:23]
+INFO: [Synth 8-6157] synthesizing module 'x3_constant' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x3_constant.v:23]
+	Parameter blue bound to: 16'b1010001100011011 
+INFO: [Synth 8-6155] done synthesizing module 'x3_constant' (41#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/x3_constant.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'constant_confirmation' (42#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/constant_confirmation.v:23]
+INFO: [Synth 8-6157] synthesizing module 'display_plot' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v:23]
 	Parameter red bound to: 16'b1111100000000000 
 	Parameter x_offset bound to: 8'sb00101111 
 	Parameter y_offset bound to: 8'sb00011111 
-INFO: [Synth 8-6155] done synthesizing module 'display_plot' (43#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_plot.v:23]
-WARNING: [Synth 8-689] width (7) of port connection 'x' does not match port width (8) of module 'display_plot' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:219]
-WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (8) of module 'display_plot' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:219]
-WARNING: [Synth 8-689] width (4) of port connection 'degrees' does not match port width (5) of module 'display_plot' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:219]
-INFO: [Synth 8-6157] synthesizing module 'display_plot_bg' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_plot_bg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_plot' (43#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'x' does not match port width (8) of module 'display_plot' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:216]
+WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (8) of module 'display_plot' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:216]
+WARNING: [Synth 8-689] width (4) of port connection 'degrees' does not match port width (5) of module 'display_plot' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:216]
+INFO: [Synth 8-6157] synthesizing module 'display_plot_bg' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot_bg.v:23]
 	Parameter grey bound to: 16'b1000010000010000 
-INFO: [Synth 8-6155] done synthesizing module 'display_plot_bg' (44#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_plot_bg.v:23]
-WARNING: [Synth 8-689] width (7) of port connection 'x' does not match port width (8) of module 'display_plot_bg' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:220]
-WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (8) of module 'display_plot_bg' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:220]
-CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register const_set_reg in module poly_top. [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:86]
-INFO: [Synth 8-6155] done synthesizing module 'poly_top' (45#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'morse_code_top' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'morse_code_detect_input' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_detect_input.v:23]
-WARNING: [Synth 8-6090] variable 'done' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_detect_input.v:65]
-WARNING: [Synth 8-6014] Unused sequential element count_2_reg was removed.  [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_detect_input.v:61]
-WARNING: [Synth 8-6014] Unused sequential element count_diff_reg was removed.  [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_detect_input.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'morse_code_detect_input' (46#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_detect_input.v:23]
-INFO: [Synth 8-6157] synthesizing module 'LSFR' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/LSFR.v:25]
-INFO: [Synth 8-6155] done synthesizing module 'LSFR' (47#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/LSFR.v:25]
-INFO: [Synth 8-6157] synthesizing module 'morse_anode_disp' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/mose_anode_disp.v:23]
-WARNING: [Synth 8-6014] Unused sequential element NUM_reg was removed.  [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/mose_anode_disp.v:42]
-INFO: [Synth 8-6155] done synthesizing module 'morse_anode_disp' (48#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/mose_anode_disp.v:23]
-INFO: [Synth 8-6157] synthesizing module 'morse_code_menu' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_menu.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'morse_code_menu' (49#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_menu.v:23]
-INFO: [Synth 8-6157] synthesizing module 'morse_practice' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_practice.v:23]
-INFO: [Synth 8-6157] synthesizing module 'morse_code_tick' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_tick.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'display_plot_bg' (44#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot_bg.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'x' does not match port width (8) of module 'display_plot_bg' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:217]
+WARNING: [Synth 8-689] width (7) of port connection 'y' does not match port width (8) of module 'display_plot_bg' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:217]
+CRITICAL WARNING: [Synth 8-5413] Mix of synchronous and asynchronous control for register const_set_reg in module poly_top. [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:84]
+INFO: [Synth 8-6155] done synthesizing module 'poly_top' (45#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'morse_code_top' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'morse_code_detect_input' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_detect_input.v:23]
+WARNING: [Synth 8-6090] variable 'done' is written by both blocking and non-blocking assignments, entire logic could be removed [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_detect_input.v:65]
+WARNING: [Synth 8-6014] Unused sequential element count_2_reg was removed.  [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_detect_input.v:61]
+WARNING: [Synth 8-6014] Unused sequential element count_diff_reg was removed.  [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_detect_input.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'morse_code_detect_input' (46#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_detect_input.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LSFR' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/LSFR.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'LSFR' (47#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/LSFR.v:25]
+INFO: [Synth 8-6157] synthesizing module 'morse_anode_disp' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/mose_anode_disp.v:23]
+WARNING: [Synth 8-6014] Unused sequential element NUM_reg was removed.  [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/mose_anode_disp.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'morse_anode_disp' (48#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/mose_anode_disp.v:23]
+INFO: [Synth 8-6157] synthesizing module 'morse_code_menu' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_menu.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'morse_code_menu' (49#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_menu.v:23]
+INFO: [Synth 8-6157] synthesizing module 'morse_practice' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_practice.v:23]
+INFO: [Synth 8-6157] synthesizing module 'morse_code_tick' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_tick.v:23]
 	Parameter green bound to: 16'b0000011111100000 
-INFO: [Synth 8-6155] done synthesizing module 'morse_code_tick' (50#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_tick.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_practice.v:40]
-INFO: [Synth 8-6157] synthesizing module 'morse_characterwithmorseAJ' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterwithmorse.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'morse_code_tick' (50#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_tick.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_practice.v:40]
+INFO: [Synth 8-6157] synthesizing module 'morse_characterwithmorseAJ' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterwithmorse.v:23]
 	Parameter white bound to: 16'b1111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'morse_characterwithmorseAJ' (51#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterwithmorse.v:23]
-INFO: [Synth 8-6157] synthesizing module 'morse_characterwithmorseKT' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterwithmorseKT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'morse_characterwithmorseAJ' (51#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterwithmorse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'morse_characterwithmorseKT' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterwithmorseKT.v:23]
 	Parameter white bound to: 16'b1111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'morse_characterwithmorseKT' (52#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterwithmorseKT.v:23]
-INFO: [Synth 8-6157] synthesizing module 'morse_characterwithmorseUZ' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterwithmorseUZ.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'morse_characterwithmorseKT' (52#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterwithmorseKT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'morse_characterwithmorseUZ' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterwithmorseUZ.v:23]
 	Parameter white bound to: 16'b1111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'morse_characterwithmorseUZ' (53#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterwithmorseUZ.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'morse_practice' (54#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_practice.v:23]
-INFO: [Synth 8-6157] synthesizing module 'morse_timed' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_timed.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_timed.v:54]
-INFO: [Synth 8-6157] synthesizing module 'morse_characterAJ' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterAJ.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'morse_characterwithmorseUZ' (53#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterwithmorseUZ.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'morse_practice' (54#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_practice.v:23]
+INFO: [Synth 8-6157] synthesizing module 'morse_timed' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_timed.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_timed.v:55]
+INFO: [Synth 8-6157] synthesizing module 'morse_characterAJ' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterAJ.v:23]
 	Parameter white bound to: 16'b1111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'morse_characterAJ' (55#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterAJ.v:23]
-INFO: [Synth 8-6157] synthesizing module 'morse_characterKT' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterKT.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'morse_characterAJ' (55#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterAJ.v:23]
+INFO: [Synth 8-6157] synthesizing module 'morse_characterKT' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterKT.v:23]
 	Parameter white bound to: 16'b1111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'morse_characterKT' (56#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterKT.v:23]
-INFO: [Synth 8-6157] synthesizing module 'morse_characterUZ' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterUZ.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'morse_characterKT' (56#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterKT.v:23]
+INFO: [Synth 8-6157] synthesizing module 'morse_characterUZ' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterUZ.v:23]
 	Parameter white bound to: 16'b1111111111111111 
-INFO: [Synth 8-6155] done synthesizing module 'morse_characterUZ' (57#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_characterUZ.v:23]
-INFO: [Synth 8-6157] synthesizing module 'morse_code_timeup' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_timeup.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'morse_characterUZ' (57#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_characterUZ.v:23]
+INFO: [Synth 8-6157] synthesizing module 'morse_code_timeup' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_timeup.v:23]
 	Parameter red bound to: 16'b1111100000000000 
-INFO: [Synth 8-6155] done synthesizing module 'morse_code_timeup' (58#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_timeup.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'morse_timed' (59#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_timed.v:23]
-WARNING: [Synth 8-3848] Net seg in module/entity morse_code_top does not have driver. [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_top.v:29]
-WARNING: [Synth 8-3848] Net an in module/entity morse_code_top does not have driver. [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_top.v:31]
-WARNING: [Synth 8-3848] Net dp in module/entity morse_code_top does not have driver. [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_top.v:33]
-INFO: [Synth 8-6155] done synthesizing module 'morse_code_top' (60#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/morse_code_top.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (61#1) [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/Top_Student.v:18]
-WARNING: [Synth 8-3917] design Top_Student has port dp driven by constant 1
-WARNING: [Synth 8-3331] design morse_code_top has unconnected port seg[6]
-WARNING: [Synth 8-3331] design morse_code_top has unconnected port seg[5]
-WARNING: [Synth 8-3331] design morse_code_top has unconnected port seg[4]
-WARNING: [Synth 8-3331] design morse_code_top has unconnected port seg[3]
-WARNING: [Synth 8-3331] design morse_code_top has unconnected port seg[2]
-WARNING: [Synth 8-3331] design morse_code_top has unconnected port seg[1]
-WARNING: [Synth 8-3331] design morse_code_top has unconnected port seg[0]
-WARNING: [Synth 8-3331] design morse_code_top has unconnected port an[3]
-WARNING: [Synth 8-3331] design morse_code_top has unconnected port an[2]
-WARNING: [Synth 8-3331] design morse_code_top has unconnected port an[1]
-WARNING: [Synth 8-3331] design morse_code_top has unconnected port an[0]
-WARNING: [Synth 8-3331] design morse_code_top has unconnected port dp
-WARNING: [Synth 8-3331] design poly_top has unconnected port state[1]
-WARNING: [Synth 8-3331] design poly_top has unconnected port state[0]
-WARNING: [Synth 8-3331] design poly_top has unconnected port set_c
+INFO: [Synth 8-6155] done synthesizing module 'morse_code_timeup' (58#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_timeup.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'morse_timed' (59#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_timed.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'morse_code_top' (60#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/morse_code_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (61#1) [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/Top_Student.v:18]
 WARNING: [Synth 8-3331] design spectrogram has unconnected port mic_in[5]
 WARNING: [Synth 8-3331] design spectrogram has unconnected port mic_in[4]
 WARNING: [Synth 8-3331] design spectrogram has unconnected port mic_in[3]
@@ -318,7 +299,7 @@ WARNING: [Synth 8-3331] design spectrogram_top has unconnected port sw[2]
 WARNING: [Synth 8-3331] design spectrogram_top has unconnected port sw[1]
 WARNING: [Synth 8-3331] design spectrogram_top has unconnected port sw[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 840.988 ; gain = 584.555
+Finished RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 842.590 ; gain = 585.832
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -331,28 +312,28 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 840.988 ; gain = 584.555
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 842.590 ; gain = 585.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 840.988 ; gain = 584.555
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 842.590 ; gain = 585.832
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/constrs_1/new/Basys3_Master.xdc]
-Finished Parsing XDC File [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/constrs_1/new/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Parsing XDC File [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1428.082 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1430.434 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:01:14 ; elapsed = 00:01:18 . Memory (MB): peak = 1431.035 ; gain = 1174.602
+Finished Constraint Validation : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1433.039 ; gain = 1176.281
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 2 processes.
 ---------------------------------------------------------------------------------
@@ -360,13 +341,8 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:01:14 ; elapsed = 00:01:18 . Memory (MB): peak = 1431.035 ; gain = 1174.602
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1433.039 ; gain = 1176.281
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5545] ROM "clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
-INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
-INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "current_peak" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "current_peak" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "oled_data_A" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
@@ -474,9 +450,9 @@ INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because addres
 INFO: [Synth 8-5544] ROM "oled_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "x_offset" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "y_offset" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_plot.v:43]
-INFO: [Synth 8-4471] merging register 'const_valid_reg' into 'const_confirm_b_reg' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:135]
-WARNING: [Synth 8-6014] Unused sequential element const_valid_reg was removed.  [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:135]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v:43]
+INFO: [Synth 8-4471] merging register 'const_valid_reg' into 'const_confirm_b_reg' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:132]
+WARNING: [Synth 8-6014] Unused sequential element const_valid_reg was removed.  [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:132]
 INFO: [Synth 8-5544] ROM "an_scale" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "seg_scale" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5545] ROM "current_peak" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
@@ -487,9 +463,13 @@ INFO: [Synth 8-5545] ROM "correct_detected" won't be mapped to RAM because addre
 INFO: [Synth 8-5545] ROM "correct" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "correct_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "timeup_detected" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "correct_detected" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "timeup_delay" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "timeup_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "correct" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "correct_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "enable_poly" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -528,7 +508,7 @@ INFO: [Synth 8-5545] ROM "correct_count" won't be mapped to RAM because address 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:09 ; elapsed = 00:02:14 . Memory (MB): peak = 1431.035 ; gain = 1174.602
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1433.039 ; gain = 1176.281
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -542,12 +522,12 @@ Report RTL Partitions:
 |5     |Seven_segment_LED_Display_Controller__GC0 |           1|      1743|
 |6     |spectrogram_top__GC0                      |           1|     11186|
 |7     |debouncer__GC0                            |           1|         4|
-|8     |poly_top__GC0                             |           1|     22274|
+|8     |poly_top__GC0                             |           1|     22276|
 |9     |morse_anode_disp__GC0                     |           1|        56|
 |10    |morse_practice__GC0                       |           1|      7724|
-|11    |morse_timed__GC0                          |           1|      9314|
-|12    |morse_code_top__GC0                       |           1|     19888|
-|13    |Top_Student__GC0                          |           1|      4011|
+|11    |morse_timed__GC0                          |           1|     11213|
+|12    |morse_code_top__GC0                       |           1|     19940|
+|13    |Top_Student__GC0                          |           1|      4037|
 +------+------------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -557,7 +537,7 @@ Detailed RTL Component Info :
 	   2 Input     33 Bit       Adders := 5     
 	   3 Input     33 Bit       Adders := 1     
 	   4 Input     33 Bit       Adders := 1     
-	   2 Input     32 Bit       Adders := 25    
+	   2 Input     32 Bit       Adders := 26    
 	   3 Input     32 Bit       Adders := 1     
 	   2 Input     26 Bit       Adders := 1     
 	   2 Input     17 Bit       Adders := 1     
@@ -575,7 +555,7 @@ Detailed RTL Component Info :
 	   2 Input      1 Bit         XORs := 1     
 +---Registers : 
 	               40 Bit    Registers := 1     
-	               32 Bit    Registers := 10    
+	               32 Bit    Registers := 11    
 	               17 Bit    Registers := 1     
 	               16 Bit    Registers := 55    
 	               15 Bit    Registers := 1     
@@ -589,19 +569,19 @@ Detailed RTL Component Info :
 	                4 Bit    Registers := 9     
 	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 4     
-	                1 Bit    Registers := 59    
+	                1 Bit    Registers := 61    
 +---Multipliers : 
 	                11x33  Multipliers := 3     
 	                33x33  Multipliers := 2     
 +---Muxes : 
 	   2 Input     40 Bit        Muxes := 3     
 	   2 Input     33 Bit        Muxes := 4     
-	   2 Input     32 Bit        Muxes := 7     
+	   2 Input     32 Bit        Muxes := 8     
 	  32 Input     32 Bit        Muxes := 1     
 	   3 Input     26 Bit        Muxes := 1     
 	  32 Input     20 Bit        Muxes := 1     
 	   2 Input     17 Bit        Muxes := 1     
-	   2 Input     16 Bit        Muxes := 40    
+	   2 Input     16 Bit        Muxes := 41    
 	  97 Input     16 Bit        Muxes := 1     
 	  18 Input     16 Bit        Muxes := 1     
 	   3 Input     16 Bit        Muxes := 3     
@@ -623,10 +603,10 @@ Detailed RTL Component Info :
 	   2 Input     11 Bit        Muxes := 7     
 	   2 Input      9 Bit        Muxes := 2     
 	   2 Input      8 Bit        Muxes := 10    
-	   2 Input      7 Bit        Muxes := 9     
-	   5 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 10    
+	   5 Input      7 Bit        Muxes := 2     
 	   8 Input      7 Bit        Muxes := 1     
-	   4 Input      7 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
 	   7 Input      7 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 3     
 	  32 Input      6 Bit        Muxes := 1     
@@ -634,20 +614,21 @@ Detailed RTL Component Info :
 	   2 Input      5 Bit        Muxes := 2     
 	  32 Input      5 Bit        Muxes := 2     
 	   7 Input      5 Bit        Muxes := 2     
-	   4 Input      4 Bit        Muxes := 5     
-	   2 Input      4 Bit        Muxes := 14    
+	   4 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 15    
 	  11 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 1     
 	   6 Input      3 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 4     
 	   4 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 254   
-	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 262   
+	   3 Input      1 Bit        Muxes := 2     
 	 192 Input      1 Bit        Muxes := 191   
 	   4 Input      1 Bit        Muxes := 1     
 	   5 Input      1 Bit        Muxes := 3     
 	   9 Input      1 Bit        Muxes := 4     
-	  27 Input      1 Bit        Muxes := 2     
+	  27 Input      1 Bit        Muxes := 1     
 	   8 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -663,10 +644,12 @@ Detailed RTL Component Info :
 +---Muxes : 
 	   5 Input     16 Bit        Muxes := 2     
 	   2 Input     16 Bit        Muxes := 2     
+	   5 Input      7 Bit        Muxes := 1     
 	   2 Input      7 Bit        Muxes := 1     
-	   4 Input      7 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 1     
-	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
 Module flexible_clk 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -1103,17 +1086,17 @@ Detailed RTL Component Info :
 Module morse_timed 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 3     
 +---Registers : 
-	               32 Bit    Registers := 2     
+	               32 Bit    Registers := 3     
 	               16 Bit    Registers := 1     
 	                8 Bit    Registers := 2     
-	                1 Bit    Registers := 3     
+	                1 Bit    Registers := 5     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 3     
 	   2 Input     16 Bit        Muxes := 5     
-	  27 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 10    
+	   3 Input      1 Bit        Muxes := 1     
 Module morse_code_detect_input 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -1151,7 +1134,10 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   4 Input     16 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 3     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
 Module Audio_Capture 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -1212,13 +1198,133 @@ Finished Part Resource Summary
 ---------------------------------------------------------------------------------
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
-Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-5545] ROM "clk_out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_plot.v:58]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_plot.v:64]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_plot.v:64]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_plot.v:59]
-INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/display_plot.v:64]
+INFO: [Synth 8-5545] ROM "correct_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "correct_detected" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "correct" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[31]' (FDE) to 'menu_button0i_6/count_reg[30]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[30]' (FDE) to 'menu_button0i_6/count_reg[29]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[28]' (FDE) to 'menu_button0i_6/count_reg[29]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[29]' (FDE) to 'menu_button0i_6/count_reg[27]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[24]' (FDE) to 'menu_button0i_6/count_reg[27]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[25]' (FDE) to 'menu_button0i_6/count_reg[27]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[26]' (FDE) to 'menu_button0i_6/count_reg[27]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[27]' (FDE) to 'menu_button0i_6/count_reg[23]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[18]' (FDE) to 'menu_button0i_6/count_reg[23]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[19]' (FDE) to 'menu_button0i_6/count_reg[23]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[16]' (FDE) to 'menu_button0i_6/count_reg[23]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[17]' (FDE) to 'menu_button0i_6/count_reg[23]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[22]' (FDE) to 'menu_button0i_6/count_reg[23]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[23]' (FDE) to 'menu_button0i_6/count_reg[21]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[20]' (FDE) to 'menu_button0i_6/count_reg[21]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[21]' (FDE) to 'menu_button0i_6/count_reg[15]'
+INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[14]' (FDE) to 'menu_button0i_6/count_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (menu_button0i_6/\count_reg[15] )
+INFO: [Synth 8-3886] merging instance 'morse_anode_disp0i_12/LED_out_reg[0]' (FDSE) to 'morse_anode_disp0i_12/LED_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'morse_anode_disp0i_12/LED_out_reg[1]' (FDSE) to 'morse_anode_disp0i_12/LED_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'morse_anode_disp0i_12/LED_out_reg[2]' (FDSE) to 'morse_anode_disp0i_12/LED_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'morse_anode_disp0i_12/LED_out_reg[3]' (FDSE) to 'morse_anode_disp0i_12/LED_out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'morse_anode_disp0i_12/LED_out_reg[4]' (FDSE) to 'morse_anode_disp0i_12/LED_out_reg[5]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (morse_anode_disp0i_12/\LED_out_reg[5] )
+INFO: [Synth 8-3886] merging instance 'practice0i_13/tick0/oled_data_reg[0]' (FDR) to 'practice0i_13/tick0/oled_data_reg[1]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/AJ0/oled_data_reg[0]' (FDS) to 'practice0i_13/AJ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/KT0/oled_data_reg[0]' (FDS) to 'practice0i_13/KT0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/UZ0/oled_data_reg[0]' (FDS) to 'practice0i_13/UZ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/tick0/oled_data_reg[1]' (FDR) to 'practice0i_13/tick0/oled_data_reg[2]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/AJ0/oled_data_reg[1]' (FDS) to 'practice0i_13/AJ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/KT0/oled_data_reg[1]' (FDS) to 'practice0i_13/KT0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/UZ0/oled_data_reg[1]' (FDS) to 'practice0i_13/UZ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/tick0/oled_data_reg[2]' (FDR) to 'practice0i_13/tick0/oled_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/AJ0/oled_data_reg[2]' (FDS) to 'practice0i_13/AJ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/KT0/oled_data_reg[2]' (FDS) to 'practice0i_13/KT0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/UZ0/oled_data_reg[2]' (FDS) to 'practice0i_13/UZ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/tick0/oled_data_reg[3]' (FDR) to 'practice0i_13/tick0/oled_data_reg[4]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/AJ0/oled_data_reg[3]' (FDS) to 'practice0i_13/AJ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/KT0/oled_data_reg[3]' (FDS) to 'practice0i_13/KT0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/UZ0/oled_data_reg[3]' (FDS) to 'practice0i_13/UZ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/tick0/oled_data_reg[4]' (FDR) to 'practice0i_13/tick0/oled_data_reg[11]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/AJ0/oled_data_reg[4]' (FDS) to 'practice0i_13/AJ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/KT0/oled_data_reg[4]' (FDS) to 'practice0i_13/KT0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/UZ0/oled_data_reg[4]' (FDS) to 'practice0i_13/UZ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/tick0/oled_data_reg[5]' (FDS) to 'practice0i_13/tick0/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/AJ0/oled_data_reg[5]' (FDS) to 'practice0i_13/AJ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/KT0/oled_data_reg[5]' (FDS) to 'practice0i_13/KT0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/UZ0/oled_data_reg[5]' (FDS) to 'practice0i_13/UZ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/tick0/oled_data_reg[6]' (FDS) to 'practice0i_13/tick0/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/AJ0/oled_data_reg[6]' (FDS) to 'practice0i_13/AJ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/KT0/oled_data_reg[6]' (FDS) to 'practice0i_13/KT0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/UZ0/oled_data_reg[6]' (FDS) to 'practice0i_13/UZ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/tick0/oled_data_reg[7]' (FDS) to 'practice0i_13/tick0/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/AJ0/oled_data_reg[7]' (FDS) to 'practice0i_13/AJ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/KT0/oled_data_reg[7]' (FDS) to 'practice0i_13/KT0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/UZ0/oled_data_reg[7]' (FDS) to 'practice0i_13/UZ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/tick0/oled_data_reg[8]' (FDS) to 'practice0i_13/tick0/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/AJ0/oled_data_reg[8]' (FDS) to 'practice0i_13/AJ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/KT0/oled_data_reg[8]' (FDS) to 'practice0i_13/KT0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/UZ0/oled_data_reg[8]' (FDS) to 'practice0i_13/UZ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/tick0/oled_data_reg[9]' (FDS) to 'practice0i_13/tick0/oled_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/AJ0/oled_data_reg[9]' (FDS) to 'practice0i_13/AJ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/KT0/oled_data_reg[9]' (FDS) to 'practice0i_13/KT0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/UZ0/oled_data_reg[9]' (FDS) to 'practice0i_13/UZ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/AJ0/oled_data_reg[10]' (FDS) to 'practice0i_13/AJ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/KT0/oled_data_reg[10]' (FDS) to 'practice0i_13/KT0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/UZ0/oled_data_reg[10]' (FDS) to 'practice0i_13/UZ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/tick0/oled_data_reg[11]' (FDR) to 'practice0i_13/tick0/oled_data_reg[12]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/AJ0/oled_data_reg[11]' (FDS) to 'practice0i_13/AJ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/KT0/oled_data_reg[11]' (FDS) to 'practice0i_13/KT0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/UZ0/oled_data_reg[11]' (FDS) to 'practice0i_13/UZ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/tick0/oled_data_reg[12]' (FDR) to 'practice0i_13/tick0/oled_data_reg[13]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/AJ0/oled_data_reg[12]' (FDS) to 'practice0i_13/AJ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/KT0/oled_data_reg[12]' (FDS) to 'practice0i_13/KT0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/UZ0/oled_data_reg[12]' (FDS) to 'practice0i_13/UZ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/tick0/oled_data_reg[13]' (FDR) to 'practice0i_13/tick0/oled_data_reg[14]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/AJ0/oled_data_reg[13]' (FDS) to 'practice0i_13/AJ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/KT0/oled_data_reg[13]' (FDS) to 'practice0i_13/KT0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/UZ0/oled_data_reg[13]' (FDS) to 'practice0i_13/UZ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/tick0/oled_data_reg[14]' (FDR) to 'practice0i_13/tick0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/AJ0/oled_data_reg[14]' (FDS) to 'practice0i_13/AJ0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/KT0/oled_data_reg[14]' (FDS) to 'practice0i_13/KT0/oled_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'practice0i_13/UZ0/oled_data_reg[14]' (FDS) to 'practice0i_13/UZ0/oled_data_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (practice0i_13/tick0/\oled_data_reg[15] )
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[15]) is unused and will be removed from module morse_code_tick__1.
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_B_reg[0]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_A_reg[0]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CA_reg[0]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CB_reg[0]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_B_reg[1]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_A_reg[1]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CA_reg[1]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CB_reg[1]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_B_reg[2]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_A_reg[2]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CA_reg[2]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CB_reg[2]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_B_reg[3]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_A_reg[3]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CA_reg[3]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CB_reg[3]' (FD) to 'i_0/subtask4_20/oled_data_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_B_reg[4]' (FD) to 'i_0/subtask4_20/oled_data_CA_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_A_reg[4]' (FD) to 'i_0/subtask4_20/oled_data_CA_reg[4]'
+INFO: [Synth 8-3886] merging instance 'i_0/subtask4_20/oled_data_CA_reg[4]' (FD) to 'i_0/subtask4_20/oled_data_CB_reg[4]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\subtask4_20/oled_data_CB_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\board0/oled_data_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (moving0/\oled_data_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\selector0/oled_data_reg[9] )
+WARNING: [Synth 8-3332] Sequential element (oled_data_reg[9]) is unused and will be removed from module display_bg_moving.
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design spectrogram has unconnected port mic_in[5]
+WARNING: [Synth 8-3331] design spectrogram has unconnected port mic_in[4]
+WARNING: [Synth 8-3331] design spectrogram has unconnected port mic_in[3]
+WARNING: [Synth 8-3331] design spectrogram has unconnected port mic_in[2]
+WARNING: [Synth 8-3331] design spectrogram has unconnected port mic_in[1]
+WARNING: [Synth 8-3331] design spectrogram has unconnected port mic_in[0]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\spec/oled_data_reg[13] )
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v:58]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v:64]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v:64]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 4 [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v:59]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/display_plot.v:64]
 DSP Report: Generating DSP x_square0, operation Mode is: A*B.
 DSP Report: operator x_square0 is absorbed into DSP x_square0.
 DSP Report: operator x_square0 is absorbed into DSP x_square0.
@@ -1261,147 +1367,31 @@ DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
 DSP Report: Generating DSP oled_data3, operation Mode is: (PCIN>>17)+A*B.
 DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
 DSP Report: operator oled_data3 is absorbed into DSP oled_data3.
-INFO: [Synth 8-4471] merging register 'coe_no_reg[31:0]' into 'coe_no_reg[31:0]' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:159]
-INFO: [Synth 8-4471] merging register 'coe_no_reg[31:0]' into 'coe_no_reg[31:0]' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:159]
-INFO: [Synth 8-4471] merging register 'coe_no_reg[31:0]' into 'coe_no_reg[31:0]' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:159]
-INFO: [Synth 8-4471] merging register 'coe_no_reg[31:0]' into 'coe_no_reg[31:0]' [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:159]
-WARNING: [Synth 8-6014] Unused sequential element coe_no_reg was removed.  [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:159]
-WARNING: [Synth 8-6014] Unused sequential element coe_no_reg was removed.  [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:159]
-WARNING: [Synth 8-6014] Unused sequential element coe_no_reg was removed.  [C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.srcs/sources_1/new/poly_top.v:159]
-INFO: [Synth 8-5545] ROM "correct_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "correct_detected" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "correct" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "correct_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "correct_detected" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "correct" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "detect_input0/count_mic" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5545] ROM "detect_input0/current_peak" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-3917] design Top_Student has port dp driven by constant 1
-INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[31]' (FDE) to 'menu_button0i_6/count_reg[30]'
-INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[30]' (FDE) to 'menu_button0i_6/count_reg[29]'
-INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[28]' (FDE) to 'menu_button0i_6/count_reg[29]'
-INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[29]' (FDE) to 'menu_button0i_6/count_reg[27]'
-INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[24]' (FDE) to 'menu_button0i_6/count_reg[27]'
-INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[25]' (FDE) to 'menu_button0i_6/count_reg[27]'
-INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[26]' (FDE) to 'menu_button0i_6/count_reg[27]'
-INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[27]' (FDE) to 'menu_button0i_6/count_reg[23]'
-INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[18]' (FDE) to 'menu_button0i_6/count_reg[23]'
-INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[19]' (FDE) to 'menu_button0i_6/count_reg[23]'
-INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[16]' (FDE) to 'menu_button0i_6/count_reg[23]'
-INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[17]' (FDE) to 'menu_button0i_6/count_reg[23]'
-INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[22]' (FDE) to 'menu_button0i_6/count_reg[23]'
-INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[23]' (FDE) to 'menu_button0i_6/count_reg[21]'
-INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[20]' (FDE) to 'menu_button0i_6/count_reg[21]'
-INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[21]' (FDE) to 'menu_button0i_6/count_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu_button0i_6/count_reg[14]' (FDE) to 'menu_button0i_6/count_reg[15]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (menu_button0i_6/\count_reg[15] )
-INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[0]' (FD) to 'menu0i_7/board0/oled_data_reg[1]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[1]' (FD) to 'menu0i_7/board0/oled_data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[2]' (FD) to 'menu0i_7/board0/oled_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[3]' (FD) to 'menu0i_7/board0/oled_data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[4]' (FD) to 'menu0i_7/board0/oled_data_reg[8]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[5]' (FD) to 'menu0i_7/board0/oled_data_reg[9]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[6]' (FD) to 'menu0i_7/board0/oled_data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[7]' (FD) to 'menu0i_7/board0/oled_data_reg[11]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[8]' (FD) to 'menu0i_7/board0/oled_data_reg[10]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[9]' (FD) to 'menu0i_7/board0/oled_data_reg[12]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (menu0i_7/\board0/oled_data_reg[10] )
-INFO: [Synth 8-3886] merging instance 'menu0i_7/board0/oled_data_reg[13]' (FD) to 'menu0i_7/board0/oled_data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[6]' (FDS) to 'menu0i_7/moving0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[7]' (FDR) to 'menu0i_7/moving0/oled_data_reg[2]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[4]' (FDS) to 'menu0i_7/moving0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[5]' (FDS) to 'menu0i_7/moving0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[0]' (FDS) to 'menu0i_7/moving0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[1]' (FDS) to 'menu0i_7/moving0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[2]' (FDR) to 'menu0i_7/moving0/oled_data_reg[3]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[3]' (FDR) to 'menu0i_7/moving0/oled_data_reg[8]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[14]' (FDR) to 'menu0i_7/moving0/oled_data_reg[8]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[12]' (FDS) to 'menu0i_7/moving0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[13]' (FDR) to 'menu0i_7/moving0/oled_data_reg[8]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[8]' (FDR) to 'menu0i_7/moving0/oled_data_reg[9]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (menu0i_7/moving0/\oled_data_reg[9] )
-INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[10]' (FDS) to 'menu0i_7/moving0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/moving0/oled_data_reg[11]' (FDS) to 'menu0i_7/moving0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[6]' (FD) to 'menu0i_7/words0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[6]' (FDS) to 'menu0i_7/selector0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[7]' (FD) to 'menu0i_7/words0/oled_data_reg[5]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[7]' (FDR) to 'menu0i_7/selector0/oled_data_reg[9]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[4]' (FD) to 'menu0i_7/words0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[4]' (FDR) to 'menu0i_7/selector0/oled_data_reg[9]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[5]' (FD) to 'menu0i_7/words0/oled_data_reg[0]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[5]' (FDS) to 'menu0i_7/selector0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[0]' (FD) to 'menu0i_7/words0/oled_data_reg[1]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[0]' (FDS) to 'menu0i_7/selector0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[1]' (FD) to 'menu0i_7/words0/oled_data_reg[2]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[1]' (FDR) to 'menu0i_7/selector0/oled_data_reg[9]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[2]' (FD) to 'menu0i_7/words0/oled_data_reg[12]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[2]' (FDR) to 'menu0i_7/selector0/oled_data_reg[9]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[3]' (FD) to 'menu0i_7/words0/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[3]' (FDR) to 'menu0i_7/selector0/oled_data_reg[9]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[15]' (FD) to 'menu0i_7/words0/oled_data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[15]' (FDS) to 'menu0i_7/selector0/oled_data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[14]' (FD) to 'menu0i_7/words0/oled_data_reg[10]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[14]' (FDS) to 'menu0i_7/selector0/oled_data_reg[13]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[12]' (FD) to 'menu0i_7/words0/oled_data_reg[13]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[12]' (FDS) to 'menu0i_7/selector0/oled_data_reg[13]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[13]' (FD) to 'menu0i_7/words0/oled_data_reg[8]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[13]' (FDS) to 'menu0i_7/selector0/oled_data_reg[11]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[8]' (FD) to 'menu0i_7/words0/oled_data_reg[11]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[8]' (FDS) to 'menu0i_7/selector0/oled_data_reg[11]'
-INFO: [Synth 8-3886] merging instance 'menu0i_7/words0/oled_data_reg[9]' (FD) to 'menu0i_7/words0/oled_data_reg[10]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (menu0i_7/\selector0/oled_data_reg[9] )
-INFO: [Synth 8-3886] merging instance 'menu0i_7/selector0/oled_data_reg[10]' (FDS) to 'menu0i_7/selector0/oled_data_reg[11]'
-WARNING: [Synth 8-3332] Sequential element (oled_data_reg[9]) is unused and will be removed from module display_bg_moving.
-INFO: [Synth 8-3886] merging instance 'spectrogram_top0i_9/spec/oled_data_reg[0]' (FDS) to 'spectrogram_top0i_9/spec/oled_data_reg[1]'
-INFO: [Synth 8-3886] merging instance 'spectrogram_top0i_9/spec/oled_data_reg[1]' (FDS) to 'spectrogram_top0i_9/spec/oled_data_reg[5]'
-INFO: [Synth 8-3886] merging instance 'spectrogram_top0i_9/spec/oled_data_reg[2]' (FDS) to 'spectrogram_top0i_9/spec/oled_data_reg[3]'
-INFO: [Synth 8-3886] merging instance 'spectrogram_top0i_9/spec/oled_data_reg[3]' (FDS) to 'spectrogram_top0i_9/spec/oled_data_reg[4]'
-INFO: [Synth 8-3886] merging instance 'spectrogram_top0i_9/spec/oled_data_reg[4]' (FDS) to 'spectrogram_top0i_9/spec/oled_data_reg[7]'
-INFO: [Synth 8-3886] merging instance 'spectrogram_top0i_9/spec/oled_data_reg[5]' (FDS) to 'spectrogram_top0i_9/spec/oled_data_reg[6]'
-INFO: [Synth 8-3886] merging instance 'spectrogram_top0i_9/spec/oled_data_reg[6]' (FDS) to 'spectrogram_top0i_9/spec/oled_data_reg[12]'
-INFO: [Synth 8-3886] merging instance 'spectrogram_top0i_9/spec/oled_data_reg[7]' (FDS) to 'spectrogram_top0i_9/spec/oled_data_reg[8]'
-INFO: [Synth 8-3886] merging instance 'spectrogram_top0i_9/spec/oled_data_reg[8]' (FDS) to 'spectrogram_top0i_9/spec/oled_data_reg[9]'
-INFO: [Synth 8-3886] merging instance 'spectrogram_top0i_9/spec/oled_data_reg[10]' (FDS) to 'spectrogram_top0i_9/spec/oled_data_reg[11]'
-INFO: [Synth 8-3886] merging instance 'spectrogram_top0i_9/spec/oled_data_reg[11]' (FDS) to 'spectrogram_top0i_9/spec/oled_data_reg[14]'
-INFO: [Synth 8-3886] merging instance 'spectrogram_top0i_9/spec/oled_data_reg[12]' (FDS) to 'spectrogram_top0i_9/spec/oled_data_reg[13]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (spectrogram_top0i_9/\spec/oled_data_reg[13] )
-INFO: [Synth 8-3886] merging instance 'spectrogram_top0i_9/spec/oled_data_reg[14]' (FDS) to 'spectrogram_top0i_9/spec/oled_data_reg[15]'
-INFO: [Synth 8-3886] merging instance 'poly_top1i_11/num0/oled_data_reg[0]' (FDR) to 'poly_top1i_11/num0/oled_data_reg[1]'
-INFO: [Synth 8-3886] merging instance 'poly_top1i_11/num1/oled_data_reg[0]' (FDR) to 'poly_top1i_11/num1/oled_data_reg[1]'
-INFO: [Synth 8-3886] merging instance 'poly_top1i_11/num2/oled_data_reg[0]' (FDR) to 'poly_top1i_11/num2/oled_data_reg[1]'
-INFO: [Synth 8-3886] merging instance 'poly_top1i_11/num3/oled_data_reg[0]' (FDR) to 'poly_top1i_11/num3/oled_data_reg[1]'
-INFO: [Synth 8-3886] merging instance 'poly_top1i_11/num4/oled_data_reg[0]' (FDR) to 'poly_top1i_11/num4/oled_data_reg[1]'
-INFO: [Synth 8-3886] merging instance 'poly_top1i_11/num5/oled_data_reg[0]' (FDR) to 'poly_top1i_11/num5/oled_data_reg[1]'
-INFO: [Synth 8-3886] merging instance 'poly_top1i_11/num6/oled_data_reg[0]' (FDR) to 'poly_top1i_11/num6/oled_data_reg[1]'
-INFO: [Synth 8-3886] merging instance 'poly_top1i_11/num7/oled_data_reg[0]' (FDR) to 'poly_top1i_11/num7/oled_data_reg[1]'
-INFO: [Synth 8-3886] merging instance 'poly_top1i_11/num8/oled_data_reg[0]' (FDR) to 'poly_top1i_11/num8/oled_data_reg[1]'
-INFO: [Synth 8-3886] merging instance 'poly_top1i_11/num9/oled_data_reg[0]' (FDR) to 'poly_top1i_11/num9/oled_data_reg[1]'
-INFO: [Synth 8-3886] merging instance 'poly_top1i_11/cross0/oled_data_reg[0]' (FDR) to 'poly_top1i_11/cross0/oled_data_reg[1]'
-INFO: [Synth 8-3886] merging instance 'poly_top1i_11/num0/oled_data_reg[1]' (FDR) to 'poly_top1i_11/num0/oled_data_reg[2]'
-INFO: [Synth 8-3886] merging instance 'poly_top1i_11/num1/oled_data_reg[1]' (FDR) to 'poly_top1i_11/num1/oled_data_reg[2]'
-INFO: [Synth 8-3886] merging instance 'poly_top1i_11/num2/oled_data_reg[1]' (FDR) to 'poly_top1i_11/num2/oled_data_reg[2]'
-INFO: [Synth 8-3886] merging instance 'poly_top1i_11/num3/oled_data_reg[1]' (FDR) to 'poly_top1i_11/num3/oled_data_reg[2]'
-INFO: [Synth 8-3886] merging instance 'poly_top1i_11/num4/oled_data_reg[1]' (FDR) to 'poly_top1i_11/num4/oled_data_reg[2]'
-INFO: [Synth 8-3886] merging instance 'poly_top1i_11/num5/oled_data_reg[1]' (FDR) to 'poly_top1i_11/num5/oled_data_reg[2]'
+INFO: [Synth 8-4471] merging register 'coe_no_reg[31:0]' into 'coe_no_reg[31:0]' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:156]
+INFO: [Synth 8-4471] merging register 'coe_no_reg[31:0]' into 'coe_no_reg[31:0]' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:156]
+INFO: [Synth 8-4471] merging register 'coe_no_reg[31:0]' into 'coe_no_reg[31:0]' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:156]
+INFO: [Synth 8-4471] merging register 'coe_no_reg[31:0]' into 'coe_no_reg[31:0]' [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:156]
+WARNING: [Synth 8-6014] Unused sequential element coe_no_reg was removed.  [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:156]
+WARNING: [Synth 8-6014] Unused sequential element coe_no_reg was removed.  [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:156]
+WARNING: [Synth 8-6014] Unused sequential element coe_no_reg was removed.  [C:/Users/marvi/verilog/Project_Final/Project_Final.srcs/sources_1/new/poly_top.v:156]
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_11/cross0/\oled_data_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_11/num0/\oled_data_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_11/num1/\oled_data_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_11/num2/\oled_data_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_11/num3/\oled_data_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_11/num4/\oled_data_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_11/num5/\oled_data_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_11/num6/\oled_data_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_11/num7/\oled_data_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_11/num8/\oled_data_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_11/num9/\oled_data_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_11/display_plot_bg0/\oled_data_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_11/constant_confirmation0/\x20/oled_data_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_11/select_constant0/\x_3_0/oled_data_reg[14] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_11/display_plot0/\oled_data_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_11/degree_confirmation0/\num3/oled_data_reg[15] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (poly_top1i_11/\num_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (cross0/\oled_data_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (num0/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (num1/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (num2/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (num3/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (num4/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (num5/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (num6/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (num7/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (num8/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (num9/\oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (display_plot_bg0/\oled_data_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (constant_confirmation0/\x20/oled_data_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (select_constant0/\x_3_0/oled_data_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (display_plot0/\oled_data_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (degree_confirmation0/\num3/oled_data_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\num_reg[4] )
 WARNING: [Synth 8-3332] Sequential element (oled_data_reg[10]) is unused and will be removed from module cross_display.
 WARNING: [Synth 8-3332] Sequential element (oled_data_reg[15]) is unused and will be removed from module number_0.
 WARNING: [Synth 8-3332] Sequential element (oled_data_reg[15]) is unused and will be removed from module number_1.
@@ -1418,17 +1408,22 @@ WARNING: [Synth 8-3332] Sequential element (x_3_0/oled_data_reg[14]) is unused a
 WARNING: [Synth 8-3332] Sequential element (x20/oled_data_reg[14]) is unused and will be removed from module constant_confirmation.
 WARNING: [Synth 8-3332] Sequential element (oled_data_reg[5]) is unused and will be removed from module display_plot.
 WARNING: [Synth 8-3332] Sequential element (oled_data_reg[14]) is unused and will be removed from module display_plot_bg.
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (morse_anode_disp0i_12/\LED_out_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (practice0i_13/tick0/\oled_data_reg[15] )
-WARNING: [Synth 8-3332] Sequential element (oled_data_reg[15]) is unused and will be removed from module morse_code_tick__1.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (timed0i_14/timeup0/\oled_data_reg[10] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (timed0i_14/tick0/\oled_data_reg[15] )
+INFO: [Synth 8-5545] ROM "correct_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "correct_detected" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "count0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "correct" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "timeup_count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "timeup_detected" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "timeup_delay" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (timeup0/\oled_data_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (tick0/\oled_data_reg[15] )
 WARNING: [Synth 8-3332] Sequential element (oled_data_reg[15]) is unused and will be removed from module morse_code_tick.
 WARNING: [Synth 8-3332] Sequential element (oled_data_reg[10]) is unused and will be removed from module morse_code_timeup.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (morse0i_15/\detect_input0/pointer0_inferred /\detect_input0/pointer_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (i_0/\subtask4_20/oled_data_CB_reg[4] )
+INFO: [Synth 8-5545] ROM "detect_input0/count_mic" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "detect_input0/current_peak" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\detect_input0/pointer0_inferred /\detect_input0/pointer_reg[0] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:02 ; elapsed = 00:06:10 . Memory (MB): peak = 1431.035 ; gain = 1174.602
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:50 ; elapsed = 00:01:53 . Memory (MB): peak = 1433.039 ; gain = 1176.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -1439,8 +1434,6 @@ ROM:
 |Module Name    | RTL Object | Depth x Width | Implemented As | 
 +---------------+------------+---------------+----------------+
 |morse_practice | char_byte  | 32x8          | LUT            | 
-|morse_timed    | char_byte  | 32x8          | LUT            | 
-|Top_Student    | char_byte  | 32x8          | LUT            | 
 |Top_Student    | char_byte  | 32x8          | LUT            | 
 +---------------+------------+---------------+----------------+
 
@@ -1477,34 +1470,35 @@ Report RTL Partitions:
 |1     |flexible_clk                              |           2|       102|
 |2     |detect_input__GC0                         |           3|         4|
 |3     |menu_button__GC0                          |           1|       106|
-|4     |menu_display__GC0                         |           1|      2686|
+|4     |menu_display__GC0                         |           1|      3672|
 |5     |Seven_segment_LED_Display_Controller__GC0 |           1|      1013|
 |6     |spectrogram_top__GC0                      |           1|      5667|
 |7     |debouncer__GC0                            |           1|         4|
-|8     |poly_top__GC0                             |           1|      5862|
-|9     |morse_practice__GC0                       |           1|      1567|
-|10    |morse_timed__GC0                          |           1|      1492|
-|11    |morse_code_top__GC0                       |           1|      1555|
-|12    |Top_Student__GC0                          |           1|      1675|
-|13    |flexible_clk__1                           |           2|       101|
-|14    |flexible_clk__2                           |           1|       101|
-|15    |flexible_clk__3                           |           1|       101|
-|16    |flexible_clk__4                           |           1|       101|
-|17    |flexible_clk__5                           |           3|       102|
-|18    |flexible_clk__6                           |           1|       100|
-|19    |flexible_clk__7                           |           2|       100|
+|8     |poly_top__GC0                             |           1|      5857|
+|9     |morse_anode_disp__GC0                     |           1|        41|
+|10    |morse_practice__GC0                       |           1|      1567|
+|11    |morse_timed__GC0                          |           1|      1725|
+|12    |morse_code_top__GC0                       |           1|      1664|
+|13    |Top_Student__GC0                          |           1|      1777|
+|14    |flexible_clk__1                           |           2|       101|
+|15    |flexible_clk__2                           |           1|       101|
+|16    |flexible_clk__3                           |           1|       101|
+|17    |flexible_clk__4                           |           1|       101|
+|18    |flexible_clk__5                           |           4|       102|
+|19    |flexible_clk__6                           |           1|       100|
+|20    |flexible_clk__7                           |           2|       100|
 +------+------------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:23 ; elapsed = 00:06:32 . Memory (MB): peak = 1431.035 ; gain = 1174.602
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:01 ; elapsed = 00:02:04 . Memory (MB): peak = 1433.039 ; gain = 1176.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:06:27 ; elapsed = 00:06:36 . Memory (MB): peak = 1431.035 ; gain = 1174.602
+Finished Timing Optimization : Time (s): cpu = 00:02:05 ; elapsed = 00:02:08 . Memory (MB): peak = 1433.039 ; gain = 1176.281
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1514,26 +1508,27 @@ Report RTL Partitions:
 |1     |flexible_clk                              |           2|       102|
 |2     |detect_input__GC0                         |           3|         4|
 |3     |menu_button__GC0                          |           1|       106|
-|4     |menu_display__GC0                         |           1|      2686|
+|4     |menu_display__GC0                         |           1|      3555|
 |5     |Seven_segment_LED_Display_Controller__GC0 |           1|      1013|
 |6     |spectrogram_top__GC0                      |           1|      5667|
 |7     |debouncer__GC0                            |           1|         4|
-|8     |poly_top__GC0                             |           1|      5862|
-|9     |morse_practice__GC0                       |           1|      1567|
-|10    |morse_timed__GC0                          |           1|      1457|
-|11    |morse_code_top__GC0                       |           1|      1555|
-|12    |Top_Student__GC0                          |           1|      1675|
-|13    |flexible_clk__1                           |           2|       101|
-|14    |flexible_clk__2                           |           1|       101|
-|15    |flexible_clk__3                           |           1|       101|
-|16    |flexible_clk__4                           |           1|       101|
-|17    |flexible_clk__5                           |           3|       102|
-|18    |flexible_clk__6                           |           1|       100|
-|19    |flexible_clk__7                           |           2|       100|
+|8     |poly_top__GC0                             |           1|      5857|
+|9     |morse_anode_disp__GC0                     |           1|        41|
+|10    |morse_practice__GC0                       |           1|      1567|
+|11    |Top_Student__GC0                          |           1|      1756|
+|12    |flexible_clk__1                           |           2|       101|
+|13    |flexible_clk__2                           |           1|       101|
+|14    |flexible_clk__3                           |           1|       101|
+|15    |flexible_clk__4                           |           1|       101|
+|16    |flexible_clk__5                           |           4|       102|
+|17    |flexible_clk__6                           |           1|       100|
+|18    |flexible_clk__7                           |           2|       100|
+|19    |Top_Student_GT0                           |           1|      3351|
 +------+------------------------------------------+------------+----------+
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poly_top1/coe_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poly_top1/coe_reg[3] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\poly_top1/coe_reg[0] )
@@ -1543,7 +1538,7 @@ WARNING: [Synth 8-3332] Sequential element (poly_top1/coe_reg[2]) is unused and 
 WARNING: [Synth 8-3332] Sequential element (poly_top1/coe_reg[1]) is unused and will be removed from module Top_Student.
 WARNING: [Synth 8-3332] Sequential element (poly_top1/coe_reg[0]) is unused and will be removed from module Top_Student.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:06:36 ; elapsed = 00:06:45 . Memory (MB): peak = 1431.035 ; gain = 1174.602
+Finished Technology Mapping : Time (s): cpu = 00:02:11 ; elapsed = 00:02:14 . Memory (MB): peak = 1433.039 ; gain = 1176.281
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1567,7 +1562,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:06:38 ; elapsed = 00:06:48 . Memory (MB): peak = 1431.035 ; gain = 1174.602
+Finished IO Insertion : Time (s): cpu = 00:02:12 ; elapsed = 00:02:15 . Memory (MB): peak = 1433.039 ; gain = 1176.281
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -1580,7 +1575,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:06:38 ; elapsed = 00:06:48 . Memory (MB): peak = 1431.035 ; gain = 1174.602
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:12 ; elapsed = 00:02:15 . Memory (MB): peak = 1433.039 ; gain = 1176.281
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -1592,25 +1587,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:40 ; elapsed = 00:06:49 . Memory (MB): peak = 1431.035 ; gain = 1174.602
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:12 ; elapsed = 00:02:15 . Memory (MB): peak = 1433.039 ; gain = 1176.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:06:40 ; elapsed = 00:06:50 . Memory (MB): peak = 1431.035 ; gain = 1174.602
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:13 ; elapsed = 00:02:16 . Memory (MB): peak = 1433.039 ; gain = 1176.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:06:40 ; elapsed = 00:06:50 . Memory (MB): peak = 1431.035 ; gain = 1174.602
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:13 ; elapsed = 00:02:16 . Memory (MB): peak = 1433.039 ; gain = 1176.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:06:40 ; elapsed = 00:06:50 . Memory (MB): peak = 1431.035 ; gain = 1174.602
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:13 ; elapsed = 00:02:16 . Memory (MB): peak = 1433.039 ; gain = 1176.281
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -1627,19 +1622,19 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |BUFG    |     9|
-|2     |CARRY4  |   922|
+|2     |CARRY4  |   941|
 |3     |DSP48E1 |    12|
-|4     |LUT1    |   114|
-|5     |LUT2    |  1280|
-|6     |LUT3    |  1142|
-|7     |LUT4    |   507|
-|8     |LUT5    |  1006|
-|9     |LUT6    |  2838|
-|10    |MUXF7   |   151|
-|11    |MUXF8   |    33|
+|4     |LUT1    |   128|
+|5     |LUT2    |  1342|
+|6     |LUT3    |  1138|
+|7     |LUT4    |   493|
+|8     |LUT5    |   990|
+|9     |LUT6    |  2886|
+|10    |MUXF7   |   138|
+|11    |MUXF8   |    25|
 |12    |FDE_1   |    32|
-|13    |FDRE    |  2261|
-|14    |FDSE    |    35|
+|13    |FDRE    |  2339|
+|14    |FDSE    |    32|
 |15    |IBUF    |    23|
 |16    |OBUF    |    37|
 +------+--------+------+
@@ -1648,109 +1643,111 @@ Report Instance Areas:
 +------+---------------------------+-------------------------------------+------+
 |      |Instance                   |Module                               |Cells |
 +------+---------------------------+-------------------------------------+------+
-|1     |top                        |                                     | 10402|
-|2     |  aud0                     |Audio_Capture                        |   113|
-|3     |  clk6p25m                 |flexible_clk                         |    64|
+|1     |top                        |                                     | 10565|
+|2     |  aud0                     |Audio_Capture                        |   112|
+|3     |  clk6p25m                 |flexible_clk                         |    63|
 |4     |  clk_20kHz                |flexible_clk_0                       |    63|
-|5     |  convert0                 |PItoXY                               |   560|
+|5     |  convert0                 |PItoXY                               |   415|
 |6     |  detect_input_c           |detect_input                         |     3|
-|7     |    d0                     |dff_31                               |     1|
-|8     |    d1                     |dff_32                               |     1|
-|9     |    d2                     |dff_33                               |     1|
+|7     |    d0                     |dff_32                               |     1|
+|8     |    d1                     |dff_33                               |     1|
+|9     |    d2                     |dff_34                               |     1|
 |10    |  detect_input_l           |detect_input_1                       |     3|
-|11    |    d0                     |dff_28                               |     1|
-|12    |    d1                     |dff_29                               |     1|
-|13    |    d2                     |dff_30                               |     1|
+|11    |    d0                     |dff_29                               |     1|
+|12    |    d1                     |dff_30                               |     1|
+|13    |    d2                     |dff_31                               |     1|
 |14    |  detect_input_r           |detect_input_2                       |     4|
-|15    |    d0                     |dff_25                               |     1|
-|16    |    d1                     |dff_26                               |     2|
-|17    |    d2                     |dff_27                               |     1|
-|18    |  display0                 |Oled_Display                         |  1619|
-|19    |  menu0                    |menu_display                         |   693|
+|15    |    d0                     |dff_26                               |     1|
+|16    |    d1                     |dff_27                               |     2|
+|17    |    d2                     |dff_28                               |     1|
+|18    |  display0                 |Oled_Display                         |  1663|
+|19    |  menu0                    |menu_display                         |   677|
 |20    |    board0                 |display_bg_board                     |     3|
-|21    |    clk0                   |flexible_clk_24                      |    63|
-|22    |    moving0                |display_bg_moving                    |   593|
-|23    |    selector0              |display_bg_selector                  |    13|
-|24    |    words0                 |display_bg_words                     |    21|
-|25    |  menu_button0             |menu_button                          |   155|
-|26    |    clk0                   |flexible_clk_23                      |    63|
-|27    |  morse0                   |morse_code_top                       |  1350|
+|21    |    clk0                   |flexible_clk_25                      |    63|
+|22    |    moving0                |display_bg_moving                    |   577|
+|23    |    selector0              |display_bg_selector                  |    14|
+|24    |    words0                 |display_bg_words                     |    20|
+|25    |  menu_button0             |menu_button                          |   173|
+|26    |    clk0                   |flexible_clk_24                      |    63|
+|27    |  morse0                   |morse_code_top                       |  1604|
 |28    |    clkslow                |flexible_clk_19                      |    63|
-|29    |    convert1               |PItoXY_20                            |   519|
-|30    |    detect_input0          |morse_code_detect_input              |   301|
+|29    |    convert1               |PItoXY_20                            |   520|
+|30    |    detect_input0          |morse_code_detect_input              |   308|
 |31    |    lsfr0                  |LSFR                                 |    25|
-|32    |    mourse_code_menu0      |morse_code_menu                      |    13|
-|33    |    practice0              |morse_practice                       |   192|
-|34    |      AJ0                  |morse_characterwithmorseAJ           |    27|
-|35    |      KT0                  |morse_characterwithmorseKT           |    18|
-|36    |      UZ0                  |morse_characterwithmorseUZ           |     7|
-|37    |      slowslow_clk         |flexible_clk_22                      |    63|
-|38    |      tick0                |morse_code_tick                      |     1|
-|39    |    timed0                 |morse_timed                          |   226|
-|40    |      AJ0                  |morse_characterAJ                    |     7|
-|41    |      KT0                  |morse_characterKT                    |     3|
-|42    |      UZ0                  |morse_characterUZ                    |     2|
-|43    |      slowslow_5clk        |flexible_clk_21                      |    63|
-|44    |      timeup0              |morse_code_timeup                    |     1|
-|45    |  poly_top1                |poly_top                             |  2377|
-|46    |    num5                   |number_5                             |     1|
-|47    |    clk0                   |flexible_clk_6                       |    63|
-|48    |    clk6p25m               |flexible_clk_7                       |    63|
-|49    |    constant_confirmation0 |constant_confirmation                |    19|
-|50    |      coe0                 |num0_small                           |     4|
-|51    |      coe1                 |num0_small_16                        |     1|
-|52    |      coe2                 |num0_small_17                        |     1|
-|53    |      coe3                 |num0_small_18                        |     2|
-|54    |      x00                  |x0_constant                          |     1|
-|55    |      x10                  |x1_constant                          |     2|
-|56    |      x20                  |x2_constant                          |     4|
-|57    |      x30                  |x3_constant                          |     1|
-|58    |    convert0               |PItoXY_8                             |   685|
-|59    |    cross0                 |cross_display                        |     2|
-|60    |    db0                    |debouncer                            |    68|
-|61    |      d0                   |dff                                  |     1|
-|62    |      clk0                 |flexible_clk_13                      |    63|
-|63    |      d1                   |dff_14                               |     3|
-|64    |      d2                   |dff_15                               |     1|
-|65    |    degree_confirmation0   |degree_confirmation                  |    12|
-|66    |      num0                 |number_0_9                           |     1|
-|67    |      num1                 |number_1_10                          |     1|
-|68    |      num2                 |number_2_11                          |     3|
-|69    |      num3                 |number_3_12                          |     2|
-|70    |    display_plot0          |display_plot                         |  1267|
-|71    |    display_plot_bg0       |display_plot_bg                      |     2|
-|72    |    num0                   |number_0                             |     2|
-|73    |    num1                   |number_1                             |     1|
-|74    |    num2                   |number_2                             |     1|
-|75    |    num3                   |number_3                             |     2|
-|76    |    num4                   |number_4                             |     2|
-|77    |    num6                   |number_6                             |     3|
-|78    |    num7                   |number_7                             |     1|
-|79    |    num8                   |number_8                             |     2|
-|80    |    num9                   |number_9                             |     1|
-|81    |    select_constant0       |select_constant                      |    11|
-|82    |      x_0_0                |x_0                                  |     1|
-|83    |      x_1_0                |x_1                                  |     1|
-|84    |      x_2_0                |x_2                                  |     3|
-|85    |      x_3_0                |x_3                                  |     3|
-|86    |    select_degree0         |select_degree                        |     5|
-|87    |  spectrogram_top0         |spectrogram_top                      |  3174|
-|88    |    clock_20M              |flexible_clk_3                       |    63|
-|89    |    clock_20k              |flexible_clk_4                       |    63|
-|90    |    freq_disp              |Seven_segment_LED_Display_Controller |   191|
-|91    |      clock_200            |flexible_clk_5                       |    63|
-|92    |    pitch                  |pitchdetector                        |   986|
-|93    |    spec                   |spectrogram                          |  1706|
-|94    |  subtask4_20              |subtask4_2                           |   101|
+|32    |    morse_anode_disp0      |morse_anode_disp                     |    77|
+|33    |      clock_200            |flexible_clk_23                      |    63|
+|34    |    mourse_code_menu0      |morse_code_menu                      |    13|
+|35    |    practice0              |morse_practice                       |   188|
+|36    |      AJ0                  |morse_characterwithmorseAJ           |    23|
+|37    |      KT0                  |morse_characterwithmorseKT           |    18|
+|38    |      UZ0                  |morse_characterwithmorseUZ           |     7|
+|39    |      slowslow_clk         |flexible_clk_22                      |    63|
+|40    |      tick0                |morse_code_tick                      |     1|
+|41    |    timed0                 |morse_timed                          |   400|
+|42    |      AJ0                  |morse_characterAJ                    |    11|
+|43    |      KT0                  |morse_characterKT                    |     3|
+|44    |      UZ0                  |morse_characterUZ                    |     1|
+|45    |      slowslow_5clk        |flexible_clk_21                      |    63|
+|46    |      timeup0              |morse_code_timeup                    |     1|
+|47    |  poly_top1                |poly_top                             |  2379|
+|48    |    num5                   |number_5                             |     1|
+|49    |    clk0                   |flexible_clk_6                       |    63|
+|50    |    clk6p25m               |flexible_clk_7                       |    63|
+|51    |    constant_confirmation0 |constant_confirmation                |    21|
+|52    |      coe0                 |num0_small                           |     4|
+|53    |      coe1                 |num0_small_16                        |     1|
+|54    |      coe2                 |num0_small_17                        |     1|
+|55    |      coe3                 |num0_small_18                        |     2|
+|56    |      x00                  |x0_constant                          |     1|
+|57    |      x10                  |x1_constant                          |     2|
+|58    |      x20                  |x2_constant                          |     4|
+|59    |      x30                  |x3_constant                          |     1|
+|60    |    convert0               |PItoXY_8                             |   685|
+|61    |    cross0                 |cross_display                        |     2|
+|62    |    db0                    |debouncer                            |    68|
+|63    |      d0                   |dff                                  |     1|
+|64    |      clk0                 |flexible_clk_13                      |    63|
+|65    |      d1                   |dff_14                               |     3|
+|66    |      d2                   |dff_15                               |     1|
+|67    |    degree_confirmation0   |degree_confirmation                  |    10|
+|68    |      num0                 |number_0_9                           |     1|
+|69    |      num1                 |number_1_10                          |     1|
+|70    |      num2                 |number_2_11                          |     4|
+|71    |      num3                 |number_3_12                          |     2|
+|72    |    display_plot0          |display_plot                         |  1268|
+|73    |    display_plot_bg0       |display_plot_bg                      |     1|
+|74    |    num0                   |number_0                             |     2|
+|75    |    num1                   |number_1                             |     1|
+|76    |    num2                   |number_2                             |     1|
+|77    |    num3                   |number_3                             |     2|
+|78    |    num4                   |number_4                             |     2|
+|79    |    num6                   |number_6                             |     3|
+|80    |    num7                   |number_7                             |     1|
+|81    |    num8                   |number_8                             |     2|
+|82    |    num9                   |number_9                             |     1|
+|83    |    select_constant0       |select_constant                      |    10|
+|84    |      x_0_0                |x_0                                  |     1|
+|85    |      x_1_0                |x_1                                  |     1|
+|86    |      x_2_0                |x_2                                  |     3|
+|87    |      x_3_0                |x_3                                  |     3|
+|88    |    select_degree0         |select_degree                        |     6|
+|89    |  spectrogram_top0         |spectrogram_top                      |  3174|
+|90    |    clock_20M              |flexible_clk_3                       |    63|
+|91    |    clock_20k              |flexible_clk_4                       |    63|
+|92    |    freq_disp              |Seven_segment_LED_Display_Controller |   191|
+|93    |      clock_200            |flexible_clk_5                       |    63|
+|94    |    pitch                  |pitchdetector                        |   986|
+|95    |    spec                   |spectrogram                          |  1706|
+|96    |  subtask4_20              |subtask4_2                           |   109|
 +------+---------------------------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:06:40 ; elapsed = 00:06:50 . Memory (MB): peak = 1431.035 ; gain = 1174.602
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:13 ; elapsed = 00:02:16 . Memory (MB): peak = 1433.039 ; gain = 1176.281
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:05:35 ; elapsed = 00:06:17 . Memory (MB): peak = 1431.035 ; gain = 584.555
-Synthesis Optimization Complete : Time (s): cpu = 00:06:41 ; elapsed = 00:06:52 . Memory (MB): peak = 1431.035 ; gain = 1174.602
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:39 ; elapsed = 00:02:00 . Memory (MB): peak = 1433.039 ; gain = 585.832
+Synthesis Optimization Complete : Time (s): cpu = 00:02:13 ; elapsed = 00:02:17 . Memory (MB): peak = 1433.039 ; gain = 1176.281
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 1173 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 1171 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -1759,11 +1756,11 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   FDE_1 => FDRE (inverted pins: C): 32 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-421 Infos, 97 Warnings, 1 Critical Warnings and 0 Errors encountered.
+430 Infos, 83 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:06:47 ; elapsed = 00:06:58 . Memory (MB): peak = 1431.035 ; gain = 1187.266
+synth_design: Time (s): cpu = 00:02:17 ; elapsed = 00:02:20 . Memory (MB): peak = 1433.039 ; gain = 1189.152
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/Daniel Pranajaya/Documents/GitHub/EE2026-Final-Project/Project_Final.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/marvi/verilog/Project_Final/Project_Final.runs/synth_1/Top_Student.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.162 . Memory (MB): peak = 1431.035 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Apr  6 11:08:31 2022...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.069 . Memory (MB): peak = 1433.039 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  6 05:43:23 2022...

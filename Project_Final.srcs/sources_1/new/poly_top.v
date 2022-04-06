@@ -21,6 +21,7 @@
 
 
 module poly_top(
+    input enable,
     input BASYS3_CLK, pb_c,
     input [9:0] sw,             // 0 - 9
     input [2:0] sw_scale,       // 10 - 12
@@ -29,9 +30,7 @@ module poly_top(
     output reg [15:0] led,
     output [6:0] seg,
     output [3:0] an,
-    output [15:0] oled_data,
-    input [1:0] state,
-    input set_c
+    output [15:0] oled_data
     );
 
     wire pbc_out;
@@ -65,7 +64,7 @@ module poly_top(
 
     // Modes Changer
     always @(posedge pbc_out) begin
-//        if (state == 2 && set_c == 1) begin
+        if (enable == 1) begin
             if (mode_change == 1) begin
                 mode <= mode + 1;
                 if (mode == 2) mode <= 0;
@@ -76,18 +75,16 @@ module poly_top(
             end else if (deg_confirm_b == 0) begin 
                 deg_set <= 0;
             end
-//        end
+       end
     end
 
     // Constant selection confirmation (for mode 1)
     always @(posedge pbc_out or posedge slow_clk) begin
-//        if (state == 2 && set_c == 1) begin
-            if (pbc_out == 1 && const_confirm_b == 1) begin
-                const_set <= 1;
-            end else if (const_confirm_b == 0) begin
-                const_set <= 0;
-            end
-//        end
+        if (pbc_out == 1 && const_confirm_b == 1) begin
+            const_set <= 1;
+        end else if (const_confirm_b == 0) begin
+            const_set <= 0;
+        end
     end
     
     // FSM

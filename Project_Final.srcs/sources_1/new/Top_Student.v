@@ -28,7 +28,6 @@ module Top_Student (
     output [6:0] seg,
     output dp
     );
-    assign dp = 1;
     
     /* Mic Configuration */
     // mic_in -> data coming in
@@ -90,8 +89,11 @@ module Top_Student (
     wire [15:0] poly_oled_data;
     wire [6:0] poly_seg_data;
     wire [3:0] poly_an_data;
+    wire enable_poly;
 
-    poly_top poly_top1 (BASYS_CLK, pb_c, sw[9:0], sw[12:10], sw[15], pixel_index, poly_led_data, poly_seg_data, poly_an_data, poly_oled_data, state, set_c);
+    assign enable_poly = (state == 2) ? 1 : 0;
+
+    poly_top poly_top1 (enable_poly, BASYS_CLK, pb_c, sw[9:0], sw[12:10], sw[15], pixel_index, poly_led_data, poly_seg_data, poly_an_data, poly_oled_data);
 
 
     /* M-O-R-S-E CODE ! */
@@ -99,9 +101,9 @@ module Top_Student (
     wire [15:0] morse_code_led_data;
     wire [6:0] morse_code_seg_data;
     wire [3:0] morse_code_an_data;
-    wire morse_code_dp;
+    wire morse_code_dp_data;
 
-    morse_code_top morse0 (BASYS_CLK, pixel_index, clk_20khz_out, clk_6_25Mhz_out, pb_c_out, mic_in, sw[1:0], morse_code_seg_data, morse_code_oled_data, morse_code_an_data, morse_code_led_data, morse_code_dp);
+    morse_code_top morse0 (BASYS_CLK, pixel_index, clk_20khz_out, clk_6_25Mhz_out, pb_c_out, mic_in, sw[1:0], morse_code_seg_data, morse_code_oled_data, morse_code_an_data, morse_code_led_data, morse_code_dp_data);
 
 
      always @(posedge BASYS_CLK) begin
@@ -128,11 +130,14 @@ module Top_Student (
                 (state == 0) ? 4'b1111 : (
                 (state == 1) ? spectrogram_an_data : (
                 (state == 2) ? poly_an_data : (
-                (state == 3) ? 4'b1111 : 4'b1111))));
+                (state == 3) ? morse_code_an_data : 4'b1111))));
 
     assign seg = (set_c == 0) ? 7'b1111111 : (
                 (state == 0) ? 7'b1111111 : (
                 (state == 1) ? spectrogram_seg_data : (
                 (state == 2) ? poly_seg_data : (
-                (state == 3) ? 7'b1111111 : 7'b1111111))));
+                (state == 3) ? morse_code_seg_data : 7'b1111111))));
+
+    assign dp = (set_c == 0) ? 1 : (
+                (state == 3) ? morse_code_dp_data : 1);
 endmodule
