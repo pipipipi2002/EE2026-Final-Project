@@ -127,13 +127,13 @@ module Top_Student (
                     (state == 3) ? morse_code_led_data : 0))));
 
     assign an = (set_c == 0) ? 4'b1111 : (
-                (state == 0) ? 4'b1111 : (
+                (state == 0) ? subtask42_an_data : (
                 (state == 1) ? spectrogram_an_data : (
                 (state == 2) ? poly_an_data : (
                 (state == 3) ? morse_code_an_data : 4'b1111))));
 
     assign seg = (set_c == 0) ? 7'b1111111 : (
-                (state == 0) ? 7'b1111111 : (
+                (state == 0) ? subtask42_seg_data : (
                 (state == 1) ? spectrogram_seg_data : (
                 (state == 2) ? poly_seg_data : (
                 (state == 3) ? morse_code_seg_data : 7'b1111111))));
